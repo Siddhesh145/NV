@@ -1,0 +1,89 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="../images/Numero.jpg" alt="" class="card-img-top" />
+						<p>NUMEROLOGIST</p>
+					</div>
+                    <!--<p style="font-family: 'Varela Round', sans-serif;text-align:center;"><b>The world was formed by a vibration, the vibration of the sound “OM”.<br/><sub>-Upanishad</sub></b></p>-->
+					<!-- <p style="font-family: 'Varela Round', sans-serif;"><b><sub>-Upanishad</sub></b></p> -->
+					<p style="font-family: 'Varela Round', sans-serif;">While Numerology relates to the science of understanding the vibration and power of every number, including the alphabets assigned to them, a Numerologist is someone who has mastered this science and across various schools of Numerology viz Chaldean, Pythagorean, Kabbalah, Vedic Numerology etc…</p>
+					<p style="font-family: 'Varela Round', sans-serif;">An experienced Numerologist would be someone who after years of practicing the science not only not understands the importance of every number and alphabet, but also knows how to apply each number under various scenarios e.g. when naming a person or newborn (baby name), to a business name , to a house or understanding favourable and unfavourable dates in a persons life.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">At NaamVidya, we are a team of experienced numerologist who not only mastered the science of numerology but have also invested to make a 5000-year-old science more relevant to today’s people and lifestyle. In fact, NaamVidya Science goes a step ahead to blend the principles of two most renowned schools of Numerology viz: Chaldean and Pythagorean with Vedic Astrology to make it most accurate and whole. This blended science is very sacred to NaamVidya and is something even the most experienced of Numerologist have not been able to master.</p>
+					
+					<p style="font-family: 'Varela Round', sans-serif;">While we thank our Guru’s for this knowledge, we also ensure that the science is rightly applied to every name balanced at NaamVidya. To bring further mathematical precision, each name is further passed through a scientific technology review. Be rest assured, you are in the safest hands in your journey to a balanced name and recommendations with NaamVidya.</p>
+                    <p><b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b></p>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <!-- principles -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Principles'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <!-- <li><a href="/whynamesmatter">Why name matters</a></li> -->
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/life-path">Purpose and Karma</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Baby Name -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'BabyName'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_New_Baby_Name()">Order a Baby Name</a></li>
+                            <li><a href="/choosing-baby-name">Baby Name ideas</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Adult -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Adult'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_Name_Correction()">New name or correction</a></li>
+                            <li><a data-ng-click="f_Spouse_Name()">Spouse Name</a></li>
+                            <li><a href="/others">Other services</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Business -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Business'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a href="/business-name">Order a Business name</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+15/02/2018 10:29:59 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 11:14:25 AM SIDDHESH-PC COMFLEX\1150 iisexpress 12  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 11:14:53 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:14) ERROR - PayPal.IdentityException: The remote server returned an error: (401) Unauthorized.
+   at PayPal.Api.PayPalResource.ConfigureAndExecute[T](APIContext apiContext, HttpMethod httpMethod, String resource, String payload, String endpoint, Boolean setAuthorizationHeader)
+   at PayPal.Api.OAuthTokenCredential.GenerateOAuthToken()
+   at PayPal.Api.OAuthTokenCredential.GetAccessToken()
+   at NaamVidya.Paypal.Configuration.GetAccessToken() in e:\TFS\NaamVidya\NV\NaamVidya\Utilities\Configuration.cs:line 36
+   at NaamVidya.Paypal.Configuration.GetAPIContext(String accessToken) in e:\TFS\NaamVidya\NV\NaamVidya\Utilities\Configuration.cs:line 50
+   at NaamVidya.Controllers.RoutesController.RequestToPaypal(DataTable CartDetails, String custom, String sTxnId) in e:\TFS\NaamVidya\NV\NaamVidya\Controllers\RoutesController.cs:line 1513
+15/02/2018 11:14:53 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - The remote server returned an error: (401) Unauthorized.
+15/02/2018 11:15:55 AM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 11:16:01 AM SIDDHESH-PC COMFLEX\1150 iisexpress 12  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+15/02/2018 11:17:13 AM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 11:17:18 AM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+15/02/2018 11:17:28 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:14) ERROR - PayPal.IdentityException: The remote server returned an error: (401) Unauthorized.
+   at PayPal.Api.PayPalResource.ConfigureAndExecute[T](APIContext apiContext, HttpMethod httpMethod, String resource, String payload, String endpoint, Boolean setAuthorizationHeader)
+   at PayPal.Api.OAuthTokenCredential.GenerateOAuthToken()
+   at PayPal.Api.OAuthTokenCredential.GetAccessToken()
+   at NaamVidya.Paypal.Configuration.GetAccessToken() in e:\TFS\NaamVidya\NV\NaamVidya\Utilities\Configuration.cs:line 36
+   at NaamVidya.Paypal.Configuration.GetAPIContext(String accessToken) in e:\TFS\NaamVidya\NV\NaamVidya\Utilities\Configuration.cs:line 50
+   at NaamVidya.Controllers.RoutesController.RequestToPaypal(DataTable CartDetails, String custom, String sTxnId) in e:\TFS\NaamVidya\NV\NaamVidya\Controllers\RoutesController.cs:line 1513
+15/02/2018 11:17:28 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - The remote server returned an error: (401) Unauthorized.
+15/02/2018 11:31:04 AM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 11:31:09 AM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+15/02/2018 12:38:33 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 12:38:42 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+15/02/2018 03:25:56 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+15/02/2018 03:26:01 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.

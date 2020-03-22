@@ -1,0 +1,19 @@
+17/01/2018 11:36:08 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function NV_SP_GetExpressDelivery has too many arguments specified.
+17/01/2018 11:36:11 AM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function NV_SP_GetExpressDelivery has too many arguments specified.
+17/01/2018 12:56:52 PM SIDDHESH-PC COMFLEX\1150 iisexpress 59  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@TEMP_GUID', which was not supplied.
+17/01/2018 01:01:16 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@TEMP_GUID', which was not supplied.
+17/01/2018 01:01:54 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg ERROR - Column 'TEMP_GUID' does not belong to table .
+17/01/2018 04:00:18 PM SIDDHESH-PC COMFLEX\1150 iisexpress 23  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:00:28 PM SIDDHESH-PC COMFLEX\1150 iisexpress 30  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:00:34 PM SIDDHESH-PC COMFLEX\1150 iisexpress 23  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:01:07 PM SIDDHESH-PC COMFLEX\1150 iisexpress 32  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:01:15 PM SIDDHESH-PC COMFLEX\1150 iisexpress 30  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:01:21 PM SIDDHESH-PC COMFLEX\1150 iisexpress 26  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:02:29 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:02:31 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+17/01/2018 04:02:34 PM SIDDHESH-PC COMFLEX\1150 iisexpress 11  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:02:38 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:02:43 PM SIDDHESH-PC COMFLEX\1150 iisexpress 11  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:03:05 PM SIDDHESH-PC COMFLEX\1150 iisexpress 14  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Column 'ExpressDeliveryDate' does not belong to table .
+17/01/2018 04:56:59 PM SIDDHESH-PC COMFLEX\1150 iisexpress 27  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :vzyccwuknpoh0eepoik1chav | FirstName : siddhesh
+17/01/2018 06:07:14 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :vzyccwuknpoh0eepoik1chav | FirstName : asdas

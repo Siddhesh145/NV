@@ -1,0 +1,657 @@
+<link type="text/css" rel="stylesheet" href="~/assets/owl.carousel.min.css" media="all">
+<link type="text/css" rel="stylesheet" href="~/assets/owl.theme.default.css" media="all">
+<link type="text/css" rel="stylesheet" href="~/assets/custom.css" media="all">
+<!-- Modal -->
+<div class="modald fade" id="myModal" role="dialog" style="background: rgba(0,0,0,0.5);position: fixed;top: 0px;width: 100%;height: 100%;z-index: 999;">
+    <div class="modal-dialog" style="">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background: #ffffff;width: 279px;margin: 100px auto;border-radius: 13px;">
+            <div class="modal-header">
+                @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                <h5 class="modal-title" style="
+				padding: 12px;
+				text-align: center;
+				">
+                    Terms & Condition
+                </h5>
+            </div>
+            <div class="modal-body" style="
+			padding: 0px 10px 10px 10px;
+			">
+                <p>Meeting with Numerologist is by prior appointment only.</p>
+
+                <p>Upon placing an order, you will receive a call from our office to schedule the meeting.</p>
+
+                <p>Meeting will be scheduled within 7 days of placing your order.</p>
+
+                <p>The meeting time is restricted to maximum of 1 hour duration.</p>
+
+                <p>Personalised consultation is for 1 baby name only. </p>
+
+                <p>Not more than 2 attendees will be allowed to meet the Numerologist at a time.</p>
+                
+                        </div>
+            <div class="modal-footer" style="
+			text-align: -webkit-center;
+			padding-bottom: 11px;
+			">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closemodal();">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modald fade" id="myModal2" role="dialog" style="background: rgba(0,0,0,0.5);position: fixed;top: 0px;width: 100%;height: 100%;z-index: 999;">
+    <div class="modal-dialog" style="">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background: #ffffff;width: 279px;margin: 100px auto;border-radius: 13px;">
+            @*<button type="button" class="close" data-dismiss="modal" ng-click="closemodal();">&times;</button>*@
+            <div class="modal-header">
+
+                <h5 class="modal-title" style="color: black;padding-top: 8%;text-align: center;font-size: 21px !important;">
+                    Limited time offer!
+                </h5>
+            </div>
+            <div class="modal-body" style="padding: 0px 10px 10px 10px;">
+                <div class="col m6 s12 l6">
+                    <p style="text-align: center !important;font-size: 20px !important;font-style: italic;color:#DC2E74;"><b>Just for an additional INR 410 / $10 you can upgrade to "Baby Name - Platinum" to avail modern, cultural, trendy, religion specific balanced names suggestions from NaamVidya!</b></p>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: -webkit-center;">
+                @*<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closemodal();">Close</button>*@
+                <div class="form-group row">
+                    <div class="col l12 m12 s12">
+                        <div class="col l6 m6 s6">
+                            <a data-ng-click="upgrade();" style="margin-bottom: 8px !important;padding: 0px !important;text-align: center !important;width: 100% !important;border-radius: 5px !important;font-size: 15px !important;" class="waves-effect waves-light btn">Upgrade</a>
+                        </div>
+                        <div class="col l6 m6 s6">
+                            <a data-ng-click="closemodaltwo();" style="margin-bottom: 8px !important;padding: 0px !important;text-align: center !important;width: 100% !important;border-radius: 5px !important;font-size: 15px !important;" class="waves-effect waves-light btn">No Thanks</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col m12 s12">
+                <div class="bannerwrap">
+                    <div class="bannerimage"><img src="../images/banner/Baby-Name-Toddler-Name-V2.jpg" /></div>
+                    <div class="bannercontent">
+                        <h4>Don't choose a name<br /> through a Database</h4>
+                        <p>Use NaamVidya science of "Advanced Numerology"<br /> to select a Balanced Name</p>
+                        @*<input type="text" placeholder="Enter First Name" />
+						<a href="#">Analyse</a>*@
+					</div>
+				</div>
+			</div>
+            <div class="col m12 s12">
+                <div class="row removemargin">
+                    <div class="col m12 s12 belowbanner">
+                        <div class="">
+                            <div class="testimonialwrap col m12 s12">
+                                <h4 class="background"><span>TESTIMONIALS</span></h4>
+                                <div class="owl-carousel owl-theme">
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Glad that I came across NaamVidya. Your science was a revelation. Thank you for helping me chose a balanced name for my baby."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Suneita & Rajesh N***, Mumbai</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"We didn't believe in Numerology till we heard about NaamVidya. Thank you for all your help."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Ritwik S*****, Bangalore</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"I had never known a name was so important in deciding the personality of a person. Thank you NaamVidya for helping us select a name for our son which is not only sweet sounding but also balanced with his DOB and our surname."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Aanika & Rupesh D**, Mumbai</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Very informative and detailed. You guys were great in advising us on a name for our daughter."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Indraneel S*****, Delhi</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Fascinating science and a learning. Good work by your name specialist in assisting us."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Ajith N********, Chennai</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Appreciate all your help in correcting my son’s name. I will certainly recommend NaamVidya service to my friends & family."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Deodita M*******, Kolkata</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Thanks NaamVidya team for your guidance in choosing a balanced name for my daughter."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Pranav S*****, Lucknow</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Thank you NaamVidya team in helping us choosing a name for our baby. Thanks to A****** (name specialist) for the prompt communication."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Nilesh & Archana P****, Mumbai</div></div>
+									</div>
+                                    <div class="singletestimonial">
+                                        <div class="testimonialcontent">
+                                            <div class="col m1 s1"><img src="../images/testimonial.png" /></div>
+                                            <div class="col m11 s11">"Your name analysis report was bang on the mark and an eye opener. Didn't know a name could make so much difference."</div>
+										</div>
+                                        <span></span>
+                                        <div class="col m12 s12"><div class="testimonialaurthor">- Mohsin & Farzana S****. Hyderabad</div></div>
+									</div>
+								</div>
+							</div>
+                            <div class="babynamewrap col m12 s12">
+                                <h4 class="background"><span>BABY NAME</span></h4>
+                                @*<p>As a parent, a balanced name is the finest gift that can be given to a newborn or a child, as the effect and vibrations of a balanced name start much earlier. More importantly, as he/she grows it helps the child harness the inner strengths and abilities to their true potential. Thereby, it offers a chance of a much brighter and peaceful future.</p>*@
+                                <p>
+                                    As a parent, a balanced name is the finest gift that can be given to a newborn or a child, as the effect and vibrations of a balanced name begin earlier in life.
+                                    Not only does it help attract luck and success in matters of health, finance, and relationships, but also brings everlasting peace and balance to life of your baby.
+                                    <br>
+                                    With the largest online database of Balanced Names, we help parents choose the <b><u style="color:#DC2E74">most modern, cultural, trendy and religion specific name for their baby</u></b> that is balanced based on principles of advanced <b style="color:#DC2E74">Numerology, Astrology, and Mantras.</b>
+								</p>
+							</div>
+                            <div class="tabsection col m12 s12">
+                                <div class="singlesection active" href=".wraptabs" id="pricing">
+                                    <img class="tick" src="../images/tick.png" />
+                                    <a href="#">
+                                        <img src="../images/tab3.png" />
+                                        <h5>PRICING</h5>
+									</a>
+								</div>
+                                <div id="howitworks" href=".wraptabs" class="singlesection">
+                                    <img class="tick" src="../images/tick.png" />
+                                    <a href="#">
+                                        <img src="../images/tab4.png" />
+                                        <h5>HOW IT WORKS</h5>
+									</a>
+								</div>
+                                <div class="singlesection" href=".wraptabs" id="firstnameanalysis">
+                                    <img class="tick" src="../images/tick.png" />
+                                    <a href="#">
+                                        <img src="../images/tab1.png" />
+                                        <h5>FREE FIRST NAME ANALYSIS</h5>
+									</a>
+								</div>
+                                <div class="singlesection">
+                                    <a href="/faq">
+                                        <img src="../images/tab2.png" />
+                                        <h5>FAQ</h5>
+									</a>
+								</div>
+							</div>
+                            <div class="col m12 s12 clearfix wraptabs">
+                                <div class="pricing col s12 m12 clearfix active" style="display:block">
+                                    <div id="babyname">
+                                        <h4 class="background"><span>PRICING</span></h4>
+                                        <p style="text-align: center;">
+                                            @*The Pricing is only for Baby or Toddler (age 5 years or less) Name service.<br />*@
+                                            The Pricing is only for Baby or Child (up-to 18 years) Name service.<br />
+                                            If you are looking for a new name or correction service for yourself or child (above 18 years) <a data-ng-click="f_Name_Correction()">click here</a>.
+                                            <br />
+                                            <!-- <span style="color:#DC2E74"><b>LIMITED TIME OFFER !!!</b></span> -->
+                                            <!-- <br> -->
+                                            <!-- <span style="font-weight: bold;font-size: 15px;color:#DC2E74/* position: absolute; *//* left: 52%; */"> -->
+											<!-- " PLATINUM NAME SERVICE " for the Price of " GOLD NAME SERVICE " -->
+                                            <!-- </span> -->
+										</p>
+                                        <div class="customcontainer">
+                                            <div class="row">
+                                                <div class="col m6 s12">
+                                                    <div class="pricingtable gold">
+                                                        <div class="pricingtablename">GOLD</div>
+                                                        @*<div class="pricingtableprice">Price INR 1690 (USD:26) + Taxes</div>*@
+                                                        @*<div class="pricingtableprice">Price INR 1690 + Taxes</div>*@
+                                                        <div class="pricingtableprice">
+                                                            <p style="font-size:25px;font-weight:bold;margin: 0;margin-left: 20px;">Price :</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span>@*<del>1995</del>*@ 1690<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>26</del> 23<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span>@*<del>1995</del>*@ 1690<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup>| <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>26</del> 23<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> 45 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> 45 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+															</p>
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">Including Taxes</p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 13px;font-style: italic;">* Valid Upto 31<sup>st</sup> October 2017</p>*@
+														</div>
+                                                        <div class="pricingtablecontent">
+                                                            <ul>
+                                                                <li class="enable">Get upto 5 baby names (given by you) checked for Balance.</li>
+                                                                <li class="enable">Get correction for the names (suggested by you and found unbalanced).</li>
+                                                                <li class="enable">Name Recommendation Report.</li>
+																<li class="enable">Service delivery: Within 48 hours*.</li>
+                                                                <li class="enable">Suggestion on business signature to be used with the name.</li>
+                                                                @*<li class="enable">Certificate of Name Assignment from NaamVidya.</li>*@
+                                                                <li class="disable"><b>Get 10-15 additional Balanced name suggestions from us.</b></li>
+                                                                <li class="disable">Dedicated Name Specialist.</li>
+																<p><b>* Option available for Express (12-24 hours) delivery of Name Recommendation service. Details provided on cart/payment page.</b></p>
+
+															</ul>
+                                                            <div class="pricingtablebutton"><a data-ng-click="f_gold_baby_order()">Order Now</a></div>
+														</div>
+													</div>
+												</div>
+                                                <div class="col m6 s12">
+                                                    <div class="pricingtable platinum">
+                                                        <div class="pricingtablename" style="padding: 22px !important;font-size: 0px !important;">
+                                                            <h3 style="margin-bottom: 0px;">PLATINUM</h3>
+                                                            <span style="font-weight: bold;font-size: 15px;/* position: absolute; *//* left: 52%; */">
+                                                                <!-- At the Price of <span style="color: #e5cc7f;">GOLD </span><sup>*</sup> -->
+                                                                <img src="~/images/sale.png" alt="" class="responsive-img sale"> 
+															</span>
+														</div>
+                                                        @*<div class="pricingtableprice">Price INR 3700 (USD:57) + Taxes</div>*@
+                                                        @*<div class="pricingtableprice">Price INR 3700 + Taxes</div>*@
+                                                        <div class="pricingtableprice">
+                                                            <p style="font-size:25px;font-weight:bold;margin: 0;margin-left: 20px;">Price :</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span> <del> 3700</del> 2100<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 43<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span> <del> 3700</del> 2100 <span style="margin:0;margin-left: 0px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> | <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 43<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 55 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 43<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 55 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>75</del> 43<sup>*</sup>*@
+															</p>
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</p>*@
+                                                            <p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">** Limited period only: <b style="color:#DC2E74">20 minutes of free telephonic consultation.</b> </p>
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 13px;font-style: italic;">* Valid Upto 31<sup>st</sup> October 2017</p>*@
+														</div>
+                                                        <div class="pricingtablecontent">
+                                                            <ul>
+                                                                <li class="enable">Get upto 5 baby names (given by you) checked for Balance.</li>
+                                                                <li class="enable">Correction for the names (suggested by you and found unbalanced).</li>
+                                                                <li class="enable"><b style="color:#DC2E74">Get 10-15 additional Balanced name suggestions from us (based on your name preference).</b></li>
+                                                                <li class="enable">Name Recommendation Report.</li>
+																<li class="enable">Service delivery: Within 48 hours*.</li>
+                                                                <li class="enable">Suggestion on business signature to be used with the name.</li>
+                                                                @*<li class="enable">Certificate of Name Assignment from NaamVidya.</li>*@
+                                                                <li class="enable">Dedicated Name Specialist.</li>
+																<p><b>* Option available for Express (12-24 hours) delivery of Name Recommendation service. Details provided on cart/payment page.</b></p>
+																<p> **Telephonic consultation for India customers only. </p>
+
+															</ul>
+                                                            <div class="pricingtablebutton"><a data-ng-click="f_platinum_baby_order()">Order Now</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row" style="margin-top: 40px !important;">
+                                                
+                                                <div class="col m6 s12">
+                                                    <div class="pricingtable gold">
+                                                        <div class="pricingtablename" style="background: linear-gradient(to bottom right, #3ca4d6, #d5a53a) !important;">
+                                                            <h3 style="margin-bottom: 0px;">NaamVidya Prime*</h3>
+                                                        </div>
+                                                        @*<div class="pricingtableprice">Price INR 1690 (USD:26) + Taxes</div>*@
+                                                        @*<div class="pricingtableprice">Price INR 1690 + Taxes</div>*@
+                                                        <div class="pricingtableprice">
+                                                            <p style="font-size:25px;font-weight:bold;margin: 0;margin-left: 20px;">Price :</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span>@*<del>1995</del>*@ 7100 <span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>26</del> 23<sup>*</sup>*@
+                                                            </p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">INR</span>@*<del>1995</del>*@ 7100 <span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup>| <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>26</del> 23<sup>*</sup>*@
+                                                            </p>
+                                                          
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">Including Taxes</p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 13px;font-style: italic;">* Valid Upto 31<sup>st</sup> October 2017</p>*@
+                                                        </div>
+                                                        <div class="pricingtablecontent">
+                                                            <ul>
+                                                                <li class="enable">Personalised 1 hour consultation with a Numerologist at our office in Thane.</li>
+                                                                <li class="enable">Get upto 5 baby names (given by you) checked for Balance.</li>
+                                                                <li class="enable">Get correction for the names (suggested by you and found unbalanced).</li>
+                                                                <li class="enable"><b>Get 10-15 additional Balanced name suggestions from us.</b></li>
+                                                                <li class="enable">Name Recommendation Report.</li>
+                                                                @*<li class="enable">Service delivery: Within 48 hours*.</li>
+                                                                <li class="enable">Suggestion on business signature to be used with the name.</li>
+                                                                <li class="enable">Certificate of Name Assignment from NaamVidya.</li>
+                                                                <li class="disable"><b>Get 10-15 additional Balanced name suggestions from us.</b></li>
+                                                                <li class="disable">Dedicated Name Specialist.</li>*@                                                                
+                                                                <p><b>*Consultation is by prior Appointment only.</b></p>
+                                                                <p>Please read detail <a data-toggle="modal" data-target="#myModal">T&C's</a> before placing your order.</p>
+
+                                                            </ul>
+                                                            <div class="pricingtablebutton"><a data-ng-click="f_prime_baby_order()">Order Now</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col m6 s12">
+                                                    <div class="pricingtable gold">
+														<div class="pricingtablename" style="background:linear-gradient(to bottom right, #dfc673, #963787) !important;">
+															<h3 style="margin-bottom: 0px;">PLATINUM COMBO</h3>
+															<span style="font-weight: bold;font-size: 15px;/* position: absolute; *//* left: 52%; */">
+																<img src="~/images/sale.png" alt="" class="responsive-img combosale">
+															</span>
+														</div>
+                                                        @*<div class="pricingtableprice">Price INR 1690 (USD:26) + Taxes</div>*@
+                                                        @*<div class="pricingtableprice">Price INR 1690 + Taxes</div>*@
+                                                        <div class="pricingtableprice">
+                                                            <p style="font-size:25px;font-weight:bold;margin: 0;margin-left: 20px;">Price :</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                Starting  <span style="font-size:15px;font-weight:bold;">INR</span> <del> 4200</del> 3380<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                Starting  <span style="font-size:15px;font-weight:bold;">INR</span> <del> 4200</del> 3380 <span style="margin:0;margin-left: 0px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> | <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> <del>110</del> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+															</p>
+                                                            <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                <span style="font-size:15px;font-weight:bold;">USD</span> <del>110</del> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                            </p>
+															 <p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">** Limited period only: <b style="color:#DC2E74">20 minutes of free telephonic consultation.</b> </p>
+                                                           
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">* Limited period only </p>*@
+                                                            @*<p style="margin:0;margin-left: 25px;font-size: 13px;font-style: italic;">* Valid Upto 31<sup>st</sup> October 2017</p>*@
+														</div>
+                                                        <div class="pricingtablecontent">
+                                                            <span> Choose a combination of:</span>
+                                                            <br>
+                                                            <br>
+                                                            <b>
+                                                                <p>
+                                                                    <input class="with-gap" name="r_sn" type="radio" id="r_sn" data-ng-model="ComboName" data-ng-click="f_maxlength_click()" value="8,2" />
+                                                                    <label for="r_sn" style="color:#000000 !important"> 1 Baby Name Platinum + 1 Adult Name Correction Gold Package</label>
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 3380<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 3380 <span style="margin:0;margin-left: 0px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> | <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                            </b>
+                                                            <i style="padding: 0px 33px 0px 15px;text-align: justify;">Ideal for 1 Baby Name and 1 Parent Name Correction.</i>
+                                                            <br>
+                                                            <br>
+                                                            <center>
+                                                                <b style="padding: 75px;text-align: center;">OR</b>
+                                                            </center>
+                                                            <br>
+                                                            <b>
+                                                                <p>
+                                                                    <input class="with-gap" name="r_ln" type="radio" id="r_ln" data-ng-model="ComboName" data-ng-click="f_maxlength_click()" value="8,8" />
+                                                                    <label for="r_ln" style="color:#000000 !important">2 Baby Name Platinum Package</label>
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 3380<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 3380 <span style="margin:0;margin-left: 0px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> | <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 90 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                            </b>
+                                                            <i style="padding: 0px 33px 0px 15px;text-align: justify;">Ideal for Twin Names or 2 Sibling Names.</i>
+                                                            <br>
+                                                            <br>
+                                                            <center>
+                                                                <b style="padding: 75px;text-align: center;">OR</b>
+                                                            </center>
+                                                            <br>
+                                                            <b>
+                                                                <p>
+                                                                    <input class="with-gap" name="r_np" type="radio" id="r_np" data-ng-model="ComboName" data-ng-click="f_maxlength_click()" value="8,7"/>
+                                                                    <label for="r_np" style="color:#000000 !important">1 Baby Name Platinum Package + 1 Adult Name Platinum Package </label>
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 5000<span style="margin:0;margin-left: 25px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">INR</span> 5000 <span style="margin:0;margin-left: 0px;font-size: 15px;font-style: italic;">+ Taxes</span> @*<sup>*</sup> | <br> <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_desktop">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 115 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+                                                                <p style="margin: 0;margin-left: 25px;" id="price_mobile">
+                                                                    <span style="font-size:15px;font-weight:bold;">USD</span> 115 @*<sup>*</sup> |  <span style="font-size:15px;font-weight:bold;">USD</span> <del>57</del> 46<sup>*</sup>*@
+                                                                </p>
+
+                                                            </b>
+                                                          
+                                                            <i style="padding: 0px 33px 0px 15px;text-align: justify;">Ideal for 2 Parents or 2 Adults.</i>
+															<p>** Telephonic consultation for India customers only.
+                                                            <br>
+                                                            <br>
+                                                           
+                                                            <p style="text-align: center;"><span style="color:red">{{errormsg}}</span></p>
+                                                            <p style="text-align: center;"><span style="color:green">{{successmsg}}</span></p>
+                                                            <div class="pricingtablebutton"><a data-ng-click="f_combo_baby_order()">Order Now</a></div>
+                                                        </div>
+													</div>
+												</div>
+                                               
+											</div>
+										</div>
+									</div>
+								</div>
+                                <div class="howitworks col m12 s12 clearfix">
+                                    <h4 class="background"><span>HOW IT WORKS</span></h4>
+                                    <div id="babyname">
+                                        <div class="customcontainer">
+                                            <div class="row step card">
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 1</h3></div></div></div>
+                                                <div class="col s8"><div class="sameheight"><div class="stepcontent">Place an order for a New Name.</div></div></div>
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="../images/cart.png"></div></div></div>
+											</div>
+                                            <div class="nextstep">
+                                                <img src="../images/nextstep.png">
+											</div>
+                                            <div class="row step card">
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 2</h3></div></div></div>
+                                                <div class="col s8"><div class="sameheight"><div class="stepcontent">Answer questions detailing your preference such as Religion, Culture, Region/Country Preference, a preferred starting alphabet, any other personal requests.</div></div></div>
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="../images/ques.png"></div></div></div>
+											</div>
+                                            <div class="nextstep">
+                                                <img src="../images/nextstep.png">
+											</div>
+                                            <div class="row step card">
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 3</h3></div></div></div>
+                                                <div class="col s8"><div class="sameheight"><div class="stepcontent">Within 48 hours of receiving your response, a name Specialist will revert to you with 10 - 15 balanced names in a Name Recommendation Report.</div></div></div>
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="../images/list.png"></div></div></div>
+											</div>
+                                            <div class="nextstep">
+                                                <img src="../images/nextstep.png">
+											</div>
+                                            <div class="row step card">
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 4</h3></div></div></div>
+                                                <div class="col s8"><div class="sameheight"><div class="stepcontent">You Finalise the Name.</div></div></div>
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="../images/write.png"></div></div></div>
+											</div>
+                                            <div class="nextstep">
+                                                <img src="../images/nextstep.png">
+											</div>
+                                            <div class="row step card">
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 5</h3></div></div></div>
+                                                <div class="col s8"><div class="sameheight"><div class="stepcontent">We send you a certificate of Name Assignment from NaamVidya.</div></div></div>
+                                                <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="../images/sbadge.png"></div></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+                                <div class="firstnameanalysis col m12 s12 clearfix">
+                                    <h4 class="background"><span>FIRST NAME ANALYSIS</span></h4>
+                                    <div id="babyname">
+                                        <div class="customcontainer">
+                                            <div class="row">
+                                                <div class="col s12 l6" data-ng-controller="sidebarController" style="float:none;margin: 0 auto;">
+                                                    <div class="bg-yellow animated slideInBottom">
+                                                        <div class="form clearfix">
+                                                            <h5 class="lead wc">
+                                                                <img src="images/soundicon.png" alt="" />Free First<br>
+                                                                Name Analysis
+															</h5>
+                                                            <p>
+                                                                <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+                                                                <label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+															</p>
+                                                            <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            items: 2,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            rewindNav: true,
+            rewindSpeed: 0,
+            dots: true,
+            margin: 50,
+            responsive: {
+                0: {
+                    items: 1,
+				},
+                769: {
+                    items: 2,
+				}
+			}
+		});
+        $('.singlesection h5').matchHeight();
+        $("#howitworks").click(function (e) {
+            e.preventDefault()
+            if ($(".howitworks").hasClass('active')) {
+                $(this).removeClass('active');
+                $(".howitworks").removeClass('active');
+                $(".howitworks").slideUp('slow');
+				} else {
+                $(this).addClass('active');
+                $("#pricing").removeClass('active');
+                $(".pricing").removeClass('active');
+                $("#firstnameanalysis").removeClass('active');
+                $(".firstnameanalysis").removeClass('active');
+                $(".pricing").slideUp('slow');
+                $(".firstnameanalysis").slideUp('slow');
+                $(".howitworks").addClass('active');
+                $(".howitworks").slideDown('slow');
+                var target = jQuery(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    jQuery('html, body').stop().animate({
+                        scrollTop: target.offset().top
+					}, 1000);
+				}
+			}
+		});
+        $("#pricing").click(function (e) {
+            e.preventDefault()
+            if ($(".pricing").hasClass('active')) {
+				$(this).addClass('active');
+                //$(this).removeClass('active');
+                //$(".pricing").removeClass('active');
+                //$(".pricing").slideUp('slow');
+				} else {
+                $(this).addClass('active');
+                $("#howitworks").removeClass('active');
+                $(".howitworks").removeClass('active');
+                $("#firstnameanalysis").removeClass('active');
+                $(".firstnameanalysis").removeClass('active');
+                $(".howitworks").slideUp('slow');
+                $(".firstnameanalysis").slideUp('slow');
+                $(".pricing").addClass('active');
+                $(".pricing").slideDown('slow');
+                var target = jQuery(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    jQuery('html, body').stop().animate({
+                        scrollTop: target.offset().top
+					}, 1000);
+				}
+			}
+		});
+        $("#firstnameanalysis").click(function (e) {
+            e.preventDefault()
+            if ($(".firstnameanalysis").hasClass('active')) {
+                $(this).removeClass('active');
+                $(".firstnameanalysis").removeClass('active');
+                $(".firstnameanalysis").slideUp('slow');
+				} else {
+                $(this).addClass('active');
+                $("#howitworks").removeClass('active');
+                $(".howitworks").removeClass('active');
+                $("#pricing").removeClass('active');
+                $(".pricing").removeClass('active');
+                $(".howitworks").slideUp('slow');
+                $(".pricing").slideUp('slow');
+                $(".firstnameanalysis").addClass('active');
+                $(".firstnameanalysis").slideDown('slow');
+                var target = jQuery(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    jQuery('html, body').stop().animate({
+                        scrollTop: target.offset().top
+					}, 1000);
+				}
+			}
+		});
+	});
+</script>

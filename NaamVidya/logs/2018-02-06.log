@@ -1,0 +1,107 @@
+06/02/2018 10:50:15 AM SIDDHESH-PC COMFLEX\1150 iisexpress 6   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 10:50:19 AM SIDDHESH-PC COMFLEX\1150 iisexpress 15  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 12:11:02 PM SIDDHESH-PC COMFLEX\1150 iisexpress 19  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 12:11:02 PM SIDDHESH-PC COMFLEX\1150 iisexpress 25  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 12:41:55 PM SIDDHESH-PC COMFLEX\1150 iisexpress 33  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+6894.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+1
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+2
+06/02/2018 01:19:12 PM SIDDHESH-PC COMFLEX\1150 iisexpress 17  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 02:29:40 PM SIDDHESH-PC COMFLEX\1150 iisexpress 59  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+06/02/2018 04:46:40 PM SIDDHESH-PC COMFLEX\1150 iisexpress 20  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+4
+06/02/2018 04:49:57 PM SIDDHESH-PC COMFLEX\1150 iisexpress 6   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+2.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+6
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+7
+06/02/2018 05:08:22 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+2.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+9
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+10
+06/02/2018 05:23:28 PM SIDDHESH-PC COMFLEX\1150 iisexpress 26  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+2.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+12
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+13
+06/02/2018 06:31:19 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+15
+06/02/2018 06:32:25 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+17
+06/02/2018 06:33:49 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+2.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+19
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+20
+06/02/2018 06:35:52 PM SIDDHESH-PC COMFLEX\1150 iisexpress 11  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetExpressDelivery' expects parameter '@REGN_GUID', which was not supplied.
+06/02/2018 06:37:06 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+22
+06/02/2018 06:44:33 PM SIDDHESH-PC COMFLEX\1150 iisexpress 27  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170615
+@sDayChar : ORD170615
+24

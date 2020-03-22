@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+
+      <!-- Styleshee ts -->
+        <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet">
+        <link rel="stylesheet" href="@Url.Content("~/Content/css/font-awesome.min.css")"   >
+        <link  href="@Url.Content("~/Content/css/style.css")"   rel="stylesheet">
+
+        <script src="js/respond.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon/favicon.png">
+        <link href="@Url.Content("~/Content/css/custom.css")" rel="stylesheet">
+</head>
+<body>
+           <div style=" margin-left:auto; margin-right:auto;">
+            <div class="container">
+
+                <div class="row" style="width:47%; margin-left:25%;">
+                    <div class="col-md-12">
+                        <!-- Widget starts -->
+                        <div class="widget">
+                            <!-- Widget head -->
+                            <div class="widget-head-error">
+                               Payment Cancelled
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="padd-error error">
+
+                                    <h3> You have Cancelled your Transaction</h3>                                    
+                                    <br /><br />
+
+                                  <div style="text-align:right;" ><a href="@Url.Action("Checkout","Checkout")">
+<button class="btn btn-medi2 btn-medi-default"> Back to Shopping Cart &nbsp;&nbsp; <img src= "@Url.Content("~/Content/images/newcart.png")"/></button></a>
+                                    </div>
+                                    <div class="table-cell-display" style="Display:none">
+
+                                        <div>
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group  list-inline">
+                                                    <input class="form-control" placeholder="Search here..." type="text"/>
+                                                </div>
+                                                <span class="input-group-btn-search2 list-inline">
+                                                    <button class="btn btn-medi-send" type="button"><strong>Search</strong></button>
+                                                </span>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <div class="horizontal-links" style="Display:none">
+                                        <a href="index.html">Home</a> | <a href="#">About Us</a> | <a href="#">Contact us</a> | <a href="#">FAQ</a>
+                                    </div>
+
+                                </div>                             
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+         <script src="@Url.Content("~/Scripts/js/jquery.js")"></script>
+        <script src="@Url.Content("~/Scripts/js/bootstrap.min.js")"></script>
+</body>
+</html>
+

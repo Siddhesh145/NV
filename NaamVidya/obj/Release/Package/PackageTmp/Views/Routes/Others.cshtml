@@ -1,0 +1,58 @@
+﻿@*<br />
+<br />
+<br />*@
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+					<div class=" bg-dark lead">
+                        <img src="../images/banner/Lotus-Leaf.jpg" alt="" class="card-img-top" />
+						<p>Other Services</p>
+					</div>
+					<div id="innerBoxsection">
+						<p>
+							We hope you have taken your First Name and Full Name Analysis to understand the power of name and how it affects our lives. If not, we urge you to take the same on this page.
+						</P>
+						<p>Do also take time to read a short write-up on why names matter by <a href="/why-names-matter">clicking here</a>.</P>
+					</div>
+                    <p style="font-family: 'Varela Round', sans-serif;">The secret & power of Alphabets, Words, Sound and Numbers have their strong influence not only on a person’s name but also on many other facets in our daily lives. </p>
+					<p style="font-family: 'Varela Round', sans-serif;">House, Business Establishment, Phone numbers, Vehicle numbers, Names of Pets vibrate remarkably to the power of name and numbers. </p>
+					<p style="font-family: 'Varela Round', sans-serif;">At NaamVidya, we intend to help you harness this science.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">For any custom name and number request, please feel free to write to us at NameService@naamvidya.com </p>
+                    <p><b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b></p>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_Name_Correction()">New name or correction</a></li>
+                            <li><a data-ng-click="f_Spouse_Name()">Spouse Name</a></li>
+                            <!-- <li><a href="/others">Other services</a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+					</div>
+                    <form style="background : #ffffff;">
+                        <div class="form-group row">
+                            <div class="col l9 m8 s12">
+                                <b style="color:#d70a61;margin-top:20px;font-size:20px;">My Reports</b>
+							</div>
+						</div>
+                        <table id="rpttabl"cellpadding="0" cellspacing="0" border="1" class="bordered">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Middle Name</th>
+                                    <th>Last Name</th>
+                                    <th>DOB</th>
+                                    <th>Gender</th>
+                                    <th hidden>REGN_GUID</th>
+								</tr>
+							</thead>
+                            <tbody>
+                                <tr data-ng-repeat="f in freeList" >
+                                    <td><a data-ng-click="GenerateFreeReport(f)" class="pull-left tsr_login_a">{{f.FirstName}}</a></td>
+                                    <td>{{f.MiddleName }} </td>
+                                    <td>{{f.LastName }} </td>
+                                    <td>{{f.DOB }} </td>
+                                    <td>{{f.Gender }} </td>
+                                    <td hidden>{{f.REGN_GUID }} </td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="col s12 l3" data-ng-controller="sidebarController">
+                @*<div class="bg-yellow animated slideInBottom">
+					<div class="form clearfix">
+						<h5 class="lead wc">
+							<img src="images/soundicon.png" alt="" />Free First<br>
+							Name Analysis
+						</h5>
+						<p>
+							<input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+						<input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>*@
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/name-correction">Order a Name</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

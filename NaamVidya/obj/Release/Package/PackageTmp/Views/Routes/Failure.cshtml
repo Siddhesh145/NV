@@ -1,0 +1,133 @@
+﻿@{
+ViewBag.Title = "Failure";
+Layout = null;
+}
+@*@model Trag.Models.PayUMoneyViewModel*@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NaamVidya</title>
+        <!--Import Google Icon Font-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="~/css/font-awesome.min.css" media="screen,projection" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="~/css/style.css" media="screen,projection" />
+        <!--Let browser know website is optimized for mobile-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <style>
+            .home-layout {
+			background: #ffffff !important;
+            }
+            body {
+			position: relative;
+			background: url('images/bg.png');
+            }
+            .affix {
+			position: fixed;
+			z-index: -1;
+            }
+            .affix {
+			top: 0;
+            }
+			.affix ~ .container {
+			position: relative;
+			top: 50px;
+			}
+            .dropdown {
+			position: absolute;
+			top: 2px;
+			left: 0.015625px;
+			opacity: 1;
+			display: block;
+            }
+            .showbody {
+			display: block !important;
+            }
+            .resultName {
+			padding: 10px;
+			margin: 0px;
+			display: block;
+			clear: both;
+			font-size: 36px;
+			font-family: 'Ananda Neptouch';
+			color: #d5a53a;
+			text-align: center;
+            }
+		</style>
+		<script>
+			$(document).ready(function(){
+				setTimeout(function () { location.href = '/my-cart-detail'; }, 10000);
+			});
+		</script>
+	</head>
+	<body>
+		@model NaamVidya.Models.PayUMoneyViewModel
+		<div class="preheader purple base">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m12 right-align">
+						<!-- <div class="social ddm">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-google-plus"></a>
+						</div> -->
+						<div class="myaccount ddm nav-wrapper ">
+							<ul class="right dropdown-content" id="t-account">
+							</ul>
+						</div>
+						<div class="myaccount ddm nav-wrapper ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="deep-purple header" data-ng-controller="menuController">
+			<nav class="deep-purple z-depth-0 ">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a href="/" class="brand-logo"><img src="~/images/logo.png" alt="" class="responsive-img" /></a>
+						<div id="sitenav" class="sitenav right">
+							<ul class="navbar-nav animated zoomIn hide-on-med-and-down">
+							</ul>
+							<div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</nav>
+			<div class="business-name-section">
+				<div class="container">
+					<div class="row mt-5 mb-5">
+						<div class="col s12 l12">
+							<div class="card z-depth-2 mb-5">
+								<div class=" bg-dark lead">
+									<img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+									@*<p style="text-align:center;">Give us following details all of the following required fields.,</p>*@
+								</div>
+								<form style="background : #ffffff;" method="post" action="@Url.Action("MakePayUMoneyPayment", "Routes")">
+								<div class="order-form" data-ng-show="dvbasictl">
+									<div class="form-group row">
+										<div class="col l12 m12 s12" style="text-align:center;">
+											<b style="color:#d70a61;margin-top:20px;font-size:20px;">Sorry, your transaction could not be processed. <br />Please wait while we redirect you to your cart.</b>
+											@*<strong>Give us the following detail.</strong>*@
+										</div>
+									</div>
+								</div>
+								<div class="order-form" data-ng-show="dvproductdtl">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>			

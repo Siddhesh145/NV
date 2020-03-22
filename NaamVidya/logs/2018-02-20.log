@@ -1,0 +1,3 @@
+20/02/2018 11:32:11 AM SIDDHESH-PC COMFLEX\1150 iisexpress 49  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :3l5r5mutyqu1t2wjzj4abyj2 | FirstName : siddhesh
+20/02/2018 03:41:52 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - The operation has timed out.
+20/02/2018 05:13:42 PM SIDDHESH-PC COMFLEX\1150 iisexpress 19  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Fill: SelectCommand.Connection property has not been initialized.

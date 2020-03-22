@@ -1,0 +1,482 @@
+﻿@*<br />
+<br />
+<br />*@
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+					</div>
+                    <br />
+                    <b style="color:#d70a61;margin-top:20px;font-size:20px;">Order Details : Order No {{OrderNo}}</b>
+                    <hr />
+                    <div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" ng-show="ProductId != 2">
+                        <div class="order-form" ng-show="nnstep0">
+                            <form class="order-form">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        <p style="font-family: 'Varela Round', sans-serif;">
+                                            Dear {{FirstName}},<br/>
+											Thank you for giving NaamVidya Science the opportunity to help you chose a balanced name. This is a very important decision that you have taken and the outcome of this name balancing is something you will cherish throughout your next phase of life.<br />
+											Let us first give you a quick background on the science used by us in charting your balanced name.<br />
+											At NaamVidya we use a mix of the ancient science of Gematria (known in the modern world as Numerology) and Vedic Astrology to chart out the perfect name that is in harmony with your date of birth.<br />
+											You may question what has Astrology to do with a name? Well, just as there is no science better than Numerology to understand the nuances of an alphabet, name or a mantra, similarly there is no better science other than Astrology that can help comprehend your natural talents and purpose of life from your date of birth.<br />
+											As such, a Name balanced (using Numerology) to the traits of a date of birth (understood from Astrology) is what attracts lasting peace, success, and harmony in life.<br />
+											In fact, NaamVidya Science goes a step ahead to blend the principles of two most renowned schools of Numerology viz: Chaldean and Pythagorean. This blended science is very sacred to NaamVidya and is something even the most experienced of Numerologist have not been able to master.<br />
+											While we thank our Guru’s for this knowledge, we also ensure that the science is rightly applied to every name balanced at NaamVidya. To bring further mathematical precision, each name is further passed through a scientific technology review. Be rest assured, you are in the safest hands in your journey to a balanced name.<br />
+											<br/>
+											<br />
+											<b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b>
+										</p>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-right" ng-click="f_Next_0()">Continue</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <!-- <form class="order-form form-comflex" method="post"> -->
+                        <div class="order-form" ng-show="nnstep1">
+                            @*<ul class="wizard-steps">
+                                <li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                <li id="step2" style="min-width: 20%; max-width: 20%;"><span class="step">2</span> <span class="title"></span></li>
+                                <li id="step3" style="min-width: 20%; max-width: 20%;"><span class="step">3</span> <span class="title"></span></li>
+                                <li id="step4" style="min-width: 20%; max-width: 20%;"><span class="step">4</span> <span class="title"></span></li>
+                                <li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">1. Name Suggested by you </b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nn1{{$index}}" ng-model="a.Checked" ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nn1{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_1()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="nnstep2">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 20%; max-width: 20%;"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 20%; max-width: 20%;"><span class="step">4</span> <span class="title"></span></li>
+								<li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">2. Name suggested by you with corrections</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nn2{{$index}}" ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nn2{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        @*<button type="button" class="waves-effect waves-light pink btn" ng-click="fn_Continue()">Continue</button>*@
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_2()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_2()">Next</button>
+									</div>
+								</div>
+                                <div class="col l12 m12 s12">
+                                    <label id="lblerrormsg"><span style="color:red">{{errormsg1}}</span></label>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="nnstep3">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 20%; max-width: 20%;"><span class="step">4</span> <span class="title"></span></li>
+								<li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">3. Name suggested with corrections to surname</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nn3{{$index}}" data-ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nn3{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="col l12 m12 s12">
+                                    <span style="color:red">{{errormsg2}}</span>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_3()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_3()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="nnstep4">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+								<li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">4. Name suggested by NaamVidya</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nn4{{$index}}" ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nn4{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_4()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_4()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="nnstep5">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+								<li id="step5" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">5. Selected Name by you</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" ng-show="stepmsg">You have not selected any name.Please go back and select name </b>
+									</div>
+								</div>
+                                <div class="col l12 m12 s12">
+                                    <span style="color:red">{{errormsg3}}</span>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-disabled="Onsave" data-ng-click="f_Back_5()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="submit" data-ng-disabled="Onsave" data-ng-click="f_nn_Submit()">Submit</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="reset" data-ng-disabled="Onsave" data-ng-click="f_nn_Reset()">Reset</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="close" data-ng-disabled="Onsave" data-ng-click="f_nn_Close()">Close</button>
+                                        @*<button type="button" class="waves-effect waves-light pink btn" ng-disabled="Onsave" ng-click="fn_Cancel()">Cancel</button>*@
+									</div>
+								</div>
+							</form>
+						</div>
+                        <!-- </form> -->
+					</div>
+                    <div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" ng-show="ProductId == 2">
+                        <div class="order-form" data-ng-show="ncstep0">
+                            <form class="order-form">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        <p style="font-family: 'Varela Round', sans-serif;">
+                                            Dear {{FirstName}},<br />
+                                            Thank you for giving NaamVidya Science the opportunity to help you chose a balanced name. This is a very important decision that you have taken and the outcome of this name balancing is something you will cherish throughout your next phase of life.<br />
+                                            Let us first give you a quick background on the science used by us in charting your balanced name.<br />
+                                            At NaamVidya we use a mix of the ancient science of Gematria (known in the modern world as Numerology) and Vedic Astrology to chart out the perfect name that is in harmony with your date of birth.<br />
+                                            You may question what has Astrology to do with a name? Well, just as there is no science better than Numerology to understand the nuances of an alphabet, name or a mantra, similarly there is no better science other than Astrology that can help comprehend your natural talents and purpose of life from your date of birth.<br />
+                                            As such, a Name balanced (using Numerology) to the traits of a date of birth (understood from Astrology) is what attracts lasting peace, success, and harmony in life.<br />
+                                            In fact, NaamVidya Science goes a step ahead to blend the principles of two most renowned schools of Numerology viz: Chaldean and Pythagorean. This blended science is very sacred to NaamVidya and is something even the most experienced of Numerologist have not been able to master.<br />
+                                            While we thank our Guru’s for this knowledge, we also ensure that the science is rightly applied to every name balanced at NaamVidya. To bring further mathematical precision, each name is further passed through a scientific technology review. Be rest assured, you are in the safest hands in your journey to a balanced name.<br />
+                                            <br />
+                                            <br />
+                                            <b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" ng-click="f_Next_nc_0()">Continue</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" ng-show="ncstep1">
+                            @*<ul class="wizard-steps">
+                                <li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                <li id="step2" style="min-width: 25%; max-width: 25%;"><span class="step">2</span> <span class="title"></span></li>
+                                <li id="step3" style="min-width: 25%; max-width: 25%;"><span class="step">3</span> <span class="title"></span></li>
+                                <li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+                                <li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">1. Name recommanded by NaamVidya</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nc1{{$index}}" data-ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nc1{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_1()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="ncstep2">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 25%; max-width: 25%;"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">2. Name with no change in first name </b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nc2{{$index}}" data-ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nc2{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_2()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_2()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="ncstep3">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form ">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">3. Name with no change in last name </b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col l12 m12 s12 col-form-label">Names<span style="color:red"></span></label>
+                                    <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                        <p>
+                                            <div style="border:1px solid #f0f0f0;" class="col l6 m6 s12" data-ng-repeat="a in namesuggestionlist">
+                                                <input type="checkbox" id="nc3{{$index}}" ng-model="a.Checked" data-ng-click="f_FN_checked(a.SrNo)" />
+                                                <label for="nc3{{$index}}">{{a.FName}} {{a.MName}} {{a.LName}}</label>
+											</div>
+										</p>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        @*<button type="button" class="waves-effect waves-light pink btn" ng-click="fn_Continue()">Continue</button>*@
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_3()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_3()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+                        <div class="order-form" data-ng-show="ncstep4">
+                            @*<ul class="wizard-steps">
+								<li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+								<li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+								<li id="step3" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+								<li id="step4" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+								<li id="step5" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">5</span> <span class="title"></span></li>
+							</ul>*@
+                            <form class="order-form">
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;">4. Selected Name by you</b>
+									</div>
+								</div>
+                                <div class="form-group row">
+                                    <div class="col l12 m12 s12">
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-if="selectedName">Selected Name : {{selectedName}}</b>
+                                        <b style="color:#d70a61;margin-top:20px;font-size:20px;" data-ng-show="stepmsg">You have not selected any name.Please go back and select name </b>
+									</div>
+								</div>
+                                <div class="col l12 m12 s12">
+                                    <span style="color:red">{{errormsg3}}</span>
+								</div>
+                                <div class="form-group row">
+                                    <label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+                                    <div class="col l12 m12 s12">
+                                        <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-disabled="Onsave" data-ng-click="f_Back_nc_4()">Back</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="submit" data-ng-disabled="Onsave" data-ng-click="f_nc_Submit()">Submit</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="reset" data-ng-disabled="Onsave" data-ng-click="f_nc_Reset()">Reset</button>
+                                        <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="close" data-ng-disabled="Onsave" data-ng-click="f_nc_Close()">Close</button>
+                                        @*<button type="button" class="waves-effect waves-light pink btn" ng-disabled="Onsave" ng-click="fn_Cancel()">Cancel</button>*@
+									</div>
+								</div>
+							</form>
+						</div>
+                        <!-- </form> -->
+					</div>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                @*<div class="bg-yellow animated slideInBottom">
+					<div class="form clearfix">
+						<h5 class="lead wc">
+							<img src="images/soundicon.png" alt="" />Free First<br>
+							Name Analysis
+						</h5>
+						<p>
+							<input class="col  s12" type="text" ng-model="newfirstName" placeholder="Enter First Name" />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+						</p>
+						<input type="button" class="waves-effect waves-light pink btn" value="Analyse" ng-click="analyzeFirstName()" />
+					</div>
+				</div>*@
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            @*<li><a href="/sku">Order a Name</a></li>*@
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

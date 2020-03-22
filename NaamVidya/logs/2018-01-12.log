@@ -1,0 +1,6 @@
+12/01/2018 11:07:22 AM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object reference not set to an instance of an object.
+12/01/2018 03:17:02 PM SIDDHESH-PC COMFLEX\1150 iisexpress 13  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Conversion failed when converting date and/or time from character string.
+12/01/2018 03:17:02 PM SIDDHESH-PC COMFLEX\1150 iisexpress 19  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Conversion failed when converting date and/or time from character string.
+12/01/2018 03:31:53 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Fill: SelectCommand.Connection property has not been initialized.
+12/01/2018 03:31:53 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.

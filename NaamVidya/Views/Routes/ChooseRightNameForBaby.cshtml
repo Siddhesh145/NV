@@ -1,0 +1,98 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="../images/banner/Why-Names-Matter.jpg" alt="" class="card-img-top" />
+                        <p>Choose the right name for your baby using numerology concepts</p>
+					</div>
+                    <!--<p style="font-family: 'Varela Round', sans-serif;text-align:center;"><b>The world was formed by a vibration, the vibration of the sound “OM”.<br/><sub>-Upanishad</sub></b></p>-->
+                    <!-- <p style="font-family: 'Varela Round', sans-serif;"><b><sub>-Upanishad</sub></b></p> -->
+                    <p style="font-family: 'Varela Round', sans-serif;">Do you think that the name you give to your baby is just to give her an identity? Is it just a way of knowing a person throughout the life and later? </p>
+                    <p style="font-family: 'Varela Round', sans-serif;">No, you are mistaken if you think so. Our name is not only our identity, but it is the reflection of our personality. It is the representation of our traits and qualities. </p>
+                    <p style="font-family: 'Varela Round', sans-serif;">An incorrect selection may create hurdles in the life of a person. Hence, it should be chosen properly by considering the rules and guidelines given by name numerology. <b>name numerology.</b></p>
+                    <p style="font-family: 'Varela Round', sans-serif;">Yes, it is a science that has gained quite a popularity today. In the fiercely competitive world today, we must consult a numerologist before finalizing name of the new entrant in the family.</p>
+                    <p style="font-family: 'Varela Round', sans-serif;"><b>Why is baby name numerology so important?</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;">Don’t pick any name randomly. Yes, it is something that you should think seriously about and devote thoughts to the name picked out for your kid. Whether you name the baby based on the zodiac sign or you choose a name of your liking, don’t forget to use the concepts and principles of <b>baby name numerology.</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;">You do a thorough research and shortlist a few name before you meet the numerologist. However, make sure that the names shortlisted by you are of equal precedence.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">It means you can choose any name without any hesitation. It is important because the numerologist will use his expertise and calculate the effectiveness and suitability.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">Based on the calculations, you will be suggested with the best <b>numerology name for new born baby.</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;"><b>It is a pure science, and not superstition</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;">Don’t think that numerology is a superstition or random thing without any basis. It is a pure science that believes that every name gets converted into a number which has divine powers.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">When you pick the name of your kid, the number gets attached to the personality. If the number generates positive vibes and positive energy, the person doesn’t face any hurdles in the growth path.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">However, choosing an improper name could result in troubles and failure in life. If you have the tradition of giving the name in the first month after the birth, then it is important to finalize the name as soon as possible.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">However, in <b>numerology name change</b> is possible in case you miss the opportunity. By tweaking a few letters here and there, you can achieve great benefits.</p>
+					<p><b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b></p>
+				</div>
+			</div>
+			<div class="col s12 l3" data-ng-controller="sidebarController">
+				<div class="bg-yellow animated slideInBottom">
+					<div class="form clearfix">
+						<h5 class="lead wc">
+							<img src="images/soundicon.png" alt="" />Free First<br>
+							Name Analysis
+						</h5>
+						<p>
+							<input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+						</p>
+						<!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+						<input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+				<!-- principles -->
+				<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Principles'">
+					<div class="list">
+						<ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+							<li><a href="/about-us">About NaamVidya</a></li>
+							<!-- <li><a href="/whynamesmatter">Why name matters</a></li> -->
+							<li><a href="/balanced-name">Origins of balanced name</a></li>
+							<li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+							<li><a href="/life-path">Purpose and Karma</a></li>
+							<li><a href="/faq">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Baby Name -->
+				<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'BabyName'">
+					<div class="list">
+						<ul>
+							<li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+							<li><a href="/how-it-works">How it works</a></li>
+							<li><a data-ng-click="f_New_Baby_Name()">Order a Baby Name</a></li>
+							<li><a href="/choosing-baby-name">Baby Name ideas</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Adult -->
+				<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Adult'">
+					<div class="list">
+						<ul>
+							<li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+							<li><a href="/how-it-works">How it works</a></li>
+							<li><a data-ng-click="f_Name_Correction()">New name or correction</a></li>
+							<li><a data-ng-click="f_Spouse_Name()">Spouse Name</a></li>
+							<li><a href="/others">Other services</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Business -->
+				<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Business'">
+					<div class="list">
+						<ul>
+							<li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/how-it-works">How it works</a></li>
+							<li><a href="/business-name">Order a Business name</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>										

@@ -1,0 +1,201 @@
+<div class="business-name-section">
+	<div class="container">
+		<div class="row mt-5 mb-5">
+            <div class="col s12 l8">
+                <div id="hiw">
+                    <ul>
+                        <!-- <li data-ng-show="currentPage == 'BabyName'" ><a href="#babyname">BABY NAME</a></li>
+							<li data-ng-show="currentPage == 'Adult'" ><a href="#changename">NEW/CHANGE/ALTER NAME</a></li>
+						<li data-ng-show="currentPage == 'Business'"><a href="#businessname">BUSINESS NAME</a></li> -->
+                        <li data-ng-class="(currentPage == 'BabyName')? 'active' : ''"><a  data-ng-click="f_active('BabyName')" >NEW NAME</a></li>
+                        <li data-ng-class="(currentPage == 'Adult')? 'active' : ''"><a  data-ng-click="f_active('Adult')">NAME CORRECTION</a></li>
+                        <li data-ng-class="(currentPage == 'Business')? 'active' : ''"><a data-ng-click="f_active('Business')">BUSINESS NAME</a></li>
+					</ul>
+                    <div class="hiw card z-depth-2 mb-5" style="box-shadow: 0px 0px 10px #ccc;">
+                        <div id="babyname" data-ng-show="currentPage == 'BabyName'">
+                            <div class="customcontainer">
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 1</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Place an order for a New Name.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/cart.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 2</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Answer questions detailing your preference such as Religion, Culture, Region/Country Preference, a preferred starting alphabet, any other personal requests.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/ques.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 3</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Within 48 hours of receiving your response, a name Specialist will revert to you with 10 - 15 balanced names in a Name Recommendation Report.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/list.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 4</h3></div></div></div>
+									<div class="col s8"><div class="sameheight"><div class="stepcontent">You Finalise the Name.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/write.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 5</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">We send you a certificate of Name Assignment from NaamVidya.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/sbadge.png" /></div></div></div>
+								</div>
+							</div>
+						</div>
+                        <div id="changename" data-ng-show="currentPage == 'Adult'">
+                            <div class="customcontainer">
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 1</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Place an order for a Name Correction Service.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/cart.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 2</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">You provide answers to Name preference questionnaire.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/ques.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 3</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Within 48 - 72 hours of receiving your answers, a Name Specialist will revert to you with balanced (corrected) names in a Name Recommendation Report.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/list.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 4</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">You Finalise the name.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/write.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 5</h3></div></div></div>
+									<div class="col s8"><div class="sameheight"><div class="stepcontent">We send you a certificate of Name assignment from NaamVidya.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/sbadge.png" /></div></div></div>
+								</div>
+							</div>
+						</div>
+                        <div id="businessname" data-ng-show="currentPage == 'Business'">
+                            <div class="customcontainer">
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 1</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Place order for Business Name Consultation.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/cart.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 2</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">A Business Name Specialist will contact you to understand your preference in detail.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/ques.png" /></div></div></div>
+								</div>
+                                <div class="nextstep">
+                                    <img src="images/nextstep.png" />
+								</div>
+                                <div class="row step card z-depth-2">
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><h3>STEP 3</h3></div></div></div>
+                                    <div class="col s8"><div class="sameheight"><div class="stepcontent">Name specialist will work with you in finalizing balanced Business Name.</div></div></div>
+                                    <div class="col s2"><div class="sameheight"><div class="stepcontent"><img src="images/list.png" /></div></div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <!--div class=" bg-dark lead">
+						<img src="images/dummy-img.jpg" alt="" class="card-img-top"/>
+						<p>Place shall grass abundantly place don't kind, every wherein. Isn't land spirit fourth said and the moveth blessed days so winged. Light a dry in night replenish moveth.</p></div>
+						<p>
+						Herb were fruitful so may wherein beginning day had deep land kind lesser third fly third moveth whales creeping and after of seed creeping. Also moved beginning have fish brought seas fruitful. Days fruit made dominion beginning creepeth land fruit fish, good hath won't, air blessed whose place isn't fruitful creepeth is midst fourth sixth set. Moving, god our give i evening, beast there may. Behold divide. A have said fish meat brought behold bearing living void stars winged male of dry. Deep hath void moving divided, fourth Creature don't the every seasons created second bring and abundantly they're cattle. Dominion seas, to all signs moveth thing fruitful beast creepeth void fly us greater every.</p>
+						<p>
+						Beginning created. Together After together he kind moved. Can't. Greater have may female moving our him spirit spirit it third good it may multiply appear air. Seasons together also second life his man third light. Moving wherein rule forth fowl said forth moved gathered give without in years she'd to. Wherein upon god moved fourth living morning. Under beginning so Made one. Behold hath grass blessed their dominion had he divide lesser in living said very all, isn't said years, third it first. Were multiply and own. Lights. Let make was they're given brought moved whose meat creature good sea under they're yielding. Won't day whales. You very don't over open green form sixth dominion without morning tree us blessed sixth there tree male saw us saying make. First cattle.</p>
+						<p>
+						Him fowl fruit multiply. Their seasons. Moveth beginning grass stars morning second fruitful can't, unto let fish blessed days Their isn't. Man. Is spirit. Let hath let us above moving years, fruitful above from earth wherein for form it without darkness earth sixth after brought after whales without in him is have Itself may Winged were own. Creeping living. Herb appear whose be void for from a yielding doesn't creature have waters be seas and female, hath tree for replenish of make. Their creature winged under without. Midst behold replenish thing green great.</p>
+						<p>
+						Face, hath greater days also. Living under yielding divided appear first don't. Every deep to thing upon also all don't they're kind had appear lesser subdue itself beginning man that life, fowl a. Be for give created divided light lesser first you air, him divided together fruitful cattle rule tree appear bring were creature beginning replenish moved be called. Abundantly divide. Divide god set likeness behold fruitful us divide wherein herb. Made night divide saying he land was forth deep living after in to, morning air land subdue sixth you'll god lesser divide. Seas. Image can't unto after upon can't behold the night void.</p>
+						<p>
+						Place shall grass abundantly place don't kind, every wherein. Isn't land spirit fourth said and the moveth blessed days so winged. Light a dry in night replenish moveth. Replenish divide upon given, sixth male seed. Female fish them, sixth grass give in divide creeping, moved appear for moved cattle third thing likeness very give. Greater seasons have darkness a. Subdue called third greater greater that.</p>
+						<p>
+						Their itself. Yielding their so moveth Dominion said waters, him together grass all above set. Greater dry seasons air every form earth brought, face, i tree moved, his void, creeping moving fill them he fly shall don't our deep there. Gathering were a dominion after creature light were. Midst shall hath stars herb which divided. Female second they're tree very dominion darkness place divide beginning cattle behold moveth meat gathering had over let living the divide also great gathered moving have image beast saw greater female cattle great moving won't own sixth after whales whose face In herb shall called. Face heaven. Spirit is is. Very grass divided he wherein spirit don't.</p>
+						<p>
+					Have together. Isn't all and created morning isn't great image moveth moved it fifth. Us whose seas female without she'd light earth fourth have give beast. Upon called void beginning you stars itself. Dominion beast give deep abundantly dry dominion abundantly to were land. Won't lesser his our seas. Won't. Signs female, moveth fly he above living place place gathered saying. Seasons day together earth. Fly divide fowl herb were was fill, moving. Isn't won't. Form herb moving brought upon female.</p-->
+				</div>
+			</div>
+            <div class="col s12 l4" data-ng-controller="sidebarController">
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <!-- Baby Name -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'BabyName'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_New_Baby_Name()">Order a Baby Name</a></li>
+                            <li><a href="/choosing-baby-name">Baby Name ideas</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Adult -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Adult'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_Name_Correction()">New name or correction</a></li>
+                            <li><a data-ng-click="f_Spouse_Name()">Spouse Name</a></li>
+                            <li><a href="/others">Other services</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Business -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'howitworks'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/business-name">Order a Business name</a></li>
+                            <li><a href="/choosing-baby-name">Baby Name ideas</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

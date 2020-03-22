@@ -1,0 +1,150 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <!-- <div class=" bg-dark lead"> -->
+                    <!-- <img src="images/dummy-img.jpg" alt="" class="card-img-top"/> -->
+                    <!-- <p>Amit</p> -->
+                    <!-- </div> -->
+                    <div id="AnalysisReport">
+                        <h4 class="main">Detailed Date of Birth and Name Analysis Report for</h4>
+                        <h3 class="theName">{{fullName}} </h3>
+                        <p><b>{{firstName}}</b>, the report below summarises how your date of birth, your first name and full name (surname combined) has influenced your life.</p>
+                        <p><b class="uppercase">The report is structured as below:</b></p>
+                        <ul class="sectionlist">
+                            <li>Section 1:	Analysis of your Date of Birth.</li>
+                            <li>Section 2:	Analysis of your First Name.</li>
+                            <li>Section 3:	Analysis of your Full Name.</li>
+                            <li>Section 4:	Summary and Recommendation.</li>
+						</ul>
+                        <hr />
+                        <h3>Section 1:	Analysis from Date of Birth</h3>
+                        <div id="section">
+                            <p style="text-align:center;"><b>What this section means</b></p>
+                            <p>Every person enters the material world at a specific date of birth and time. Being unchangeable, this date of birth gives a good clarity on the way to fulfil his/her Purpose in Life.</p>
+                            <p><b>It is this purpose of life, which you should follow to have ultimate peace, success, and happiness in life.</b></p>
+                            <p>However, whether you can fulfil this <b>Purpose</b> depends upon your <b>Name</b>, as it is the <b>Name</b> that shapes your nature and personality. </p>
+                            <p>More importantly, it is your name that gives you the ability to utilise the maturity and talents that your soul or subconscious mind has learned through all the previous births and life existences.</p>
+						</div>
+                        <h4 class="list-section header">Date of Birth:	{{dob|date:'dd-MM-yyyy'}}</h4>
+                        <h3>Purpose in Life & Strengths</h3>
+                        <ul class="sectionlist">
+                            <li data-ng-repeat="item in section1">{{item.ParaDesc}}</li>
+						</ul>
+                        <div id="section">
+                            <p><b>{{firstName}}</b>, what is stated above is the strengths gifted to fulfil your purpose in life.</p>
+                            <p><b>The law of Karma states that it is your duty to fulfil this purpose, utilizing these strengths.</b></p>
+                            <p>Inability to utilise them often shows up as a feeling of dissatisfaction or something missing in later years of life. More so, as the karma fulfilling itself is inevitable. However, it’s manifestation without a person being mentally prepared (due to lack of nurturing of strengths) is what leads to uncertainties or unfavourable circumstances in life.</p>
+						</div>
+                        <hr />
+                        <h3>Section 2:	Your First Name Analysis</h3>
+                        <div id="section">
+                            <p style="text-align:center;"><b>What this section means</b></p>
+                            <p><b>{{firstName}}</b>, the next section analyses your first name and will gives an indication whether your Name is supporting your journey to fulfil the purpose in life. It also details if it is conditioning your mind to utilize the strengths from birth.</p>
+                            <p>Importantly, the difference in balance (if any) is expressed as weakness and shortcomings in your life.</p>
+                            <p>In fact, many a time these shortcomings get magnified, as the name has wrong vibrations of its’ own, which introduce weakness of its own.</p>
+						</div>
+                        <div id="list-section">
+                            <h4 class="list-section header">{{firstName}}</h4>
+                            <ul class="sectionlist">
+                                <li data-ng-repeat="item in section2">{{item.ParaDesc}}</li>
+							</ul>
+						</div>
+                        <hr />
+                        <h3>Section 3:	Your Full Name Analysis <br />(including your surname)</h3>
+                        <div id="section">
+                            <p style="text-align:center;"><b>What this section means</b></p>
+                            <p>Your full name creates your true nature and remains till your last breath. The effect of full name begins when you are ready to take responsibilities in life, mature, and become independent of any support.</p>
+                            <p>Note: Even if your first name has given you strengths and abilities, your full name (if unbalanced) can have an opposite effect and instead attract failures.</p>
+						</div>
+                        <div id="list-section">
+                            <h4 class="list-section header">{{fullName}}</h4>
+                            <ul class="sectionlist">
+                                <li data-ng-repeat="item in section3">{{item.ParaDesc}}</li>
+							</ul>
+						</div>
+                        <hr />
+                        <h3>Section 4:	Recommendation for {{fullName}}</h3>
+                        <div id="section">
+                            <p style="text-align:center;"><b>What this section means</b></p>
+                            <p>While every First Name, Full Name, and Date of Birth come with their set of positive and negative influences, what also matters is if together they align to support or oppose each other.</p>
+                            <p>It is like compatibility between life partners, where for peace and happiness what matters is how well they can bond, and not necessarily how good they are individually as people.</p>
+                            <p>The details below indicate how your life’s journey is impacted when your name, surname, and date of birth come together.</p>
+						</div>
+                        <div id="list-section">
+                            <ul class="sectionlist">
+                                <li data-ng-repeat="item in section4">{{item.ParaDesc}}</li>
+							</ul>
+						</div>
+                        <div data-ng-if="flag=='U'" id="section">
+                            <p><b style="color:#d70a61;">{{firstName}}, the report above clearly states the imbalance that your name carries. It is our "Strong Recommendation" that you have the name corrected/balanced to avoid the negative influences of your name to grow. </b> </p>
+							<p><b style="color:#d70a61;">Some influences may be showing today and may further aggravate tomorrow, while others may appear as you progress in life.</b> </p>
+                            <p><b style="color:#d70a61;">Believe us, a small correction (based on mathematical principles) can make all the difference to attract the right destiny. In fact, many with corrected names have seen a noticeable difference in the first few months itself.</b></p>
+                            <p><b>NB: Please "DO-NOT" attempt to balance your name yourself using this report. There are just too many variables (other than the one used for this report) that are to be considered. A small mathematical error can create a unchangeable disaster. Please allow us or consult an experienced numerologist to guide you on a name correction.</b></p>
+						</div>
+                        <div data-ng-if="flag=='U'" id="section">
+                            <p>If you took this analysis for a newborn or child in early years, a balanced name is the biggest gift that can be given, as the effect and vibrations of a balanced name start much earlier. More importantly, the positive strengths are available to the child in abundance to pursue his/her destiny of life and to achieve success.</p>
+                            <p>Some of the benefits of a balanced name are as follows:</p>
+                            <ol>
+                                <li>Attract positive vibrations and assistance in reaching your desired objectives and success.</li>
+                                <li>Clarity in thoughts and decision making.</li>
+                                <li>A better focus on the goal of life.</li>
+                                <li>A difference in the way people perceive and engage with you</li>
+							</ol>
+						</div>
+                        <div data-ng-if="flag=='B'" id="section">
+                            <p>{{firstName}}, stated above is just an initial analysis done using limited, but important principles of NaamVidya Advanced Numerology. There are many more variables which need to be further analysed to finally conclude the balance or imbalance of a name.</p>
+							<p>While NaamVidya principles acknowledge that negatives and positives are part and parcel of every person, however, it also lays down the methods to bring a correction to what is undeserved.</p>
+                            <p>This correction through name balancing is also capable of adding strengths and positive abilities to a person thereby supporting him/her in the journey to success going forward in life.</p>
+						</div>
+                        <div data-ng-if="flag=='B'" id="section">
+                            <p>If you took this analysis for a new born or child in early years, a balanced name is the biggest gift that can be given.As the effect and vibrations of a balanced name start much earlier. </p>
+                            <p>More importantly, the positive strengths are available to him in abundance to pursue his destiny of life and to achieve success.</p>
+						</div>
+                        <p>NaamVidya offers New Name & Name Correction Services for Baby, Child, Adult, Businesses, including any other custom requirements. To view and order an appropriate service click the link below:<br/>  
+							<a class="waves-effect waves-light btn" style="margin-left:10px;margin-bottom:5px;" href="/baby-name">Baby or Child Name</a><br/>
+                            <a class="waves-effect waves-light btn" style="margin-left:10px;margin-bottom:5px;" href="/baby-name-gift">Gift A Baby Name</a><br />
+							<a class="waves-effect waves-light btn" style="margin-left:10px;" href="/name-correction">Adult Name</a>
+						</p>
+					</div>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                @*<div class="bg-yellow animated slideInBottom">
+					<div class="form clearfix">
+						<h5 class="lead wc">
+							<img src="images/soundicon.png" alt="" />Free First<br>
+							Name Analysis
+						</h5>
+						<p>
+							<input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+						<input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>*@
+				<div class="animated slideInBottom bg-alert" style="margin-bottom:20px;">
+					<img src="images/alert.png"  alt="" />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WARNING!!</p>
+					<p>Please do not attempt to choose or correct a name yourself basis the report given here. Selecting or Changing a name is a very serious science, requires years of expertise and many more factors to be considered. Even a small incorrect change in spelling can have an adverse effect on health, relationships, and business. Please allow NaamVidya Team to guide you in this journey.</p>
+				</div>
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            @*<li><a href="/sku">Order a Name</a></li>*@
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col s12 l3" >
+			</div> -->
+		</div>
+	</div>
+</div>

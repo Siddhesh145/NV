@@ -1,0 +1,93 @@
+﻿@*<br />
+<br />
+<br />*@
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="~/images/banner/logo-banner.jpg" alt="" class="card-img-top" style="margin-bottom: 20px;" />
+					</div>
+                    <div data-ng-if="firstNameRptName!=null">
+                        <div id="innerBoxsection">
+                            <p data-ng-hide="'Files/ERROR.HTML'==getPartial()"><br />Names have always held power to shape a nature, behaviour and health. Depending on their harmony with a date-of-birth, they can either <b>"Hurt"</b> or <b>"Attract happiness"</b>. The points below show how your <b>First Name</b> has shaped your personality. Read with an open mind...</p>
+						</div>
+                        <p data-ng-hide="'Files/ERROR.HTML'==getPartial()" class="resultName">{{firstNameRptName | titleCase}}</p>
+                        <ng-include src="getPartial()"></ng-include>
+                        <div data-ng-hide="'Files/ERROR.HTML'==getPartial()" style="border:1px solid #eaeaea;padding:10px;font-family: 'Varela Round', sans-serif;">
+                            <p>{{firstNameRptName}}, the above analysis is just a summary of your nature basis First Name. <b>However, what actually shapes the Success or Failure in life is the “Combination of your Name with Surname and Date-of-Birth!”</b> </p>
+                            <p><b>Some combinations bring happiness, while others attract frustration, affect health and bring loneliness. Hence, a Name should always be chosen most carefully!</b></p>
+                            <div id="innerBoxsection" style="margin-bottom: 25px;">
+                                <p style="font-weight:normal;">
+                                    Wish to know how your Surname and Date of birth has affected you? Generate your <b><span style="color:#d60a61;">"FREE"</span> Detailed Full Name Analysis"</b> by clicking below.
+								</p>
+                                <a href="/full-name-analysis" class="waves-effect waves-light btn" style="overflow:visible;">full name Report<span id="freelogo"></span></a>
+							</div>
+                            <div id="innerBoxsection">
+                                <p style="font-weight:normal;">
+                                    “Like your Name Analysis? Tell your friends about this amazing science! Click below to
+                                    <b>
+                                        <span style="color:#d60a61;">
+                                            share now on Facebook”
+										</span>
+									</b>
+                                    <div class="fb-share-button" data-href="https://naamvidya.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                        @*<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.naamvidya.com%2Ffirst-name-analysis&amp;src=sdkpreparse">Share</a>*@
+                                        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnaamvidya.com%2F&amp;src=sdkpreparse"><img class="myfbshare" style="width:8%" src="../images/facebook-share.png" /></a>
+									</div>
+								</p>
+							</div>
+                            <p>To read about "Importance Of a Name", <a href="/the-importance-of-name">click here</a>.</p>
+						</div>
+					</div>
+                    <div data-ng-if="firstNameRptName==null">
+                        <!-- <p>Please Enter the first name to get the free analysis report.</p> -->
+                        <p style="font-family: 'Varela Round', sans-serif;">Use the power of <b style="color:#d60a61;">NUMEROLOGY</b> to choose a name.</p>
+                        <p style="font-family: 'Varela Round', sans-serif;">Take your FREE first name analysis to see how it has influenced you.</p>
+					</div>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="animated slideInBottom bg-alert" style="margin-bottom:20px;">
+                    <img src="~/images/alert.png" alt="" />
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALERT!! - BABY NAMES</p>
+                    <p>
+                        Please do not select your Baby name basis the first name report given here, even if it sounds favourable.
+                        A vibration of First Name should be compatible with a Surname and Date-Of-Birth, else it can bring discord and failures in life.
+					</p>
+				</div>
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="~/images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+                            <label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/full-name-analysis">Full Name Report</a></li>
+                            @*<li><a href="/sku">Order a Name</a></li>*@
+						</ul>
+					</div>
+				</div>
+			</div>
+            <!-- <div class="col s12 l3" > -->
+            <!-- </div> -->
+		</div>
+	</div>
+</div>

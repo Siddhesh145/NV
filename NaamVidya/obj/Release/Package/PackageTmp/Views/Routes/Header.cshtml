@@ -1,0 +1,126 @@
+﻿<div class="preheader purple base">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 right-align">
+                <div class="social ddm">
+                    <a href="https://api.whatsapp.com/send?phone=918291919698">
+						<img src="~/images/whtasapp.png" style="
+						height: 21px;
+						margin-top: 0px;
+						margin-bottom: -6px !important;
+						padding-top: 0px !important;
+						padding-bottom: 0px !important;
+						" />
+					</a>
+					<a href="https://www.instagram.com/naamvidya/" target="_blank">
+						<img src="~/images/Instagram.png" style="
+						height: 21px;
+						margin-top: 0px;
+						margin-bottom: -6px !important;
+						padding-top: 0px !important;
+						padding-bottom: 0px !important;
+						" />
+					</a>
+					<a href="https://www.facebook.com/naamvidya/" target="_blank">
+						<img src="~/images/fb.png" style="
+						height: 19px;
+						margin-top: 0px;
+						margin-bottom: -3px !important;
+						padding-top: 0px !important;
+						padding-bottom: 0px !important;
+						" />
+					</a>
+					<a href="https://plus.google.com/115484702926110129373" target="_blank">
+						<img src="~/images/gplus.png" style="
+						height: 19px;margin-bottom: -3px !important;"
+						/>
+					</a>
+					<a href="/blog" target="_parent">
+						<img src="~/images/Bloggerr.png" style="
+						height: 19px;
+						height: 25px;
+						padding-top: 0px;
+						margin-top: 0px;
+						margin-bottom: -3px !important;
+						padding-top: 0px !important;
+						padding-bottom: 0px !important;
+						margin-bottom: -7px !important;
+						" />
+					</a>
+					@*<a href="/blog" target="_blank" class="fa fa-bold"></a>*@
+					@*<a href="/blog" target="_blank"><img src="~/images/blogger.png" /></a>*@
+				</div>
+				<div class="myaccount ddm nav-wrapper ">
+					<a class="dropdown-button" data-ng-click="f_call_drpdwn('t-account')" data-target="#t-account" data-activates="t-account"><i class="fa fa-chevron-down"></i><i class="fa fa-user"></i>{{UserName}}</a>
+					<ul class="right dropdown-content" data-ng-class="(Status == 'open')? 'dropdown' : ''" id="t-account">
+						<li><a class="dropdown-item" data-ng-click="f_logout(loginlogoutMenu)">{{loginlogoutMenu}}</a> </li>
+						<li data-ng-show="loginlogoutMenu == 'Login'"><a class=" dropdown-item" href="/user-registration">Register</a> </li>
+						@*<li data-ng-show="loginlogoutMenu == 'Logout' && UserFlag == 0"><a class=" dropdown-item" href="/my-orders">My Orders</a> </li>
+						<li data-ng-show="loginlogoutMenu == 'Logout' && UserFlag == 1"><a class="dropdown-item" href="/dashboard">Dashboard</a> </li>
+						<li data-ng-show="loginlogoutMenu == 'Logout' && UserFlag == 0"><a class="dropdown-item" href="/my-reports">My Reports</a> </li>*@
+						<li data-ng-show="loginlogoutMenu == 'Logout'"><a class=" dropdown-item" href="/my-orders">My Orders</a> </li>
+						@*<li data-ng-show="loginlogoutMenu == 'Logout'"><a class="dropdown-item" href="/dashboard">Dashboard</a> </li>*@
+						<li data-ng-show="loginlogoutMenu == 'Logout'"><a class="dropdown-item" href="/my-reports">My Reports</a> </li>
+						<li data-ng-show="loginlogoutMenu == 'Logout'"><a class="dropdown-item" href="/change-password">Change Password</a> </li>
+					</ul>
+				</div>
+				<div class="myaccount ddm nav-wrapper ">
+					<a class="dropdown-button" data-target="#t-cart" data-activates="t-cart" data-ng-click="fn_MyCart()"><i class="fa fa-shopping-cart"></i> MY CART  <span data-ng-if="CartCount != 0">{{CartCount}}</span> </a>
+				</div>
+                @*<div class="myaccount ddm nav-wrapper" id="google_translate_element" ></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit()
+                    {
+                        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                     }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>*@
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="deep-purple header" data-ng-controller="menuController">
+	<nav class="deep-purple z-depth-0 ">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="/" class="brand-logo"><img src="~/images/logo.png" alt="" class="responsive-img" /></a>
+				<div id="sitenav" class="sitenav right">
+					<button data-ng-click="f_open_menu()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+					<ul class="navbar-nav animated zoomIn hide-on-med-and-down">
+						<li class="dropdown mymenucolor">
+							<a class="" id="dropdown01">PRINCIPLES</a>
+							<ul>
+								<li><a data-ng-click="gotoMenu('Principles','/about-us')">About NaamVidya</a></li>
+								<li><a data-ng-click="gotoMenu('Principles','/why-names-matter')">Why names matter</a></li>
+								<li><a data-ng-click="gotoMenu('Principles','/balanced-name')">Origins of a balanced name</a></li>
+								<li><a data-ng-click="gotoMenu('Principles','/ethics-beliefs')">Ethics & Beliefs</a></li>
+								<li><a data-ng-click="gotoMenu('Principles','/life-path')">Purpose & Karma</a></li>
+								<li><a href="/full-name-analysis">Full name report</a></li>
+								<li><a data-ng-click="gotoMenu('Principles','/faq')">FAQ</a></li>
+							</ul>
+						</li>
+						<li class="dropdown mymenucolor">
+							<a class="" id="dropdown01" data-ng-click="gotoMenu('BabyName','/choosing-baby-name')">BABY NAME</a>
+						</li>
+						<li class="dropdown mymenucolor">
+							<a class="" id="dropdown01" data-ng-click="gotoMenu('Adult','/why-names-matter')">ADULT NAME</a>
+						</li>
+						<li class="dropdown mymenucolor">
+							<a class="" id="dropdown01" data-ng-click="gotoMenu('Business','/business-name')">BUSINESS NAME</a>
+						</li>
+						<li class="dropdown mymenucolor">
+							<a class="" id="dropdown01" data-ng-click="gotoMenu('howitworks','/how-it-works')">HOW IT WORKS</a>
+						</li>
+						<li class="dropdown mymenucolor">
+                            <a class="" id="dropdown01" data-ng-click="gotoMenu('gift','/baby-name-gift')">GIFT CARDS</a>
+						</li>								 
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="clearfix"></div>
+</div>		

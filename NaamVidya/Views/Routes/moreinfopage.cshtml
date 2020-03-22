@@ -1,0 +1,1222 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+                        @*<p style="text-align:center;">Give us following details all of the following required fields.,</p>*@
+					</div>
+                    <br />
+                    <center>
+                        <b style="color:#d70a61;margin-top:20px;font-size:25px;"> Name preference questionnaire </b>
+                    </center>
+
+
+                        <hr />
+                        <div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" data-ng-show="tab_nn">
+                            <!-- <form class="order-form form-comflex" method="post"> -->
+
+                            <center><b style="color:#d70a61;margin-top:20px;font-size:20px;">Please provide details as below.</b></center>
+
+                            <div class="order-form" data-ng-show="nnstep1">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">First Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" data-ng-disabled="true" type="text" value="" id="example-text-input" data-ng-model="firstName" placeholder="will be provided by NaamVidya">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="middleName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Last Name<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Mobile No<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="mobileno">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Date of Birth<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Days">
+                                                    <option value="" disabled selected>Day</option>
+                                                    @*<option value="{{x.Days}}" data-ng-repeat="x in days">{{x.Days}}</option>*@
+                                                    @*<option value="02">2</option>
+                                        <option value="03">3</option>*@
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="MonthNames">
+                                                    <option value="" disabled selected>Month</option>
+                                                    @*<option value="{{x.MonthNames}}" data-ng-repeat="x in months">{{x.MonthNames}}</option>*@
+                                                    @*<option value="Feb">February</option>
+                                        <option value="Mar">March</option>*@
+                                                    <option>Jan</option>
+                                                    <option>Feb</option>
+                                                    <option>Mar</option>
+                                                    <option>Apr</option>
+                                                    <option>May</option>
+                                                    <option>Jun</option>
+                                                    <option>Jul</option>
+                                                    <option>Aug</option>
+                                                    <option>Sep</option>
+                                                    <option>Oct</option>
+                                                    <option>Nov</option>
+                                                    <option>Dec</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Years">
+                                                    <option value="" disabled selected>Year</option>
+                                                    @*<option value="{{x.Years}}" data-ng-repeat="x in years">{{x.Years}}</option>*@
+                                                    @*<option value="2016">2016</option>
+                                        <option value="2015">2015</option>*@
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+                                                    <option>2009</option>
+                                                    <option>2008</option>
+                                                    <option>2007</option>
+                                                    <option>2006</option>
+                                                    <option>2005</option>
+                                                    <option>2004</option>
+                                                    <option>2003</option>
+                                                    <option>2002</option>
+                                                    <option>2001</option>
+                                                    <option>2000</option>
+                                                    <option>1999</option>
+                                                    <option>1998</option>
+                                                    <option>1997</option>
+                                                    <option>1996</option>
+                                                    <option>1995</option>
+                                                    <option>1994</option>
+                                                    <option>1993</option>
+                                                    <option>1992</option>
+                                                    <option>1991</option>
+                                                    <option>1990</option>
+                                                    <option>1989</option>
+                                                    <option>1988</option>
+                                                    <option>1987</option>
+                                                    <option>1986</option>
+                                                    <option>1985</option>
+                                                    <option>1984</option>
+                                                    <option>1983</option>
+                                                    <option>1982</option>
+                                                    <option>1981</option>
+                                                    <option>1980</option>
+                                                    <option>1979</option>
+                                                    <option>1978</option>
+                                                    <option>1977</option>
+                                                    <option>1976</option>
+                                                    <option>1975</option>
+                                                    <option>1974</option>
+                                                    <option>1973</option>
+                                                    <option>1972</option>
+                                                    <option>1971</option>
+                                                    <option>1970</option>
+                                                    <option>1969</option>
+                                                    <option>1968</option>
+                                                    <option>1967</option>
+                                                    <option>1966</option>
+                                                    <option>1965</option>
+                                                    <option>1964</option>
+                                                    <option>1963</option>
+                                                    <option>1962</option>
+                                                    <option>1961</option>
+                                                    <option>1960</option>
+                                                    <option>1959</option>
+                                                    <option>1958</option>
+                                                    <option>1957</option>
+                                                    <option>1956</option>
+                                                    <option>1955</option>
+                                                    <option>1954</option>
+                                                    <option>1953</option>
+                                                    <option>1952</option>
+                                                    <option>1951</option>
+                                                    <option>1950</option>
+                                                    <option>1949</option>
+                                                    <option>1948</option>
+                                                    <option>1947</option>
+                                                    <option>1946</option>
+                                                    <option>1945</option>
+                                                    <option>1944</option>
+                                                    <option>1943</option>
+                                                    <option>1942</option>
+                                                    <option>1941</option>
+                                                    <option>1940</option>
+                                                    <option>1939</option>
+                                                    <option>1938</option>
+                                                    <option>1937</option>
+                                                    <option>1936</option>
+                                                    <option>1935</option>
+                                                    <option>1934</option>
+                                                    <option>1933</option>
+                                                    <option>1932</option>
+                                                    <option>1931</option>
+                                                    <option>1930</option>
+                                                    <option>1929</option>
+                                                    <option>1928</option>
+                                                    <option>1927</option>
+                                                    <option>1926</option>
+                                                    <option>1925</option>
+                                                    <option>1924</option>
+                                                    <option>1923</option>
+                                                    <option>1922</option>
+                                                    <option>1921</option>
+                                                    <option>1920</option>
+                                                    <option>1919</option>
+                                                    <option>1918</option>
+                                                    <option>1917</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*<div class="form-group row">
+                            <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Place Of Birth</label>
+                            <div class="col l12 m12 s12">
+                                <input class="form-control" type="text" value="" id="example-text-input"  data-ng-model="placeOfBirth">
+                            </div>
+                        </div>*@
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Gender<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input name="mf" type="radio" id="r_m" data-ng-model="gender" value="M" />
+                                            <label for="r_m">Male</label>
+                                            <input name="mf" type="radio" id="r_f" data-ng-model="gender" value="F" />
+                                            <label for="r_f">Female</label>
+                                            @*<input name="mf" type="radio" id="r_m"  data-ng-model="gender"><label for="r_m" class="waves-effect waves-light">Male</label>
+                                <input name="mf" type="radio" id="r_f"  data-ng-model="gender"><label for="r_f" class="waves-effect waves-light">Female</label>*@
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Remarks</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Remarks">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <span style="color:red">{{errormsg}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_1()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="nnstep2">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;">Any Names that you have in mind or have shortlisted which want us to consider (Optional)</b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Name1" placeholder="Name 1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        @*<label for="example-text-input" class="col l12 m12 s12 col-form-label">Name 2</label>*@
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Name2" placeholder="Name 2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        @*<label for="example-text-input" class="col l12 m12 s12 col-form-label">Name 3</label>*@
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Name3" placeholder="Name 3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        @*<label for="example-text-input" class="col l12 m12 s12 col-form-label">Name 4</label>*@
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Name4" placeholder="Name 4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        @*<label for="example-text-input" class="col l12 m12 s12 col-form-label">Name 5</label>*@
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Name5" placeholder="Name 5">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            @*<button type="button" class="waves-effect waves-light pink btn" data-ng-click="fn_Continue()">Continue</button>*@
+                                            <button type="button" class="waves-effect waves-light pink btn  pull-left" data-ng-click="f_Back_2()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_2()">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        <label id="lblerrormsg"><span style="color:red">{{errormsg1}}</span></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="nnstep3">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <br />
+                                        <div class="col l12 m12 s12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Any starting Alphabets to be considered.</label>
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label"><b style="font-weight:400;font-size:12px;color:#232323;">Eg Text: A, B, Th, Bha</b></label>
+                                        <div class="col l6 m6 s6">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="PreferedAlphabets" maxlength="3" style="width:70px;margin-bottom:10px;" only-starting-alphabet placeholder="option 1">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="PreferedAlphabets1" maxlength="3" style="width:70px;margin-bottom:10px;" only-starting-alphabet placeholder="option 2">
+                                        </div>
+                                        <div class="col l6 m6 s6">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Length of Name that you prefer</label>
+                                        <div class="col l12 m12 s12">
+                                            @*<input class="form-control" type="text" id="example-text-input" data-ng-model="MaxLengthName" placeholder="e.g : 5, if you do not want name to be less than 5 characters">*@
+                                            <p>
+                                                <input class="with-gap" name="r_sn" type="radio" id="r_sn" data-ng-model="LengthName" data-ng-click="f_maxlength_click()" value="sn" />
+                                                <label for="r_sn">Short Names (5 Characters)</label>
+                                            </p>
+                                            <p>
+                                                <input class="with-gap" name="r_ln" type="radio" id="r_ln" data-ng-model="LengthName" data-ng-click="f_maxlength_click()" value="ln" />
+                                                <label for="r_ln">Long Names (More than 5 Alphabets)</label>
+                                            </p>
+                                            <p>
+                                                <input class="with-gap" name="r_np" type="radio" id="r_np" data-ng-model="LengthName" data-ng-click="f_maxlength_click()" value="np" checked />
+                                                <label for="r_np">No Preference</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Religion / Cultural Preference<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                            <p data-ng-repeat="a in criteriadetail">
+                                                <input type="checkbox" id="Criteria-{{a.rowno}}" data-ng-model="a.Checked" />
+                                                <label for="Criteria-{{a.rowno}}">{{a.Criteria_Name}}</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg2}}</span>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_3()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_3()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="nnstep4">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;">Family Details</b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+                                            <p>
+                                                <input type="checkbox" id="rhyme" data-ng-model="rhymewithparents" />
+                                                <label for="rhyme">Do you want us to consider and suggest names that rhyme with baby's sibling or parents?</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Mother Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="MotherName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Father Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="FatherName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Sibling Names</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Sibling1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Sibling2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Sibling3">
+                                        </div>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        @*<span style="color:red">{{errormsg}}</span>*@
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_4()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_4()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="nnstep5">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Birth Country</label>
+                                        <div class="col l12 m12 s12">
+                                            @*<input class="form-control" type="text" value="" id="example-text-input" data-ng-model="Country">*@
+                                            <select class="col l12 m12 s12" style="height: 30px;" data-ng-model="Country">
+                                                @*name="@Html.NameFor(x => x.Country)">*@
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="{{x.CountryName}}" data-ng-repeat="x in CountryList">{{x.CountryName}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Birth City</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data- data-ng-model="birthCity">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Time of Birth</label>
+                                        <div class="col l12 m12 s12">
+                                            <div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="hour">
+                                                    <option value="" disabled selected>Hours</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="min">
+                                                    <option value="" disabled selected>Minutes</option>
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                    <option>32</option>
+                                                    <option>33</option>
+                                                    <option>34</option>
+                                                    <option>35</option>
+                                                    <option>36</option>
+                                                    <option>37</option>
+                                                    <option>38</option>
+                                                    <option>39</option>
+                                                    <option>40</option>
+                                                    <option>41</option>
+                                                    <option>42</option>
+                                                    <option>43</option>
+                                                    <option>44</option>
+                                                    <option>45</option>
+                                                    <option>46</option>
+                                                    <option>47</option>
+                                                    <option>48</option>
+                                                    <option>49</option>
+                                                    <option>50</option>
+                                                    <option>51</option>
+                                                    <option>52</option>
+                                                    <option>53</option>
+                                                    <option>54</option>
+                                                    <option>55</option>
+                                                    <option>56</option>
+                                                    <option>57</option>
+                                                    <option>58</option>
+                                                    <option>59</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:90px;border:none;float:left;" data-ng-model="ampm">
+                                                    <option value="" disabled selected>AM / PM</option>
+                                                    <option>AM</option>
+                                                    <option>PM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <span style="color:red">{{errormsg}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_5()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_5()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="nnstep6">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">5</span> <span class="title"></span></li>
+                                    <li id="step6" style="min-width: 16.5%; max-width: 16.5%;" class="active"><span class="step">6</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row" data-ng-show="firstNM" data-ng-if="firstName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">First Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{firstName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="middleName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Middle Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{middleName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="lastName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Last Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{lastName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="mobileno">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Mobile No :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{mobileno}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MonthNames">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Date of Birth :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Days}}-{{MonthNames}}-{{Years}}</label>
+                                        @*<label for="example-text-input" class="col l2 m2 s2 col-form-label">-{{MonthNames}}</label>
+                            <label for="example-text-input" class="col l2 m2 s2 col-form-label">-{{Years}}</label>*@
+                                    </div>
+                                    <div class="form-group row" data-ng-if="Country">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth Country :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Country}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="birthCity">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth City :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{birthCity}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="hour">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth Time :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{hour}}:{{min}} {{ampm}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="gender">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Gender :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{gender}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="Remarks">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Remarks :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Remarks}}</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label" data-ng-if="Name1">Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label" data-ng-if="Name1">{{Name1}},{{Name2}},{{Name3}},{{Name4}},{{Name5}}</label>
+                                        @*<label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name2"></label>
+                            <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name3"></label>
+                            <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name4"></label>
+                            <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name5"></label>*@
+                                    </div>
+                                    <div class="form-group row" data-ng-if="PreferedAlphabets">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Any starting Alphabet to consider :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{PreferedAlphabets}},{{PreferedAlphabets1}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="criteriaName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Religion / Cultural Preference :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{criteriaName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MotherName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Mother Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{MotherName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="FatherName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Father Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{FatherName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if=" Sibling1">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Sibling Names :</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Sibling1">{{Sibling1}},{{Sibling2}},{{Sibling3}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="rhymewithparents">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Rhyme with sibling or parents? :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{(rhymewithparents)? 'yes' : 'No'}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MaxLengthName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Any preference for a length of name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{MaxLengthName}}</label>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg3}}</span>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-disabled="Onsave" data-ng-click="f_Back_6()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-disabled="Onsave" data-ng-click="fn_Submit()">Submit</button>
+                                            @*<button type="button" class="waves-effect waves-light pink btn" data-ng-disabled="Onsave" data-ng-click="fn_Cancel()">Cancel</button>*@
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- </form> -->
+                        </div>
+                        <div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" data-ng-show="tab_nc">
+                            <!-- <form class="order-form form-comflex" method="post"> -->
+                            <div class="order-form" data-ng-show="ncstep1">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 25%; max-width: 25%;"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 25%; max-width: 25%;"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+                                    @*<li id="step5" style="min-width: 20%; max-width: 20%;"><span class="step">5</span> <span class="title"></span></li>*@
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="firstNM">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">First Name<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="middleName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Last Name<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Mobile No<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="mobileno">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Date of Birth<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Days">
+                                                    <option value="" disabled selected>Day</option>
+                                                    @*<option value="{{x.Days}}" data-ng-repeat="x in days">{{x.Days}}</option>*@
+                                                    @*<option value="02">2</option>
+                                        <option value="03">3</option>*@
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="MonthNames">
+                                                    <option value="" disabled selected>Month</option>
+                                                    @*<option value="{{x.MonthNames}}" data-ng-repeat="x in months">{{x.MonthNames}}</option>*@
+                                                    @*<option value="Feb">February</option>
+                                        <option value="Mar">March</option>*@
+                                                    <option>Jan</option>
+                                                    <option>Feb</option>
+                                                    <option>Mar</option>
+                                                    <option>Apr</option>
+                                                    <option>May</option>
+                                                    <option>Jun</option>
+                                                    <option>Jul</option>
+                                                    <option>Aug</option>
+                                                    <option>Sep</option>
+                                                    <option>Oct</option>
+                                                    <option>Nov</option>
+                                                    <option>Dec</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Years">
+                                                    <option value="" disabled selected>Year</option>
+                                                    @*<option value="{{x.Years}}" data-ng-repeat="x in years">{{x.Years}}</option>*@
+                                                    @*<option value="2016">2016</option>
+                                        <option value="2015">2015</option>*@
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+                                                    <option>2009</option>
+                                                    <option>2008</option>
+                                                    <option>2007</option>
+                                                    <option>2006</option>
+                                                    <option>2005</option>
+                                                    <option>2004</option>
+                                                    <option>2003</option>
+                                                    <option>2002</option>
+                                                    <option>2001</option>
+                                                    <option>2000</option>
+                                                    <option>1999</option>
+                                                    <option>1998</option>
+                                                    <option>1997</option>
+                                                    <option>1996</option>
+                                                    <option>1995</option>
+                                                    <option>1994</option>
+                                                    <option>1993</option>
+                                                    <option>1992</option>
+                                                    <option>1991</option>
+                                                    <option>1990</option>
+                                                    <option>1989</option>
+                                                    <option>1988</option>
+                                                    <option>1987</option>
+                                                    <option>1986</option>
+                                                    <option>1985</option>
+                                                    <option>1984</option>
+                                                    <option>1983</option>
+                                                    <option>1982</option>
+                                                    <option>1981</option>
+                                                    <option>1980</option>
+                                                    <option>1979</option>
+                                                    <option>1978</option>
+                                                    <option>1977</option>
+                                                    <option>1976</option>
+                                                    <option>1975</option>
+                                                    <option>1974</option>
+                                                    <option>1973</option>
+                                                    <option>1972</option>
+                                                    <option>1971</option>
+                                                    <option>1970</option>
+                                                    <option>1969</option>
+                                                    <option>1968</option>
+                                                    <option>1967</option>
+                                                    <option>1966</option>
+                                                    <option>1965</option>
+                                                    <option>1964</option>
+                                                    <option>1963</option>
+                                                    <option>1962</option>
+                                                    <option>1961</option>
+                                                    <option>1960</option>
+                                                    <option>1959</option>
+                                                    <option>1958</option>
+                                                    <option>1957</option>
+                                                    <option>1956</option>
+                                                    <option>1955</option>
+                                                    <option>1954</option>
+                                                    <option>1953</option>
+                                                    <option>1952</option>
+                                                    <option>1951</option>
+                                                    <option>1950</option>
+                                                    <option>1949</option>
+                                                    <option>1948</option>
+                                                    <option>1947</option>
+                                                    <option>1946</option>
+                                                    <option>1945</option>
+                                                    <option>1944</option>
+                                                    <option>1943</option>
+                                                    <option>1942</option>
+                                                    <option>1941</option>
+                                                    <option>1940</option>
+                                                    <option>1939</option>
+                                                    <option>1938</option>
+                                                    <option>1937</option>
+                                                    <option>1936</option>
+                                                    <option>1935</option>
+                                                    <option>1934</option>
+                                                    <option>1933</option>
+                                                    <option>1932</option>
+                                                    <option>1931</option>
+                                                    <option>1930</option>
+                                                    <option>1929</option>
+                                                    <option>1928</option>
+                                                    <option>1927</option>
+                                                    <option>1926</option>
+                                                    <option>1925</option>
+                                                    <option>1924</option>
+                                                    <option>1923</option>
+                                                    <option>1922</option>
+                                                    <option>1921</option>
+                                                    <option>1920</option>
+                                                    <option>1919</option>
+                                                    <option>1918</option>
+                                                    <option>1917</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*<div class="form-group row">
+                            <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Place Of Birth</label>
+                            <div class="col l12 m12 s12">
+                                <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="placeOfBirth">
+                            </div>
+                        </div>*@
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Gender<span style="color:red">*</span></label>
+                                        <div class="col l12 m12 s12">
+                                            <input name="mf" type="radio" id="r_m" data-ng-model="gender" value="M" />
+                                            <label for="r_m">Male</label>
+                                            <input name="mf" type="radio" id="r_f" data-ng-model="gender" value="F" />
+                                            <label for="r_f">Female</label>
+                                            @*<input name="mf" type="radio" id="r_m"  data-ng-model="gender"><label for="r_m" class="waves-effect waves-light">Male</label>
+                                <input name="mf" type="radio" id="r_f" data-ng-model="gender"><label for="r_f" class="waves-effect waves-light">Female</label>*@
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Remarks</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="Remarks">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <span style="color:red">{{errormsg}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_1()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="ncstep2">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 25%; max-width: 25%;"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Birth Country</label>
+                                        <div class="col l12 m12 s12">
+                                            @*<input class="form-control" type="text" value="" id="example-text-input" data-ng-model="country">*@
+                                            <select class="col l12 m12 s12" style="height: 30px;" data-ng-model="Country">
+                                                @*name="@Html.NameFor(x => x.Country)">*@
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="{{x.CountryName}}" data-ng-repeat="x in CountryList">{{x.CountryName}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-1910text-input" class="col l12 m12 s12 col-form-label">Birth City</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-model="birthCity">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Time of Birth</label>
+                                        <div class="col l12 m12 s12">
+                                            <div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="hour">
+                                                    <option value="" disabled selected>Hours</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="min">
+                                                    <option value="" disabled selected>Minutes</option>
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                    <option>32</option>
+                                                    <option>33</option>
+                                                    <option>34</option>
+                                                    <option>35</option>
+                                                    <option>36</option>
+                                                    <option>37</option>
+                                                    <option>38</option>
+                                                    <option>39</option>
+                                                    <option>40</option>
+                                                    <option>41</option>
+                                                    <option>42</option>
+                                                    <option>43</option>
+                                                    <option>44</option>
+                                                    <option>45</option>
+                                                    <option>46</option>
+                                                    <option>47</option>
+                                                    <option>48</option>
+                                                    <option>49</option>
+                                                    <option>50</option>
+                                                    <option>51</option>
+                                                    <option>52</option>
+                                                    <option>53</option>
+                                                    <option>54</option>
+                                                    <option>55</option>
+                                                    <option>56</option>
+                                                    <option>57</option>
+                                                    <option>58</option>
+                                                    <option>59</option>
+                                                </select>
+                                                <select style="height: 2rem;padding:0px;width:90px;border:none;float:left;" data-ng-model="ampm">
+                                                    <option value="" disabled selected>AM / PM</option>
+                                                    <option>AM</option>
+                                                    <option>PM</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <span style="color:red">{{errormsg}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn" data-ng-click="f_Back_nc_2()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_2()">Next</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="ncstep3">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 25%; max-width: 25%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 25%; max-width: 25%;"><span class="step">4</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row">
+                                        <div class="col l12 m12 s12">
+                                            <b style="color:#d70a61;margin-top:20px;font-size:20px;">Any middle name that we can work on?</b>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" id="example-text-input" data-ng-model="OptionalmiddleName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            @*<button type="button" class="waves-effect waves-light pink btn" data-ng-click="fn_Continue()">Continue</button>*@
+                                            <button type="button" class="waves-effect waves-light pink btn" data-ng-click="f_Back_nc_3()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_3()">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        <label id="lblerrormsg"><span style="color:red">{{errormsg1}}</span></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-form" data-ng-show="ncstep4">
+                                <ul class="wizard-steps">
+                                    <li id="step1" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">1</span> <span class="title"></span></li>
+                                    <li id="step2" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">2</span> <span class="title"></span></li>
+                                    <li id="step3" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">3</span> <span class="title"></span></li>
+                                    <li id="step4" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">4</span> <span class="title"></span></li>
+                                    <li id="step5" style="min-width: 20%; max-width: 20%;" class="active"><span class="step">5</span> <span class="title"></span></li>
+                                </ul>
+                                <form class="order-form form-comflex">
+                                    <div class="form-group row" data-ng-show="firstNM" data-ng-if="firstName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">First Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{firstName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="middleName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Middle Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{middleName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="lastName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Last Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{lastName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="mobileno">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Mobile No :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{mobileno}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MonthNames">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Date of Birth :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Days}}-{{MonthNames}}-{{Years}}</label>
+                                        @*<label for="example-text-input" class="col l2 m2 s2 col-form-label">-{{MonthNames}}</label>
+                            <label for="example-text-input" class="col l2 m2 s2 col-form-label">-{{Years}}</label>*@
+                                    </div>
+                                    <div class="form-group row" data-ng-if="Country">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth Country :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Country}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="birthCity">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth City :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{birthCity}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="hour">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label"> Birth Time :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{hour}}:{{min}} {{ampm}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="gender">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Gender :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{gender}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="Remarks">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Remarks :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{Remarks}}</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label" data-ng-if="Name1">Name :</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name1">{{Name1}}</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name2">,{{Name2}}</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name3">,{{Name3}}</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name4">,{{Name4}}</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Name5">,{{Name5}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="PreferedAlphabets">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Any start alphabets in mind :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{PreferedAlphabets}},{{PreferedAlphabets1}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="criteriaName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Criteria :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{criteriaName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MotherName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Mother Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{MotherName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="FatherName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Father Name :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{FatherName}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if=" Sibling1">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Sibling Names :</label>
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Sibling1">{{Sibling1}}</label><br />
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Sibling2">,{{Sibling2}}</label><br />
+                                        <label for="example-text-input" class="col l1 m1 s1 col-form-label" data-ng-if="Sibling3">,{{Sibling3}}</label>
+                                    </div>
+                                    <div class="form-group row" data-ng-if="MaxLengthName">
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">Any Max length of Name in mind :</label>
+                                        <label for="example-text-input" class="col l6 m6 s6 col-form-label">{{MaxLengthName}}</label>
+                                    </div>
+                                    <div class="col l12 m12 s12">
+                                        <span style="color:red">{{errormsg3}}</span>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <button type="button" class="waves-effect waves-light pink btn" data-ng-disabled="Onsave" data-ng-click="f_Back_nc_4()">Back</button>
+                                            <button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-disabled="Onsave" data-ng-click="fn_Submit()">Submit</button>
+                                            @*<button type="button" class="waves-effect waves-light pink btn" data-ng-disabled="Onsave" data-ng-click="fn_Cancel()">Cancel</button>*@
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- </form> -->
+                        </div>
+</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about">About NaamVidya</a></li>
+                            <li><a href="/whynamesmatter">Why names matter</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics">Ethics & Beliefs</a></li>
+                            <li><a href="/registration">Full Name Report</a></li>
+                            @*<li><a href="/sku">Order a Name</a></li>*@
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

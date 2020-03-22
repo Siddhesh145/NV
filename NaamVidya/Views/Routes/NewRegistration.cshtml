@@ -1,0 +1,192 @@
+﻿<script src="~/Scripts/go.js" async defer></script>
+<script src="~/Scripts/fb.js" async defer></script>
+<style type="text/css">
+    #customBtn {
+	display: inline-block;
+	background: white;
+	width: 100%;
+	display: block;
+	margin: 0 auto !important;
+	width: 100%;
+	/*max-width: 162px;*/
+	padding-left: 25%;
+	position: relative;
+	font-size: 13px;
+	font-weight: 500;
+	color: #696b79;
+	height: 50px;
+	border: 1px solid #bfc0c6;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+    }
+	#customBtn:hover {
+	cursor: pointer;
+	}
+    span.label {
+	font-family: serif;
+	font-weight: normal;
+	display: none;
+    }
+    span.icon {
+	background: url(../images/gplus-icon.png) transparent 10px 10px no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+	background-size: 32px 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+    }
+    span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 42px;
+	padding-right: 42px;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	/* Use the Roboto font that is loaded in the <head> */
+        font-family: 'Roboto', sans-serif;
+		}
+	</style>
+	<div class="business-name-section">
+		<div class="container">
+			<div class="row mt-5 mb-5">
+				<div class="col s12 l9">
+					<div class="card z-depth-2 mb-5">
+						<div class=" bg-dark lead">
+							<img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+						</div>
+						<br />
+						<b  data-ng-show="regis" style="color:#d70a61;margin-top:20px;font-size:20px;">@*New User Registration*@</b>
+						<b data-ng-show="otpshow" style="color:#d70a61;margin-top:20px;font-size:20px;">Verify Registration</b>
+						<br />
+						<hr/>
+						<form class="form-comflex">
+							<div data-ng-show="regis">
+								<br/>
+								<div class="form-group row">
+									<div class="col l12 m12 s12" style="text-align:center;margin:20px 0px;">
+										<b style="font-family: 'Varela Round', sans-serif;font-size:22px;color:#d70a61;">Register at NaamVidya</b>
+									</div>
+								</div>
+								<fieldset class="fs-login">
+									<legend>QUICKLY USING</legend>
+									<div class="form-group row">
+										<div class="col l6 m8 s12" style="margin-bottom:10px;">
+											<button id="fbloginbtn" data-ng-click="checkLoginState();" class="fbloginbtn" style="margin:0px auto !important;">Facebook</button>
+										</div>
+										<div class="col l6 m8 s12" style="margin-bottom:10px;">
+											@*<button id="gploginbtn" class=" gploginbtn" style="margin:0px auto !important;">GOOGLE</button>*@
+											@*<div class=" gploginbtn" id="google-signin2"></div>*@
+											<div id="gSignInWrapper">
+												<span class="label">Sign in with:</span>
+												<button id="customBtn" class="customGPlusSignIn">
+													<span class="icon"></span>
+													<span class="buttonText">Google</span>
+												</button>
+											</div>
+											<div id="name"></div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="fs-login">
+									<legend>OR USING EMAIL</legend>
+									<div class="form-group row">
+										<label for="first_name" class="col l12 m12 s12 col-form-label" style="color: rgba(215,10,97,1);font-size: 16px !important;">First Name<span style="color:red">*</span> :</label>
+										<div class="col l12 m12 s12">
+											<input class="form-control" type="text" data-ng-model="firstName" id="first_name">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="last_name" class="col l12 m12 s12 col-form-label" style="color: rgba(215,10,97,1);font-size: 16px !important;">Last Name <span style="color:red">*</span> :</label>
+										<div class="col l12 m12 s12">
+											<input class="form-control" type="text" data-ng-model="lastName" id="last_name">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="email_Id" class="col l12 m12 s12 col-form-label" style="color: rgba(215,10,97,1);font-size: 16px !important;">Email ID<span style="color:red">*</span> :</label>
+										<div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" data-ng-model="emailId" ng-disabled="emailId" id="email_Id">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="password" class="col l12 m12 s12 col-form-label" style="color: rgba(215,10,97,1);font-size: 16px !important;">Password<span style="color:red">*</span> :</label>
+										<div class="col l12 m12 s12">
+											<input class="form-control" type="password" data-ng-model="password" id="password">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="confirm_password" class="col l12 m12 s12 col-form-label" style="color: rgba(215,10,97,1);font-size: 16px !important;">Confirm Password<span style="color:red">*</span> :</label>
+										<div class="col l12 m12 s12">
+											<input class="form-control" type="password" data-ng-model="confirmPassword" id="confirm_password">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="confirm_password" class="col l12 m12 s12 col-form-label"><span style="color:red">{{errorMsg}}</span></label>
+									</div>
+									<div class="row">
+										<div class="input-field col l12 m12 s12">
+											<button type="button" data-ng-click="f_Submit()" style="margin-bottom: 20px;width: 100%;border-radius: 5px;height: 50px;line-height: 50px;font-size: 20px;" class="waves-effect waves-light btn">Submit</button>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div data-ng-show="otpshow">
+								<br />
+								<div class="form-group row">
+									<label for="first_name" class="col l12 m12 s12 col-form-label" style="color: rgba(0,0,0,0.87);font-size: 13px !important;">
+										Please enter OTP (sent on your email) to complete your registration.  
+									</label>
+								</div>
+								<div class="form-group row">
+									<center>
+										<div class="col l12 m12 s12">
+											<input class="form-control" type="text" data-ng-model="OTP" id="OTP" placeholder="Enter OTP">
+										</div>
+									</center>
+								</div>
+								<div class="form-group row">
+									<label id="errorMsg" class="col l12 m12 s12 col-form-label"><span style="color:red">{{errorMsg1}}</span></label>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light btn" data-ng-click="f_SubmitOTP()">Submit</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col s12 l3" data-ng-controller="sidebarController">
+					@*<div class="bg-yellow animated slideInBottom">
+						<div class="form clearfix">
+							<h5 class="lead wc">
+								<img src="images/soundicon.png" alt="" />Free First<br>
+								Name Analysis
+							</h5>
+							<p>
+								<input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" />
+								<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+							</p>
+							<input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+						</div>
+					</div>*@
+					<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+						<div class="list">
+							<ul>
+                                <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+								<li><a href="/about-us">About NaamVidya</a></li>
+								<li><a href="/why-names-matter">Why names matter</a></li>
+								<li><a href="/balanced-name">Origins of balanced name</a></li>
+								<li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+								<li><a href="/full-name-analysis">Full Name Report</a></li>
+								@*<li><a href="/sku">Order a Name</a></li>*@
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>																																																																																																																																																																		

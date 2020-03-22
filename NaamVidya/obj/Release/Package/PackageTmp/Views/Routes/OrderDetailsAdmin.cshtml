@@ -1,0 +1,1888 @@
+﻿@*<br />
+<br />
+<br />*@
+<div class="business-name-section">
+	<div class="container">
+		<div class="row mt-5 mb-5">
+			<div class="col s12 l9">
+				<div class="card z-depth-2 mb-5">
+					<div class=" bg-dark lead">
+						<img src="images/dummy-img.jpg" alt="" class="card-img-top" />
+					</div>
+					<br />
+					<b style="color:#d70a61;margin-top:20px;font-size:20px;">Order Details : Order No {{OrderNo}}</b>
+					<hr />
+					<div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" ng-show="ProductId != 2">
+						<div class="order-form" data-ng-show="nnstep0">
+							<div class="container">
+								<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+									<div class="col l12 m12 s12">
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Order No: {{Order.OrderNo}}</label>
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Date :{{Order.OrderDate}}</label>
+									</div>
+									<div class="col l12 m12 s12">
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Cycle No:{{Order.CycleNo}}</label>
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Product :{{Order.ProductName}}</label>
+									</div>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<form class="order-form">
+										<div class="form-group row">
+											<div class="col l12 m12 s12">
+												<b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+											</div>
+										</div>
+										<div class="col l6 m12 s12">
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">First Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text"  id="example-text-input" data-ng-model="Order.FirstName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Last Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text"  id="example-text-input" data-ng-model="Order.LastName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-email-input" class="col l12 m12 s12 col-form-label">Gender<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input name="mf" type="radio" id="r_m" data-ng-model="Order.Gender" value="M" />
+													<label for="r_m">Male</label>
+													<input name="mf" type="radio" id="r_f" data-ng-model="Order.Gender" value="F" />
+													<label for="r_f">Female</label>
+													@*<input name="mf" type="radio" id="r_m"  data-ng-model="gender"><label for="r_m" class="waves-effect waves-light">Male</label>
+													<input name="mf" type="radio" id="r_f"  data-ng-model="gender"><label for="r_f" class="waves-effect waves-light">Female</label>*@
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Max Length<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text"  id="example-text-input" data-ng-model="Order.MaxLengthName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Father Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text"  id="example-text-input" data-ng-model="Order.FathersName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text"  id="example-text-input" data-ng-model="Order.OptionalmiddleName">
+												</div>
+											</div>
+										</div>
+										<div class="col l6 m12 s12">
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text"  id="example-text-input" data-ng-model="Order.MiddleName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Prefered Alphabets<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text" id="example-text-input" data-ng-model="Order.PreferedAlphabets" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Date of Birth<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.Days">
+															<option value="" disabled selected>Day</option>
+															@*<option value="{{x.Days}}" data-ng-repeat="x in days">{{x.Days}}</option>*@
+															@*<option value="02">2</option>
+															<option value="03">3</option>*@
+															<option>01</option>
+															<option>02</option>
+															<option>03</option>
+															<option>04</option>
+															<option>05</option>
+															<option>06</option>
+															<option>07</option>
+															<option>08</option>
+															<option>09</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+															<option>13</option>
+															<option>14</option>
+															<option>15</option>
+															<option>16</option>
+															<option>17</option>
+															<option>18</option>
+															<option>19</option>
+															<option>20</option>
+															<option>21</option>
+															<option>22</option>
+															<option>23</option>
+															<option>24</option>
+															<option>25</option>
+															<option>26</option>
+															<option>27</option>
+															<option>28</option>
+															<option>29</option>
+															<option>30</option>
+															<option>31</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.MonthNames">
+															<option value="" disabled selected>Month</option>
+															@*<option value="{{x.MonthNames}}" data-ng-repeat="x in months">{{x.MonthNames}}</option>*@
+															@*<option value="Feb">February</option>
+															<option value="Mar">March</option>*@
+															<option>Jan</option>
+															<option>Feb</option>
+															<option>Mar</option>
+															<option>Apr</option>
+															<option>May</option>
+															<option>Jun</option>
+															<option>Jul</option>
+															<option>Aug</option>
+															<option>Sep</option>
+															<option>Oct</option>
+															<option>Nov</option>
+															<option>Dec</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.Years">
+															<option value="" disabled selected>Year</option>
+															@*<option value="{{x.Years}}" data-ng-repeat="x in years">{{x.Years}}</option>*@
+															@*<option value="2016">2016</option>
+															<option value="2015">2015</option>*@
+															<option>2018</option>
+															<option>2017</option>
+															<option>2016</option>
+															<option>2015</option>
+															<option>2014</option>
+															<option>2013</option>
+															<option>2012</option>
+															<option>2011</option>
+															<option>2010</option>
+															<option>2009</option>
+															<option>2008</option>
+															<option>2007</option>
+															<option>2006</option>
+															<option>2005</option>
+															<option>2004</option>
+															<option>2003</option>
+															<option>2002</option>
+															<option>2001</option>
+															<option>2000</option>
+															<option>1999</option>
+															<option>1998</option>
+															<option>1997</option>
+															<option>1996</option>
+															<option>1995</option>
+															<option>1994</option>
+															<option>1993</option>
+															<option>1992</option>
+															<option>1991</option>
+															<option>1990</option>
+															<option>1989</option>
+															<option>1988</option>
+															<option>1987</option>
+															<option>1986</option>
+															<option>1985</option>
+															<option>1984</option>
+															<option>1983</option>
+															<option>1982</option>
+															<option>1981</option>
+															<option>1980</option>
+															<option>1979</option>
+															<option>1978</option>
+															<option>1977</option>
+															<option>1976</option>
+															<option>1975</option>
+															<option>1974</option>
+															<option>1973</option>
+															<option>1972</option>
+															<option>1971</option>
+															<option>1970</option>
+															<option>1969</option>
+															<option>1968</option>
+															<option>1967</option>
+															<option>1966</option>
+															<option>1965</option>
+															<option>1964</option>
+															<option>1963</option>
+															<option>1962</option>
+															<option>1961</option>
+															<option>1960</option>
+															<option>1959</option>
+															<option>1958</option>
+															<option>1957</option>
+															<option>1956</option>
+															<option>1955</option>
+															<option>1954</option>
+															<option>1953</option>
+															<option>1952</option>
+															<option>1951</option>
+															<option>1950</option>
+															<option>1949</option>
+															<option>1948</option>
+															<option>1947</option>
+															<option>1946</option>
+															<option>1945</option>
+															<option>1944</option>
+															<option>1943</option>
+															<option>1942</option>
+															<option>1941</option>
+															<option>1940</option>
+															<option>1939</option>
+															<option>1938</option>
+															<option>1937</option>
+															<option>1936</option>
+															<option>1935</option>
+															<option>1934</option>
+															<option>1933</option>
+															<option>1932</option>
+															<option>1931</option>
+															<option>1930</option>
+															<option>1929</option>
+															<option>1928</option>
+															<option>1927</option>
+															<option>1926</option>
+															<option>1925</option>
+															<option>1924</option>
+															<option>1923</option>
+															<option>1922</option>
+															<option>1921</option>
+															<option>1920</option>
+															<option>1919</option>
+															<option>1918</option>
+															<option>1917</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Remarks<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.Remarks">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Mother Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" value="{{Order.LastName}}" id="example-text-input" data-ng-model="Order.MothersName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Sublings<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName1">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName2">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName3">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col l12 m12 s12">
+													<span style="color:red">{{errormsg}}</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+											<div class="col l12 m12 s12">
+												<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_0()">Back</button>
+												<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_0()">Next</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- <form class="order-form form-comflex" method="post"> -->
+						<div class="order-form" data-ng-show="nnstep1">
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">1. Name Suggested by you </b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto; height:100px;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_FN_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<span style="color:red">{{errormsg}}  @*{{selectedItem}}*@</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_1()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_1()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="nnstep2">
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">2. Name suggested by user with alteration of First Name</b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_FN_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>   
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										@*<button type="button" class="waves-effect waves-light pink btn" ng-click="fn_Continue()">Continue</button>*@
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_2()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_2()">Next</button>
+									</div>
+								</div>
+								<div class="col l12 m12 s12">
+									<label id="lblerrormsg"><span style="color:red">{{errormsg1}}</span></label>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="nnstep3">
+							<form class="order-form ">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">3. Name suggested with corrections to surname</b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px;">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_FN_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col l12 m12 s12">
+									<span style="color:red">{{errormsg2}}</span>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_3()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_3()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="nnstep4">
+							<form class="order-form ">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">4. Name suggested by NaamVidya</b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_FN_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_4()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_4()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="nnstep5">
+							<form class="order-form ">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">5. Name to be Added</b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px;">
+										<div class="col l12 m12 s12">
+											<div class="col l2 m2 s2" style="padding-top: 3%;">
+												<label style="margin-top: 26px;font-size:20px;" class="">Name :</label>
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_firstName" placeholder="First Name" />
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_middleName" placeholder="Middle Name" />
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_lastName" placeholder="Last Name" />
+											</div>
+											<div class="col l2 m2 s2"></div>
+										</div>
+										<div class="col l12 m12 s12">
+											<div class="col l2 m2 s2" style="">
+												<label style="margin-top: 26px;font-size:20px;" class="">Gender :</label>
+											</div>
+											<div class="col l4 m4 s4">
+												<input name="mf" type="radio" id="r_m" data-ng-model="S_gender" value="M"  />
+												<label for="r_m" data-ng-click="f_S_gender_change('M')">Male</label>
+												<input name="mf" type="radio" id="r_f" data-ng-model="S_gender" value="F"  />
+												<label for="r_f" data-ng-click="f_S_gender_change('F')">Female</label>
+											</div>
+											<div class="col l2 m2 s2">
+												<label style="margin-top: 26px;font-size:20px;" class="">Date of Birth :</label>
+											</div>
+											<div class="col l4 m4 s4">
+												<div class="col l12 m12 s12">
+													<div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_Days">
+															<option value="" disabled="disabled" selected="selected">Day</option>
+															<option value="01">01</option>
+															<option value="02">02</option>
+															<option value="03">03</option>
+															<option value="04">04</option>
+															<option value="05">05</option>
+															<option value="06">06</option>
+															<option value="07">07</option>
+															<option value="08">08</option>
+															<option value="09">09</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															<option value="18">18</option>
+															<option value="19">19</option>
+															<option value="20">20</option>
+															<option value="21">21</option>
+															<option value="22">22</option>
+															<option value="23">23</option>
+															<option value="24">24</option>
+															<option value="25">25</option>
+															<option value="26">26</option>
+															<option value="27">27</option>
+															<option value="28">28</option>
+															<option value="29">29</option>
+															<option value="30">30</option>
+															<option value="31">31</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_MonthNames">
+															<option value="" disabled="disabled" selected="selected">Month</option>
+															<option value="Jan">Jan</option>
+															<option value="Feb">Feb</option>
+															<option value="Mar">Mar</option>
+															<option value="Apr">Apr</option>
+															<option value="May">May</option>
+															<option value="Jun">Jun</option>
+															<option value="Jul">Jul</option>
+															<option value="Aug">Aug</option>
+															<option value="Sep">Sep</option>
+															<option value="Oct">Oct</option>
+															<option value="Nov">Nov</option>
+															<option value="Dec">Dec</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_Years">
+															<option value="" disabled="disabled" selected="selected">Year</option>
+															<option value="2018">2018</option>
+															<option value="2017">2017</option>
+															<option value="2016">2016</option>
+															<option value="2015">2015</option>
+															<option value="2014">2014</option>
+															<option value="2013">2013</option>
+															<option value="2012">2012</option>
+															<option value="2011">2011</option>
+															<option value="2010">2010</option>
+															<option value="2009">2009</option>
+															<option value="2008">2008</option>
+															<option value="2007">2007</option>
+															<option value="2006">2006</option>
+															<option value="2005">2005</option>
+															<option value="2004">2004</option>
+															<option value="2003">2003</option>
+															<option value="2002">2002</option>
+															<option value="2001">2001</option>
+															<option value="2000">2000</option>
+															<option value="1999">1999</option>
+															<option value="1998">1998</option>
+															<option value="1997">1997</option>
+															<option value="1996">1996</option>
+															<option value="1995">1995</option>
+															<option value="1994">1994</option>
+															<option value="1993">1993</option>
+															<option value="1992">1992</option>
+															<option value="1991">1991</option>
+															<option value="1990">1990</option>
+															<option value="1989">1989</option>
+															<option value="1988">1988</option>
+															<option value="1987">1987</option>
+															<option value="1986">1986</option>
+															<option value="1985">1985</option>
+															<option value="1984">1984</option>
+															<option value="1983">1983</option>
+															<option value="1982">1982</option>
+															<option value="1981">1981</option>
+															<option value="1980">1980</option>
+															<option value="1979">1979</option>
+															<option value="1978">1978</option>
+															<option value="1977">1977</option>
+															<option value="1976">1976</option>
+															<option value="1975">1975</option>
+															<option value="1974">1974</option>
+															<option value="1973">1973</option>
+															<option value="1972">1972</option>
+															<option value="1971">1971</option>
+															<option value="1970">1970</option>
+															<option value="1969">1969</option>
+															<option value="1968">1968</option>
+															<option value="1967">1967</option>
+															<option value="1966">1966</option>
+															<option value="1965">1965</option>
+															<option value="1964">1964</option>
+															<option value="1963">1963</option>
+															<option value="1962">1962</option>
+															<option value="1961">1961</option>
+															<option value="1960">1960</option>
+															<option value="1959">1959</option>
+															<option value="1958">1958</option>
+															<option value="1957">1957</option>
+															<option value="1956">1956</option>
+															<option value="1955">1955</option>
+															<option value="1954">1954</option>
+															<option value="1953">1953</option>
+															<option value="1952">1952</option>
+															<option value="1951">1951</option>
+															<option value="1950">1950</option>
+															<option value="1949">1949</option>
+															<option value="1948">1948</option>
+															<option value="1947">1947</option>
+															<option value="1946">1946</option>
+															<option value="1945">1945</option>
+															<option value="1944">1944</option>
+															<option value="1943">1943</option>
+															<option value="1942">1942</option>
+															<option value="1941">1941</option>
+															<option value="1940">1940</option>
+															<option value="1939">1939</option>
+															<option value="1938">1938</option>
+															<option value="1937">1937</option>
+															<option value="1936">1936</option>
+															<option value="1935">1935</option>
+															<option value="1934">1934</option>
+															<option value="1933">1933</option>
+															<option value="1932">1932</option>
+															<option value="1931">1931</option>
+															<option value="1930">1930</option>
+															<option value="1929">1929</option>
+															<option value="1928">1928</option>
+															<option value="1927">1927</option>
+															<option value="1926">1926</option>
+															<option value="1925">1925</option>
+															<option value="1924">1924</option>
+															<option value="1923">1923</option>
+															<option value="1922">1922</option>
+															<option value="1921">1921</option>
+															<option value="1920">1920</option>
+															<option value="1919">1919</option>
+															<option value="1918">1918</option>
+															<option value="1917">1917</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col l12 m12 s12">
+											<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-disabled="Onsave"data-ng-click="f_click_nn_name_reco()">
+												OK
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:300px" data-ng-show="selectedItem.length > 0">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in S_selectedItem">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_Check_reco_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+														<td>
+															<p>
+																@*<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />*@
+																<i class="ico-times" id="Criteria-{{o.SrNo}}" data-ng-click="f_Remove_nn(o)" style="font: normal 1em/1 Arial, sans-serif;  display: inline-block;cursor:pointer !important;"></i>
+																@*<label for="Criteria-{{o.SrNo}}"></label>*@
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>  
+								</div>
+								<div class="col l12 m12 s12">
+									<span style="color:red">{{errormsg3}}</span>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-disabled="Onsave" data-ng-click="f_Back_5()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-disabled="Onsave" data-ng-click="f_Next_5()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="nnstep6">
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">6. Selected Name by you</b>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;" ng-show="stepmsg">You have not selected any name.Please go back and select name </b>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:300px" data-ng-show="selectedItem.length > 0">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in selectedItem">
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+														<td>
+															<p>
+																@*<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />*@
+																<i class="ico-times" id="Criteria-{{o.SrNo}}" data-ng-click="f_Remove_nn(o)" style="font: normal 1em/1 Arial, sans-serif;  display: inline-block;cursor:pointer !important;"></i>
+																@*<label for="Criteria-{{o.SrNo}}"></label>*@
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col l12 m12 s12">
+									<span style="color:red">{{errormsg3}}</span>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_6()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="submit" data-ng-disabled="Onsave" data-ng-click="f_nn_Submit()">Submit</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="reset" data-ng-disabled="Onsave"  data-ng-click="f_nn_Reset()">Reset</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="close" data-ng-disabled="Onsave"  data-ng-click="f_nn_Close()">Close</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- </form> -->
+					</div>
+					<div style="background: rgb(237, 222, 179);border-radius:10px;padding:20px;width:100%;" ng-show="ProductId == 2">
+						<div class="order-form" data-ng-show="ncstep0">
+							<div class="container">
+								<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+									<div class="col l12 m12 s12">
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Order No: {{Order.OrderNo}}</label>
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Date :{{Order.OrderDate}}</label>
+									</div>
+									<div class="col l12 m12 s12">
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Cycle No:{{Order.CycleNo}}</label>
+										<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Product :{{Order.ProductName}}</label>
+									</div>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<form class="order-form">
+										<div class="form-group row">
+											<div class="col l12 m12 s12">
+												<b style="color:#d70a61;margin-top:20px;font-size:20px;"></b>
+											</div>
+										</div>
+										<div class="col l6 m12 s12">
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">First Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text" id="example-text-input" data-ng-model="Order.FirstName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Last Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.LastName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-email-input" class="col l12 m12 s12 col-form-label">Gender<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input name="mf" type="radio" id="r_m" data-ng-model="Order.Gender" value="M" />
+													<label for="r_m">Male</label>
+													<input name="mf" type="radio" id="r_f" data-ng-model="Order.Gender" value="F" />
+													<label for="r_f">Female</label>
+													@*<input name="mf" type="radio" id="r_m"  data-ng-model="gender"><label for="r_m" class="waves-effect waves-light">Male</label>
+													<input name="mf" type="radio" id="r_f"  data-ng-model="gender"><label for="r_f" class="waves-effect waves-light">Female</label>*@
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Max Length<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text" id="example-text-input" data-ng-model="Order.MaxLengthName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Father Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text" id="example-text-input" data-ng-model="Order.FathersName" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.OptionalmiddleName">
+												</div>
+											</div>
+										</div>
+										<div class="col l6 m12 s12">
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Middle Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.MiddleName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Prefered Alphabets<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" data-ng-disabled="true" type="text" id="example-text-input" data-ng-model="Order.PreferedAlphabets" placeholder="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Date of Birth<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.Days">
+															<option value="" disabled selected>Day</option>
+															@*<option value="{{x.Days}}" data-ng-repeat="x in days">{{x.Days}}</option>*@
+															@*<option value="02">2</option>
+															<option value="03">3</option>*@
+															<option>01</option>
+															<option>02</option>
+															<option>03</option>
+															<option>04</option>
+															<option>05</option>
+															<option>06</option>
+															<option>07</option>
+															<option>08</option>
+															<option>09</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+															<option>13</option>
+															<option>14</option>
+															<option>15</option>
+															<option>16</option>
+															<option>17</option>
+															<option>18</option>
+															<option>19</option>
+															<option>20</option>
+															<option>21</option>
+															<option>22</option>
+															<option>23</option>
+															<option>24</option>
+															<option>25</option>
+															<option>26</option>
+															<option>27</option>
+															<option>28</option>
+															<option>29</option>
+															<option>30</option>
+															<option>31</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.MonthNames">
+															<option value="" disabled selected>Month</option>
+															@*<option value="{{x.MonthNames}}" data-ng-repeat="x in months">{{x.MonthNames}}</option>*@
+															@*<option value="Feb">February</option>
+															<option value="Mar">March</option>*@
+															<option>Jan</option>
+															<option>Feb</option>
+															<option>Mar</option>
+															<option>Apr</option>
+															<option>May</option>
+															<option>Jun</option>
+															<option>Jul</option>
+															<option>Aug</option>
+															<option>Sep</option>
+															<option>Oct</option>
+															<option>Nov</option>
+															<option>Dec</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="Order.Years">
+															<option value="" disabled selected>Year</option>
+															@*<option value="{{x.Years}}" data-ng-repeat="x in years">{{x.Years}}</option>*@
+															@*<option value="2016">2016</option>
+															<option value="2015">2015</option>*@
+															<option>2018</option>
+															<option>2017</option>
+															<option>2016</option>
+															<option>2015</option>
+															<option>2014</option>
+															<option>2013</option>
+															<option>2012</option>
+															<option>2011</option>
+															<option>2010</option>
+															<option>2009</option>
+															<option>2008</option>
+															<option>2007</option>
+															<option>2006</option>
+															<option>2005</option>
+															<option>2004</option>
+															<option>2003</option>
+															<option>2002</option>
+															<option>2001</option>
+															<option>2000</option>
+															<option>1999</option>
+															<option>1998</option>
+															<option>1997</option>
+															<option>1996</option>
+															<option>1995</option>
+															<option>1994</option>
+															<option>1993</option>
+															<option>1992</option>
+															<option>1991</option>
+															<option>1990</option>
+															<option>1989</option>
+															<option>1988</option>
+															<option>1987</option>
+															<option>1986</option>
+															<option>1985</option>
+															<option>1984</option>
+															<option>1983</option>
+															<option>1982</option>
+															<option>1981</option>
+															<option>1980</option>
+															<option>1979</option>
+															<option>1978</option>
+															<option>1977</option>
+															<option>1976</option>
+															<option>1975</option>
+															<option>1974</option>
+															<option>1973</option>
+															<option>1972</option>
+															<option>1971</option>
+															<option>1970</option>
+															<option>1969</option>
+															<option>1968</option>
+															<option>1967</option>
+															<option>1966</option>
+															<option>1965</option>
+															<option>1964</option>
+															<option>1963</option>
+															<option>1962</option>
+															<option>1961</option>
+															<option>1960</option>
+															<option>1959</option>
+															<option>1958</option>
+															<option>1957</option>
+															<option>1956</option>
+															<option>1955</option>
+															<option>1954</option>
+															<option>1953</option>
+															<option>1952</option>
+															<option>1951</option>
+															<option>1950</option>
+															<option>1949</option>
+															<option>1948</option>
+															<option>1947</option>
+															<option>1946</option>
+															<option>1945</option>
+															<option>1944</option>
+															<option>1943</option>
+															<option>1942</option>
+															<option>1941</option>
+															<option>1940</option>
+															<option>1939</option>
+															<option>1938</option>
+															<option>1937</option>
+															<option>1936</option>
+															<option>1935</option>
+															<option>1934</option>
+															<option>1933</option>
+															<option>1932</option>
+															<option>1931</option>
+															<option>1930</option>
+															<option>1929</option>
+															<option>1928</option>
+															<option>1927</option>
+															<option>1926</option>
+															<option>1925</option>
+															<option>1924</option>
+															<option>1923</option>
+															<option>1922</option>
+															<option>1921</option>
+															<option>1920</option>
+															<option>1919</option>
+															<option>1918</option>
+															<option>1917</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Remarks<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.Remarks">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Mother Name<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" value="{{Order.LastName}}" id="example-text-input" data-ng-model="Order.MothersName">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="example-text-input" class="col l12 m12 s12 col-form-label">Sublings<span style="color:red">*</span></label>
+												<div class="col l12 m12 s12">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName1">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName2">
+													<input class="form-control" type="text" id="example-text-input" data-ng-model="Order.SiblingName3">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col l12 m12 s12">
+													<span style="color:red">{{errormsg}}</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+											<div class="col l12 m12 s12">
+												<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_0()">Back</button>
+												<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_0()">Next</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="order-form" ng-show="ncstep1">                       
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">1. Name Suggested by you </b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_FN_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_1()">Next</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_1()">Back</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="ncstep2">
+							<form class="order-form ">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">2. Name with no change in first name </b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div> 
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_2()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_2()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="ncstep3">
+							<form class="order-form ">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">3. Name with no change in last name </b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;">
+										<div class="col l12 m12 s12">
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-left">Middle Name: {{order.OrderNo}}</label>
+											<label style="margin-top:20px;font-size:20px;" class="col l6 m6 s12 pull-right">Last Name:{{orderList.CycleNo}}</label>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:500px">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in OrderReco">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<span style="color:red">{{errormsg}}</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										@*<button type="button" class="waves-effect waves-light pink btn" ng-click="fn_Continue()">Continue</button>*@
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_3()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_3()">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="ncstep4">
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">4.Name to be Added</b>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px;">
+										<div class="col l12 m12 s12">
+											<div class="col l2 m2 s2" style="padding-top: 3%;">
+												<label style="margin-top: 26px;font-size:20px;" class="">Name :</label>
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_firstName" placeholder="First Name" />
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_middleName" placeholder="Middle Name" />
+											</div>
+											<div class="col l2 m2 s2">
+												<input style="margin-top:20px;border: 1px solid #d60a61;" class="form-control" type="text"
+												value="" id="" data-ng-model="S_lastName" placeholder="Last Name" />
+											</div>
+											<div class="col l2 m2 s2"></div>
+										</div>
+										<div class="col l12 m12 s12">
+											<div class="col l2 m2 s2" style="">
+												<label style="margin-top: 26px;font-size:20px;" class="">Gender :</label>
+											</div>
+											<div class="col l4 m4 s4">
+												<input name="mf" type="radio" id="r_m" data-ng-model="S_gender" value="M"  />
+												<label for="r_m" data-ng-click="f_S_gender_change('M')">Male</label>
+												<input name="mf" type="radio" id="r_f" data-ng-model="S_gender" value="F"  />
+												<label for="r_f" data-ng-click="f_S_gender_change('F')">Female</label>
+											</div>
+											<div class="col l2 m2 s2">
+												<label style="margin-top: 26px;font-size:20px;" class="">Date of Birth :</label>
+											</div>
+											<div class="col l4 m4 s4">
+												<div class="col l12 m12 s12">
+													<div style="border: 1px solid #FFFFFF;float:left;background-color:#FFFFFF;border-radius:10px">
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_Days"
+														class="ng-pristine ng-valid ng-empty ng-touched">
+															<option value="" disabled="disabled" selected="selected">Day</option>
+															<option value="01">01</option>
+															<option value="02">02</option>
+															<option value="03">03</option>
+															<option value="04">04</option>
+															<option value="05">05</option>
+															<option value="06">06</option>
+															<option value="07">07</option>
+															<option value="08">08</option>
+															<option value="09">09</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															<option value="18">18</option>
+															<option value="19">19</option>
+															<option value="20">20</option>
+															<option value="21">21</option>
+															<option value="22">22</option>
+															<option value="23">23</option>
+															<option value="24">24</option>
+															<option value="25">25</option>
+															<option value="26">26</option>
+															<option value="27">27</option>
+															<option value="28">28</option>
+															<option value="29">29</option>
+															<option value="30">30</option>
+															<option value="31">31</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_MonthNames"
+														class="ng-pristine ng-untouched ng-valid ng-empty">
+															<option value="" disabled="disabled" selected="selected">Month</option>
+															<option value="Jan">Jan</option>
+															<option value="Feb">Feb</option>
+															<option value="Mar">Mar</option>
+															<option value="Apr">Apr</option>
+															<option value="May">May</option>
+															<option value="Jun">Jun</option>
+															<option value="Jul">Jul</option>
+															<option value="Aug">Aug</option>
+															<option value="Sep">Sep</option>
+															<option value="Oct">Oct</option>
+															<option value="Nov">Nov</option>
+															<option value="Dec">Dec</option>
+														</select>
+														<select style="height: 2rem;padding:0px;width:70px;border:none;float:left;" data-ng-model="S_Years"
+														class="ng-pristine ng-untouched ng-valid ng-empty">
+															<option value="" disabled="disabled" selected="selected">Year</option>
+															<option value="2018">2018</option>
+															<option value="2017">2017</option>
+															<option value="2016">2016</option>
+															<option value="2015">2015</option>
+															<option value="2014">2014</option>
+															<option value="2013">2013</option>
+															<option value="2012">2012</option>
+															<option value="2011">2011</option>
+															<option value="2010">2010</option>
+															<option value="2009">2009</option>
+															<option value="2008">2008</option>
+															<option value="2007">2007</option>
+															<option value="2006">2006</option>
+															<option value="2005">2005</option>
+															<option value="2004">2004</option>
+															<option value="2003">2003</option>
+															<option value="2002">2002</option>
+															<option value="2001">2001</option>
+															<option value="2000">2000</option>
+															<option value="1999">1999</option>
+															<option value="1998">1998</option>
+															<option value="1997">1997</option>
+															<option value="1996">1996</option>
+															<option value="1995">1995</option>
+															<option value="1994">1994</option>
+															<option value="1993">1993</option>
+															<option value="1992">1992</option>
+															<option value="1991">1991</option>
+															<option value="1990">1990</option>
+															<option value="1989">1989</option>
+															<option value="1988">1988</option>
+															<option value="1987">1987</option>
+															<option value="1986">1986</option>
+															<option value="1985">1985</option>
+															<option value="1984">1984</option>
+															<option value="1983">1983</option>
+															<option value="1982">1982</option>
+															<option value="1981">1981</option>
+															<option value="1980">1980</option>
+															<option value="1979">1979</option>
+															<option value="1978">1978</option>
+															<option value="1977">1977</option>
+															<option value="1976">1976</option>
+															<option value="1975">1975</option>
+															<option value="1974">1974</option>
+															<option value="1973">1973</option>
+															<option value="1972">1972</option>
+															<option value="1971">1971</option>
+															<option value="1970">1970</option>
+															<option value="1969">1969</option>
+															<option value="1968">1968</option>
+															<option value="1967">1967</option>
+															<option value="1966">1966</option>
+															<option value="1965">1965</option>
+															<option value="1964">1964</option>
+															<option value="1963">1963</option>
+															<option value="1962">1962</option>
+															<option value="1961">1961</option>
+															<option value="1960">1960</option>
+															<option value="1959">1959</option>
+															<option value="1958">1958</option>
+															<option value="1957">1957</option>
+															<option value="1956">1956</option>
+															<option value="1955">1955</option>
+															<option value="1954">1954</option>
+															<option value="1953">1953</option>
+															<option value="1952">1952</option>
+															<option value="1951">1951</option>
+															<option value="1950">1950</option>
+															<option value="1949">1949</option>
+															<option value="1948">1948</option>
+															<option value="1947">1947</option>
+															<option value="1946">1946</option>
+															<option value="1945">1945</option>
+															<option value="1944">1944</option>
+															<option value="1943">1943</option>
+															<option value="1942">1942</option>
+															<option value="1941">1941</option>
+															<option value="1940">1940</option>
+															<option value="1939">1939</option>
+															<option value="1938">1938</option>
+															<option value="1937">1937</option>
+															<option value="1936">1936</option>
+															<option value="1935">1935</option>
+															<option value="1934">1934</option>
+															<option value="1933">1933</option>
+															<option value="1932">1932</option>
+															<option value="1931">1931</option>
+															<option value="1930">1930</option>
+															<option value="1929">1929</option>
+															<option value="1928">1928</option>
+															<option value="1927">1927</option>
+															<option value="1926">1926</option>
+															<option value="1925">1925</option>
+															<option value="1924">1924</option>
+															<option value="1923">1923</option>
+															<option value="1922">1922</option>
+															<option value="1921">1921</option>
+															<option value="1920">1920</option>
+															<option value="1919">1919</option>
+															<option value="1918">1918</option>
+															<option value="1917">1917</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col l12 m12 s12">
+											<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-disabled="Onsave" data-ng-click="f_click_nn_name_reco()">
+												OK
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:300px" data-ng-show="selectedItem.length > 0">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														<th></th>
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in S_selectedItem">
+														<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" data-ng-click="f_Check_reco_checked(o)" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+														<td>
+															<p>
+																@*<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />*@
+																<i class="ico-times" id="Criteria-{{o.SrNo}}" data-ng-click="f_Remove_nn(o)" style="font: normal 1em/1 Arial, sans-serif;  display: inline-block;cursor:pointer !important;"></i>
+																@*<label for="Criteria-{{o.SrNo}}"></label>*@
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col l12 m12 s12">
+									<span style="color:red">{{errormsg3}}</span>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left"  data-ng-click="f_Back_nc_4()">Back</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_4()">Next</button>
+										@*<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="submit" data-ng-disabled="Onsave" data-ng-click="f_nc_Submit()">Submit</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="reset" data-ng-disabled="Onsave" data-ng-click="f_nc_Reset()">Reset</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="close" data-ng-disabled="Onsave" data-ng-click="f_nc_Close()">Close</button>*@
+										@*<button type="button" class="waves-effect waves-light pink btn" ng-disabled="Onsave" ng-click="fn_Cancel()">Cancel</button>*@
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="order-form" data-ng-show="ncstep5">
+							<form class="order-form">
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;">5. Selected Name by you</b>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<b style="color:#d70a61;margin-top:20px;font-size:20px;" ng-show="stepmsg">You have not selected any name.Please go back and select name </b>
+									</div>
+								</div>
+								<div class="container" style="padding-top: 20px;">
+									<div class="row" style="border: 1px solid #ccc; background: #f0f0f0; border-radius: 10px; padding-bottom: 10px;overflow-y:auto;height:300px" data-ng-show="selectedItem.length > 0">
+										<div style="padding: 1%;">
+											<table class="table table-fixed table-striped" style="overflow-y:auto;margin:0px;width:100%">
+												<thead>
+													<tr>
+														@*<th></th>*@
+														<th>First Naame</th>
+														<th>Middle Name</th>
+														<th>Last Name</th>
+														<th>F1</th>
+														<th>F2</th>
+														<th>C1</th>
+														<th>C2</th>
+														<th>C3</th>
+														<th>P1</th>
+														<th>CF1</th>
+														<th>CF2</th>
+														<th>H1</th>
+														<th>E1</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr data-ng-repeat="o in selectedItem">
+														@*<td>
+															<p>
+																<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />
+																<label for="Criteria-{{o.SrNo}}"></label>
+															</p>
+														</td>*@
+														<td>{{o.FName}}</td>
+														<td>{{o.MName}}</td>
+														<td>{{o.LName}}</td>
+														<td>{{o.F1}}</td>
+														<td>{{o.F2}}</td>
+														<td>{{o.C1}}</td>
+														<td>{{o.C2}}</td>
+														<td>{{o.C3}}</td>
+														<td>{{o.P1}}</td>
+														<td>{{o.CF1}}</td>
+														<td>{{o.CF2}}</td>
+														<td>{{o.H1}}</td>
+														<td>{{o.E1}}</td>
+														<td>
+															<p>
+																@*<input type="checkbox" id="Criteria-{{o.SrNo}}" data-ng-model="o.Checked" />*@
+																<i class="ico-times" id="Criteria-{{o.SrNo}}" data-ng-click="f_Remove_nn(o)" style="font: normal 1em/1 Arial, sans-serif;  display: inline-block;cursor:pointer !important;"></i>
+																@*<label for="Criteria-{{o.SrNo}}"></label>*@
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col l12 m12 s12">
+									<span style="color:red">{{errormsg3}}</span>
+								</div>
+								<div class="form-group row">
+									<label for="example-email-input" class="col l6 m6 s6 col-form-label"></label>
+									<div class="col l12 m12 s12">
+										<button type="button" class="waves-effect waves-light pink btn pull-left" data-ng-click="f_Back_nc_5()">Back</button>
+										@*<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-click="f_Next_nc_4()">Next</button>*@
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="submit" data-ng-disabled="Onsave" data-ng-click="f_nc_Submit()">Submit</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="reset" data-ng-disabled="Onsave" data-ng-click="f_nc_Reset()">Reset</button>
+										<button type="button" class="waves-effect waves-light pink btn pull-right" data-ng-show="close" data-ng-disabled="Onsave" data-ng-click="f_nc_Close()">Close</button>
+										@*<button type="button" class="waves-effect waves-light pink btn" ng-disabled="Onsave" ng-click="fn_Cancel()">Cancel</button>*@
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- </form> -->
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3" data-ng-controller="sidebarController">
+				@*<div class="bg-yellow animated slideInBottom">
+					<div class="form clearfix">
+						<h5 class="lead wc">
+							<img src="images/soundicon.png" alt="" />Free First<br>
+							Name Analysis
+						</h5>
+						<p>
+							<input class="col  s12" type="text" ng-model="newfirstName" placeholder="Enter First Name" />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+						</p>
+						<input type="button" class="waves-effect waves-light pink btn" value="Analyse" ng-click="analyzeFirstName()" />
+					</div>
+				</div>*@
+				<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+					<div class="list">
+						<ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+							<li><a href="/about-us">About NaamVidya</a></li>
+							<li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/balanced-name">Origins of balanced name</a></li>
+							<li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+							@*<li><a href="/sku">Order a Name</a></li>*@
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

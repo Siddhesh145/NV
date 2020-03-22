@@ -1,0 +1,72 @@
+﻿<meta view-head name="description" content={{metaDescription}}>
+<view-title>{{chosenTitle}}</view-title>
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="../images/banner/About-US.jpg" alt="" class="card-img-top" />
+                        <p>about naamvidya</p>
+					</div>
+					<p><b style="font-family: 'Varela Round', sans-serif;color:#d60a61;">The Creation:</b></p>
+                    <p style="font-family: 'Varela Round', sans-serif;"><span style="color:#d60a61;">NaamVidya <span style="font-style:italic;">{Sanskrit: Naam = Name, Vidya: Knowledge}</span></span> is an outcome of a thought, a quest which began with some simple questions - What is Life? What is our Purpose? Where does all of it end? and What is the right path to follow?</p>
+					<p style="font-family: 'Varela Round', sans-serif;">The research goes deep, and it shall continue till we fulfil our purpose of unity with the ultimate consciousness.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">It is on this quest that we came across many enlightened people, who in their capacity as a guide, teacher, mentor and guru, helped and continue to assist us in our journey towards realization. We thank them for their patience, guidance and knowledge.</p>
+					<p style="font-family: 'Varela Round', sans-serif;">Continuing the path of seeking knowledge, we were also taught and we open heartedly accepted and learned the science behind Numbers, Alphabets, Words and Sound (Chants or Mantras).</p>
+					<p style="font-family: 'Varela Round', sans-serif;">At NaamVidya, it is our endeavour to share our learnings with the world and help people realize their true potential through the power of Name, Sound and Numbers.</p>
+					<p><b style="font-family: 'Varela Round', sans-serif;color:#d60a61;">The Science:</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;">The science that measures the vibrations and effect of every Alphabet, Word, and Mantra is a more than 5000-year-old. It was called Gematria and is known to the modern world as Numerology. </p>
+                    <p style="font-family: 'Varela Round', sans-serif;">Unfortunately, while the human psychology, behaviour, and lifestyle evolved over the last many years, the science didn't keep pace with this transition. At NaamVidya we have invested and modernised this science to understand the lifestyle and behaviour of today, where our team of Numerologist, Mathematician, and Psychologist have worked together to accurately determine what should be the right balance for an individual and his name.</p>                    
+					<p style="font-family: 'Varela Round', sans-serif;">Also, we don't limit ourselves to just one school of science, but use a very selective combination to accurately determine the identity of a person and suggest a balanced name. Certain finer compatibilities (e.g. harmony of your name to your date of birth) is measured using Astrology. Thereby, ensuring that the name recommended to you cover the best of both worlds and provides the friendliest vibration of success and harmony.</p>
+					<p><b style="font-family: 'Varela Round', sans-serif;color:#d60a61;">The Team:</b></p>
+					<p style="font-family: 'Varela Round', sans-serif;">NaamVidya comprises of a panel of experts (Numerologist, Mathematician, and Psychologist) who not only have a mastery of the ancient science of Numerology and their respective fields but have also not hesitated to adopt technological advances to ensure that names balanced are done with mathematical precision without any human errors. Our knowledge is further guided by gurus who are considered as leaders of this science with a collective experience of decades, having provided balanced name suggestions to over thousands of individuals.</p>
+					<p><b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b></p>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+                            <label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <!-- Principles -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Principles'">
+                    <div class="list">
+                        <ul>
+                            <!-- <li><a href="/about-us">About NaamVidya</a></li> -->
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/why-names-matter">Why name matters</a></li>
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/life-path">Purpose and Karma</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- About -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'About'">
+                    <div class="list">
+                        <ul>
+                            <!-- <li><a href="/about-us">Naamvidya</a></li> -->
+                            <li><a href="#footer">Contact</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <!-- data-spy="affix" data-offset-top="197" -->
+		</div>
+	</div>
+</div>

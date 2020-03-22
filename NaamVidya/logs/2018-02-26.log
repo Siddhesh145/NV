@@ -1,0 +1,15 @@
+26/02/2018 01:04:14 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg ERROR - Input string was not in a correct format.
+26/02/2018 01:24:56 PM SIDDHESH-PC COMFLEX\1150 iisexpress 12  NVAPI.Nlogger.nLoggerMsg ERROR - The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+26/02/2018 05:56:57 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID [file exist] : 3ty14oe4hfi2p1xdzhfwpu44 | FirstName : siddhesh
+26/02/2018 06:00:55 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :3ty14oe4hfi2p1xdzhfwpu44 | FirstName : hasti
+26/02/2018 06:04:02 PM SIDDHESH-PC COMFLEX\1150 iisexpress 7   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :3ty14oe4hfi2p1xdzhfwpu44 | FirstName : hasti
+26/02/2018 06:06:03 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :3ty14oe4hfi2p1xdzhfwpu44 | FirstName : hasio
+26/02/2018 06:11:05 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :dlwewmioxnakcf0npbioavfh | FirstName : hasti
+26/02/2018 06:11:59 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :bxsk05bm5btidsngzlyvih4n | FirstName : raj
+26/02/2018 06:12:13 PM SIDDHESH-PC COMFLEX\1150 iisexpress 8   NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :vv4m5fjcokwke0w2ekdrh42t | FirstName : mohan
+26/02/2018 06:28:25 PM SIDDHESH-PC COMFLEX\1150 iisexpress 19  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :twu1z3jplszv131nuk3ikwhn | FirstName : raja
+26/02/2018 06:32:23 PM SIDDHESH-PC COMFLEX\1150 iisexpress 21  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :twu1z3jplszv131nuk3ikwhn | FirstName : hasti
+26/02/2018 06:38:13 PM SIDDHESH-PC COMFLEX\1150 iisexpress 23  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :twu1z3jplszv131nuk3ikwhn | FirstName : hasti
+26/02/2018 06:38:30 PM SIDDHESH-PC COMFLEX\1150 iisexpress 23  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID :twu1z3jplszv131nuk3ikwhn | FirstName : hasti
+26/02/2018 06:39:47 PM SIDDHESH-PC COMFLEX\1150 iisexpress 30  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID [file exist] : twu1z3jplszv131nuk3ikwhn | FirstName : siddhesh
+26/02/2018 06:40:48 PM SIDDHESH-PC COMFLEX\1150 iisexpress 23  NVAPI.Nlogger.DebugLogger(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:24) DEBUG - SessionID [file exist] : twu1z3jplszv131nuk3ikwhn | FirstName : siddhesh

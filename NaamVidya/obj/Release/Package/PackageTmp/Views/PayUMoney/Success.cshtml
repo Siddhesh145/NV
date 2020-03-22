@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Success";
+    Layout = null;
+}
+
+
+@*@model Trag.Models.PayUMoneyViewModel*@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.7-dist/css/Custom.css" />
+    <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <script src="~/Content/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Naam Vidya</title>
+    <script type="text/javascript">
+        $(document).on('click', '#btnSuccessGoBack', function (e) {
+            //$('#btnFailedGoBack').click(function (e) {
+            window.location = "../Home/Home";
+            //var TraggingScoreId = $('#spnTragScoreId').text();
+
+            ////var TraggingScoreName = $('input:radio[name=radTaggingScore]:checked').val();
+            //if (TraggingScoreId != undefined || TraggingScoreId != 0 || TraggingScoreId != null) {
+            //    //window.location = "../Trag/Person/"+$('#txtTraggingReasonId').val()+"/"+TraggingScoreId;
+            //    window.location = "../Trag/Person/0/" + TraggingScoreId;
+            //    //window.location = "../Trag/Person/" + TraggingScoreId;
+            //}
+        });
+
+    </script>
+</head>
+
+<body style="background-image:url(../../Images/BG1.jpg);">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+
+                @*<div class="account-wall">*@
+                <div style="margin-top: 150px;  padding-top:40px; background-color:  #f7f7f7;">
+                    <h3 class="text-center text-success">                        
+                        Payment done successfully.                         
+                    </h3>
+                    
+                    <h4 class="text-center">
+                        Your Payment Id  = @ViewBag.PaymentId
+                    </h4>
+                   
+                    @*<h4 class="text-center">
+                        Your Transaction Id = @ViewBag.TrasactionId
+                    </h4>*@
+                    <h4 class="text-center login-title">
+                        
+                        </h4>
+                        <form class="form-signin" method="post">
+                            <div class="form-group">
+                                @*<span style="display:none" id="spnTragScoreId">@Model.TragScoreId</span>*@
+                                @*<a href="@Url.Action("Person","Trag")">*@
+                                <input type="button" id="btnSuccessGoBack" class="btn btn-warning btn-block" style="background-color:#ffe600; color:black; font-size:18px;padding: 5px; font-weight:bold" value="Go Home" />
+                                @*</a>*@
+                            </div>
+                        </form>
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

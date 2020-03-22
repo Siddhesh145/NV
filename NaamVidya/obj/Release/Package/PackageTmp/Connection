@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<SYNC>
+  <DBConnection>
+    <SERVER>192.168.1.25\comflex</SERVER>
+    <USER_NAME>sa</USER_NAME>
+    <PASSWORD>comflex@123</PASSWORD>
+    <DATABASE>NV</DATABASE>
+    <TrustedConnection>false</TrustedConnection>
+  </DBConnection>
+<PayUMoney>
+
+  <!--<furl>http://localhost:2991/PayUMoney/Failure</furl>
+
+<surl>http://localhost:2991/PayUMoney/Success</surl>-->
+      <furl>http://localhost:2991/Failure</furl>
+
+      <surl>http://localhost:2991/Success</surl>
+
+    </PayUMoney>
+</SYNC>

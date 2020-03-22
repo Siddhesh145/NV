@@ -1,0 +1,20 @@
+07/02/2018 10:26:44 AM SIDDHESH-PC COMFLEX\1150 iisexpress 16  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+1.00
+before cursor
+inside cursore
+ORD170616
+@sDayChar : ORD170616
+1
+07/02/2018 10:30:43 AM SIDDHESH-PC COMFLEX\1150 iisexpress 15  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Procedure or function 'NV_SP_GetDiscount' expects parameter '@Country_flag', which was not supplied.
+0.00
+2.00
+before cursor
+inside cursore
+ORD170616
+@sDayChar : ORD170616
+3
+inside cursore
+ORD170616
+@sDayChar : ORD170616
+4

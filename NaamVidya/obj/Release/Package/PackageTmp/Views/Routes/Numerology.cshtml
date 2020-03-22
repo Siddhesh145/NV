@@ -1,0 +1,101 @@
+﻿<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 l9">
+                <div class="card z-depth-2 mb-5">
+                    <div class=" bg-dark lead">
+                        <img src="../images/Numero.jpg" alt="" class="card-img-top" />
+						<p>NaamVidya NUMEROLOGY</p>
+					</div>
+                   <p style="font-family: 'Varela Round', sans-serif;">The science that measures the vibrations and effect of every Number Alphabet, Word, and Mantra is a more than 5000-year-old. It was called Gematria and is known to the modern world as Numerology. </p>
+
+<p style="font-family: 'Varela Round', sans-serif;">In fact, in Hinduism this science predates even further and was the basis of writing mantras and assigning baby-name. It is said that the sages and gurus in the ancient times knew and understood the vibration of every alphabet (in Devnagri / Sanskrit) and carefully chose a right combination to craft a name or a mantra.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">As such, with the right combination and choice of words, the specific mantra or name helped a person achieve the desired objective and destiny.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">For the newer world and with the advent of the Latin, Roman or English script the vibration and power of every alphabet were remeasured and assigned a specific number. While these numbers differed in various schools of numerology, what is important to know is what aspect of power a specific school was trying to measure.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">There are primarily 3 key schools of numerology - The Chaldean, The Pythagorean and The Kabbalah.  Each school has a different number assigned to a particular alphabet and measure of a specific vibration of a name.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">e.g. The Pythagoreans school of numerology does exceptionally well in understanding the conscious nature and personality of a person, whereas the Chaldean school does the same to fathom and understand the deeper subconscious mind of a person. Kabbalah on the other end can help measure health and events with a lot more precision.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">The question here often comes up, is which school is better than other. If you ask this question to an experienced numerologist he/she will agree to have used a combination of them to accurately measure and apply the science. Having said that, it is a lot easier said than done to apply more than one school if numerology. With hundreds of parameters to evaluate, most numerologist restrict themselves to only one school.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">At NaamVidya, we are proud to say that we are the pioneers to use a selective blend of different schools of numerology when assigning a new balanced name or correcting a name. This has been possible due to the adoption of newer technological advances by our panel of experienced numerologist. This helps us evaluate names and number across hundreds of parameters across various schools of numerology and Astrology before recommending to our clients.</p>
+
+<p style="font-family: 'Varela Round', sans-serif;">You can be rest assured, you are in the safest hands in your journey to a balanced name with NaamVidya. </p>
+
+
+                    <p><b style="font-family: 'Varela Round', sans-serif;font-style: italic;">- NaamVidya Principles</b></p>
+				</div>
+			</div>
+            <div class="col s12 l3" data-ng-controller="sidebarController">
+                <div class="bg-yellow animated slideInBottom">
+                    <div class="form clearfix">
+                        <h5 class="lead wc">
+                            <img src="images/soundicon.png" alt="" />Free First<br>
+                            Name Analysis
+						</h5>
+                        <p>
+                            <input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+							<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>    
+						</p>
+                        <!--p>Date of Birth<br/>
+							<input class="col  s12" type="text" />
+						</p-->
+                        <input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+					</div>
+				</div>
+                <!-- principles -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Principles'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/baby-name-gift">Gift Baby Name</a></li>
+                            <li><a href="/about-us">About NaamVidya</a></li>
+                            <!-- <li><a href="/whynamesmatter">Why name matters</a></li> -->
+                            <li><a href="/balanced-name">Origins of balanced name</a></li>
+                            <li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+                            <li><a href="/life-path">Purpose and Karma</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Baby Name -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'BabyName'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+							<li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_New_Baby_Name()">Order a Baby Name</a></li>
+                            <li><a href="/choosing-baby-name">Baby Name ideas</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Adult -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Adult'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/full-name-analysis">Full name report</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a data-ng-click="f_Name_Correction()">New name or correction</a></li>
+                            <li><a data-ng-click="f_Spouse_Name()">Spouse Name</a></li>
+                            <li><a href="/others">Other services</a></li>
+						</ul>
+					</div>
+				</div>
+                <!-- Business -->
+                <div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;" data-ng-show="currentPage == 'Business'">
+                    <div class="list">
+                        <ul>
+                            <li><a href="/why-names-matter">Why names matter</a></li>
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a href="/business-name">Order a Business name</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

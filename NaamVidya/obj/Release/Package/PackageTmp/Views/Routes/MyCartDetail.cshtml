@@ -1,0 +1,407 @@
+﻿@*<br />
+    <br />
+    <br />*@
+@model NaamVidya.Models.NaamvidyaDetailModel
+<!-- Modal -->
+<div class="modald fade" id="myModal" role="dialog" style="background: rgba(0,0,0,0.5);position: fixed;top: 0px;width: 100%;height: 100%;z-index: 999;">
+    <div class="modal-dialog" style="">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background: #ffffff;width: 279px;margin: 100px auto;border-radius: 13px;">
+            <div class="modal-header">
+                @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                <h5 class="modal-title" style="
+				padding: 12px;
+				text-align: center;
+				">
+                    Coverage, T&C
+                </h5>
+            </div>
+            <div class="modal-body" style="
+			padding: 0px 10px 10px 10px;
+			">
+                <p>1.Delivery of Name Recommendation report within the stated timelines(*) at the time of placing the order.</p>
+
+                <p>2.Direct access to your assigned Name Specialist on mobile, chat and email.</p>
+                <br>
+                <p>* : This requires submission of completed Name Preference questionnaire on the website. Name Preference questionnaire is availed immediately after placing your order. The questionnaire can also be accessed from MyOrders page (after you have placed your order).</p>
+            </div>
+            <div class="modal-footer" style="
+			text-align: -webkit-center;
+			padding-bottom: 11px;
+			">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closemodal();">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <form class="order-form" method="post" action="{{action}}">
+
+                <div class="cartsection">
+                    <div class="carttitle bg-pink pt-3 pb-3 center-align">
+                        <h5 class="wc">My Cart </h5>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col s12 l12" style="padding :3px">
+                                <div class="form-group row" style="text-align: -webkit-center;padding-top: 34px;" data-ng-show="MyCartDetail.length >0 ">
+                                    <div class="col l12 m12 s12" style="text-align: center;">
+                                        <span>Ordering from : </span>
+                                        <input type="radio" id="c_i" data-ng-model="Country_flag" name="@Html.NameFor(x => x.Country_flag )" value="I" ng-click="ShowCountry('I')" />
+                                        <label for="c_i" class="order">India</label>
+                                        <input type="radio" id="c_ni" data-ng-model="Country_flag" name="@Html.NameFor(x => x.Country_flag )" value="O" ng-click="ShowCountry('O')" />
+                                        <label for="c_ni" class="order">Outside India</label>
+                                    </div>
+                                </div>
+                                <table class="table bordered highlight mt-5 mb-5" data-ng-show="MyCartDetail.length >0 ">
+                                    <thead>
+                                        <tr class=" text-uppercase bg-yellow">
+                                            <th width="70%">Item</th>
+                                            <th width="25%" class="center-align">Price</th>
+                                            <th width="5%" class="center-align">#</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-ng-repeat="x in MyCartDetail">
+                                        <tr>
+                                            <td>
+                                                <b class="text-uppercase">
+                                                    {{x.ProductInfo}}
+
+                                                </b>
+                                                <br />
+                                                <span data-ng-hide="(x.ProductType == 'G')">
+                                                    <span data-ng-if="x.FirstName!=''">
+                                                        <span data-ng-if="x.ProductId!='13'">
+                                                            First Name : {{x.FirstName}} &nbsp; &nbsp;
+                                                        </span>
+                                                        <span data-ng-if="x.ProductId=='13'">
+                                                            Promoter Name : {{x.FirstName}} &nbsp; &nbsp;
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span data-ng-hide="(x.ProductType == 'G')">
+                                                    <span data-ng-if="x.MiddleName!=''"> Middle Name : {{x.MiddleName}} &nbsp; &nbsp;</span>
+                                                    <span data-ng-if="x.LastName!=''">   Last Name :    {{x.LastName}} &nbsp; &nbsp;</span>
+                                                    <span data-ng-if="x.Gender!=''">     Gender :       {{x.Gender}} &nbsp; &nbsp;</span>
+                                                    <span data-ng-if="x.Date_Of_Birth!=''">DOB : {{x.Date_Of_Birth}} &nbsp; &nbsp;</span>
+                                                    <span data-ng-if="x.MobileNo!=''">MobileNo :     {{x.MobileNo}}</span>
+                                                </span>
+                                                @*<span data-ng-if="x.MiddleName =='' || x.LastName=='' || x.Gender=='' ||x.MobileNo ==''"><span><span>*</span>Your preference for Name (DOB,Last Name/Surname,Shortlisted Names,Religion etc.) Will be collected after your order is placed</span></span>*@
+                                                <span data-ng-hide="(x.ProductType == 'G') || (x.ProductId=='13') || (x.ProductId=='14')">
+                                                    <i data-ng-show="IsVisible">
+                                                        <div class="col l12 m12 s12" style="padding-top: 13px;">
+                                                            <div class="col l6 m6 s12">
+                                                                <label style="color: green;font-size: 13px !important;">
+                                                                    <input type="checkbox" data-ng-click="fn_Express(x)" id="Express-{{x.CartId}}" data-ng-model="x.ExpressDelivery" checked="checked" style="position: relative !important;left: 0px !important;opacity: 1 !important;width: 14px !important;" />
+                                                                    Express Delivery Available : (INR 500)
+                                                                </label>
+                                                            </div>
+                                                            <div class="col l6 m6 s12">
+                                                                <label style="float: right;font-size: 12px !important;">
+                                                                    @*<i class="fa fa-inr "></i>500*@
+                                                                    @*<span style="margin: 0px 107px 0px 8px;"><a href="" title=" Thanks to our extensive selection of expedited delivery options, we’re confident that you’ll find the right one that matches your needs - as well as your budget – whatever the size of your parcel; large parcels can be delivered just as swiftly as small ones,  heavy parcels delivered as quickly as light." style="/* float: right; */margin: 0 !important;"><i class="fa fa-info-circle"></i></a></span>*@
+                                                                    <span @*data-ng-if="x.ExpressDelivery==true"*@>Get your Name Recommendation report by {{ExpressDeliveryDate}} *<a data-toggle="modal" data-target="#myModal">Coverage, T&C</a></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </i>
+                                                </span>
+                                            </td>
+                                            <td class="center-align">
+                                                <b data-ng-show="IsVisible"><i class="fa fa-inr "></i> {{x.Price}}</b>
+                                                <b data-ng-show="!IsVisible"><i class="fa fa-usd "></i> {{x.DollerPrice}}</b>
+
+
+                                            </td>
+                                            <td class="center-align">
+
+                                                @*<img src="images/img_remove.jpg" class="responsive-img" alt="slide1" />*@
+                                                <button type="button" class="btn" data-ng-click="fn_remove_cart(x)"><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tr class="text-uppercase bg-gray">
+                                        <th>ADDITIONAL INSTRUCTIONS ABOUT YOUR ORDER</th>
+                                        <th class="center-align">Cart Total</th>
+                                        <th class="center-align"></th>
+                                    </tr>
+
+                                   
+                                    <tr>
+                                        <td class="text-right">
+                                            <b>Total Amount : </b>
+                                        </td>
+                                        <td class="center-align">
+                                            <b data-ng-show="IsVisible"><i class="fa fa-inr "></i>{{SubTotal}}</b>
+                                            <b data-ng-show="!IsVisible"><i class="fa fa-usd "></i>{{DTotalAmt}}</b>
+                                        </td>
+                                        <td class="center-align"></td>
+                                    </tr>
+                                  
+                                    <tr>
+                                        <td class="text-right">
+                                            <b> Discount : </b>
+                                        </td>
+                                        <td class="center-align">
+                                            <b data-ng-show="IsVisible"><i class="fa fa-inr "></i>{{TotalDist}}</b>
+                                            <b data-ng-show="!IsVisible"><i class="fa fa-usd "></i>{{TotalDist}}</b>
+                                        </td>
+                                        <td class="center-align"></td>
+                                    </tr>
+                                  
+                                    <tr data-ng-show="IsVisible">
+                                        <td class="text-right">
+                                            <b>GST 18% : </b>
+                                        </td>
+                                        <td class="center-align">
+                                            <b><i class="fa fa-inr "></i>{{CGST + SGST}}</b>
+                                        </td>
+                                        <td class="center-align"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-right">
+                                            <b>Final Amount : </b>
+                                        </td>
+                                        <td class="center-align">
+                                            @*<h6>Before taxes and shipping</h6>*@
+                                            <b data-ng-show="IsVisible"><i class="fa fa-inr "></i>{{FinalAmt}}</b>
+                                            <b data-ng-show="!IsVisible"><i class="fa fa-usd "></i>{{DFinalAmt}}</b>
+
+                                        </td>
+                                        <td class="center-align"></td>
+                                    </tr>
+
+
+                                </table>
+
+
+
+                               
+
+                                <div data-ng-show="IsVisible">
+                                    <div class="form-comflex" style="margin-bottom:10px;" data-ng-show="MyCartDetail.length >0 ">
+                                        <div class="form-group row" style="margin-bottom : -20px;">
+                                            <div class="col s6 l6 m6">
+                                                <div class="coupen-code" style="float: none;padding: 7px;">
+                                                    <input type="text" class="form-control" data-ng-model="COUPEN_CODE" style="border-color: #d60a61;text-align: center;" placeholder="Coupon Code" name="@Html.NameFor(x =>x.Voucher)" />
+                                                </div>
+                                            </div>
+                                            <div class="col s6 l6 m6" style="float: none;">
+                                                <div class="coupen-code">
+                                                    <b class="waves-effect waves-light" data-ng-click="fn_Apply_Code(COUPEN_CODE)" style="padding: 5px;">
+                                                        Apply Coupon
+                                                    </b>
+                                                </div>
+                                            </div>
+                                            <p style="color:red;text-align:center;margin-top:0px;margin-bottom:5px">{{msg}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-comflex" data-ng-show="MyCartDetail.length > 0 ">
+									<div class="form-group row" ng-show="dvadmin">
+                                        <div class="col s8 l8 m8">
+                                            <div class="coupen-code" style="float: none;padding: 7px;">
+                                                <input type="text" class="form-control" data-ng-change="fn_clientid()" data-ng-model="ClientEmailId" style="border-color: #d60a61;text-align: center;" name="@Html.NameFor(x => x.ClientsEmailId)" placeholder="Enter Client's Email Id">
+                                            </div>
+                                        </div>
+                                        <div class="col s4 l4 m4" style="float: none;">
+                                            <div class="coupen-code">
+                                                <b class="waves-effect waves-light" data-ng-click="fn_validateClientId(ClientEmailId)" style="padding: 3px;">
+                                                    Ok
+                                                </b>
+                                            </div>
+                                        </div>
+                                        <p style="color:red;text-align:center;margin-top:0px;margin-bottom:5px">{{msg1}}</p>
+                                    </div> 
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Bill To <sup style="color:red">*</sup> </label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-change="fn_Change_BillTo()" data-ng-model="BillTo" name="@Html.NameFor(x => x.BillTo)" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Email To <sup style="color:red">*</sup> </label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-change="fn_Change_BillTo()" data-ng-model="EmailTo" name="@Html.NameFor(x => x.Email_Id)" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Billing Address <sup style="color:red">*</sup></label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-change="fn_Change_BillAddress1()" data-ng-model="BillingAddress1" name="@Html.NameFor(x => x.BillAddress1)" placeholder="Address ">
+                                            @*<textarea class="col l12 m12 s12 col-form-label" id="example-text-input" style="resize:none;" data-ng-model="BillingAddress"></textarea>*@
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-change="fn_Change_BillAddress1()" data-ng-model="BillingAddress2" name="@Html.NameFor(x => x.BillAddress2)" placeholder="Address ">
+                                            @*<textarea class="col l12 m12 s12 col-form-label" id="example-text-input" style="resize:none;" data-ng-model="BillingAddress"></textarea>*@
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" data-ng-change="fn_Change_BillAddress1()" data-ng-model="BillingAddress3" name="@Html.NameFor(x => x.BillAddress3)" placeholder="Address ">
+                                            @*<textarea class="col l12 m12 s12 col-form-label" id="example-text-input" style="resize:none;" data-ng-model="BillingAddress"></textarea>*@
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Country  <sup style="color:red">*</sup></label>
+                                        <div class="col l12 m12 s12">
+                                            <select class="col l6 m6 s12" style="height: 30px;" data-ng-change="fn_Change_BillAddress2(Country)" data-ng-model="Country" name="@Html.NameFor(x => x.Country)">
+                                                <option value="">Select</option>
+                                                <option value="{{x.CountryName}}" data-ng-repeat="x in CountryList">{{x.CountryName}}</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">State <sup style="color:red">*</sup></label>
+                                        <div class="col l12 m12 s12">
+                                            <select class="col l6 m6 s12" style="height: 30px;" data-ng-change="fn_Change_BillAddress1()" data-ng-model="State" name="@Html.NameFor(x => x.State)">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="NA" ng-if="Country !='INDIA'">NA</option>
+                                                <option value="{{x.StateCode}}" data-ng-repeat="x in StateList | filter:{CountryName:Country}">{{x.StateName}}</option>
+                                            </select>
+                                        </div>																				
+                                    </div>
+									  <div class="form-group row" ng-show="dvadmin">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <input type="checkbox" class="filled-in" id="filled-provisional" data-ng-change="fn_changeProvisional()" data-ng-model="PStatus" name="@Html.NameFor(x => x.PStatus)" />
+                                            <label for="filled-provisional" class="col-form-label">Provisional</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="form-group row" ng-show="dvadmin">                                       
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label">Payment Ref-Id</label>
+                                        <div class="col l12 m12 s12">
+                                            <input class="form-control" type="text" value="" id="example-text-input" ng-disabled="onprovisional" ng-change="fn_changeRefId()" ng-blur="fn_blurRefId()" data-ng-model="PayumoneyTranId" name="@Html.NameFor(x => x.PayumoneyTranId)">
+                                        </div>
+                                        <p style="color:red;text-align:center;margin-top:0px;margin-bottom:5px">{{msg2}}</p>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <label for="example-email-input" class="col l12 m12 s12 col-form-label"></label>
+                                        <div class="col l12 m12 s12">
+                                            <input type="checkbox" class="filled-in" id="filled-in-box" data-ng-click="fn_Accept()" data-ng-model="confirm" checked="checked" />
+                                            <label for="filled-in-box"><a target="_blank" href="/terms-and-conditions">I Accept Terms & Condition </a></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" data-ng-show="MyCartDetail.length > 0 ">
+                                        <div class="col s12 m6 l8"><label>Note : Order Once Placed can not be cancelled </label></div>
+
+
+                                        <div class="col s12 m12 l12">
+                                            <div style="margin-top: 5%;">
+                                                <a style="cursor: default"><img src="/images/pu_new.png" style="height: 29px;margin-top: 0px;/* margin-bottom: -6px !important; */padding-top: 0px !important;padding-bottom: 0px !important;"></a>
+
+                                                <a style="cursor: default"><img src="/images/upi_new.png" style="height: 23px;margin-top: 0px;/* margin-bottom: -3px !important; */padding-top: 0px !important;padding-bottom: 0px !important;"></a>
+
+                                                <a style="cursor: default"><img src="/images/visa_new.png" style="height: 23px;/* margin-bottom: -3px !important; */"></a>
+
+                                                <a style="cursor: default"><img src="/images/mastercard_new.png" style="height: 29px;margin-top: 0px;margin-bottom: -3px !important;padding-top: 0px !important;padding-bottom: 0px !important;"></a>
+
+                                                @*<a style="cursor: default"><img src="/images/Paytm.png" style="height: 38px;margin-top: 0px;margin-bottom: -7px !important;padding-top: 0px !important;padding-bottom: 0px !important;"></a>*@
+
+                                                <!-- PayPal Logo -->
+                                                <a style="cursor: default"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal" style="height: 24px;margin-top: 0px;margin-bottom: 2px !important;padding-top: 0px !important;padding-bottom: 0px !important;"></a>
+                                             
+                                                <!-- PayPal Logo -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12 m12 l12">
+
+                                            @*<div class="scbtn" data-ng-if="btnadmin"><button type="submit" data-ng-disabled="dsbtnSubmit" data-ng-show="IsVisible" data-ng-click="fn_CheckOut_O()" class="waves-effect waves-light pink btn" onsubmit="return validateForm()">Secure Checkout Paytm <img src="~/images/Paytm.png" style="width: auto !important;height: 41px;margin-bottom: -15px !important;" /></button></div>*@
+                                            <div class="scbtn" data-ng-if="btnadmin"><button type="submit" data-ng-disabled="dsbtnSubmit" data-ng-show="IsVisible" data-ng-click="fn_CheckOut()" class="waves-effect waves-light pink btn" onsubmit="return validateForm()">Secure Checkout</button></div>
+                                            <div class="scbtn" data-ng-if="btnadmin"><button type="submit" data-ng-disabled="dsbtnSubmit" data-ng-show="!IsVisible" data-ng-click="fn_CheckOut()" class="waves-effect waves-light pink btn" onsubmit="return validateForm()">Secure Checkout PayPal</button></div>
+                                           
+                                            <div class="scbtn" ><button type="submit" data-ng-disabled="dsbtnSubmit" ng-show="dvadmin" data-ng-click="fn_CheckOut()" class="waves-effect waves-light pink btn" onsubmit="return validateForm()">Secure Checkout Admin </button></div>
+
+                                            <div class="csbtn"><button type="button" data-ng-click="fn_ContinueShopping()" class="waves-effect waves-light purple btn">Continue Shopping</button></div>
+                                        </div>
+                                        @*<div class="col s12 m12 l12" style="margin-top: -26px;margin-bottom: 18px !important;">
+                                            <label>
+                                                You can also pay via
+                                                <!-- Paytm Logo -->
+
+                                                <img src="/images/Paytm.png" border="0" alt="Now accepting Paytm" class="paytmd paytmm">
+
+                                                <!-- Paytm Logo -->  to : 8291033688‬
+                                            </label>
+                                        </div>*@
+                                        @*<div class="col s12 m12 l12" style="margin-bottom: 23px !important;">
+                                            <label>
+                                                International Customers pay using PayPal
+                                                <!-- PayPal Logo -->
+                                                <a href="https://www.paypal.me/naamvidya" title="Now accepting PayPal" onclick="javascript:window.open('https://www.paypal.me/naamvidya','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+                                                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_now_accepting_pp_2line_w.png" border="0" alt="Now accepting PayPal" style="width: 19% !important;margin-bottom: -2% !important;">
+                                                </a>
+                                                <!-- PayPal Logo -->: (payments@naamvidya.com)
+                                            </label>
+                                        </div>*@
+
+                                        <br>
+                                        <br>
+
+
+
+
+                                        <div class="col s12 m6 l8"><label>For NEFT or DIRECT BANK DEPOSIT:</label></div>
+                                        <br>
+                                        <br>
+                                        <div class="col s12 m12 l12"><label>HDFC BANK CURRENT A/C #: 50200025239458</label></div>
+                                        <div class="col s12 m6 l8"><label>IFSC:HDFC0001471</label></div>
+                                        <div class="col s12 m6 l8"><label>BRANCH: CHANDIVALI POWAI, MUMBAI</label></div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <div class="col s12 m12 l12" style="margin-top: 3%;"><label>Please send your deposit details or questions to orders@naamvidya.com or WhatsApp at: +91 82919 19698</label></div>
+                                    </div>
+                                    <!-- <div class="tbottom" data-ng-show="MyCartDetail.length > 0 ">
+                                    <div class="col s12 m4 l4"></div>
+                                    <div class="col s12 m4 l4">
+
+                                    </div>
+                                    <div class="col s12 m4 l4">
+
+                                    </div>
+                                    </div> -->
+
+
+                                </div>
+                                <div class="tbottom" data-ng-show="NodataFound">
+                                    <div class="col s12 m12 l12" style="text-align:center">
+                                        <h5 class="text-uppercase">
+                                            Cart is empty
+
+                                        </h5>
+                                    </div>
+                                    <div class="col s12 m12 l12" style="text-align:center">
+                                        <div class="col s12 m4 l4"></div>
+                                        <div class="col s12 m4 l4">
+
+                                        </div>
+
+                                        <div class="col s12 m4 l4">
+                                            <div class="csbtn"><button type="button" data-ng-click="fn_ContinueShopping()" class="waves-effect waves-light purple btn">Continue Shopping</button></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,430 @@
+﻿<style type="text/css">
+	#customBtn {
+	display: inline-block;
+	background: white;
+	width: 100%;
+	display: block;
+	margin: 0 auto !important;
+	width: 100%;
+	/*max-width: 162px;*/
+	padding-left: 25%;
+	position: relative;
+	font-size: 13px;
+	font-weight: 500;
+	color: #696b79;
+	height: 50px;
+	border: 1px solid #bfc0c6;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	}
+	#customBtn:hover {
+	cursor: pointer;
+	}
+	span.label {
+	font-family: serif;
+	font-weight: normal;
+	display: none;
+	}
+	span.icon {
+	background: url(../images/gplus-icon.png) transparent 10px 10px no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+	background-size: 32px 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 42px;
+	padding-right: 42px;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	/* Use the Roboto font that is loaded in the <head> */
+		font-family: 'Roboto', sans-serif;
+		}
+		/*Gift Card*/
+		/*main carrd style*/
+		.carrd {
+		max-width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+		background: #fff;
+		padding: 0;
+		border: none;
+		border-radius: .5rem;
+		box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
+		transition: box-shadow 0.1s ease, transform 0.1s ease;
+		z-index: '';
+		margin-bottom: 0px;
+		}
+		.carrd a,
+		.carrds > .carrd a {
+		cursor: pointer;
+		}
+		.carrd > .carrd-content,
+		.carrds > .carrd > .carrd-content {
+		flex-grow: 1;
+		border: none;
+		background: 0 0;
+		margin: 0;
+		padding: 1em;
+		box-shadow: none;
+		font-size: 1em;
+		border-radius: 0;
+		}
+		.carrd > .carrd-content:after,
+		.carrds > .carrd > .carrd-content:after {
+		display: block;
+		height: 0;
+		}
+		.carrd > .carrd-content > h4.carrd-title,
+		.carrds > .carrd > .carrd-content > h4.carrd-title {
+		display: block;
+		margin: 0px;
+		font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		}
+		.carrd > .carrd-content > h6.carrd-meta,
+		.carrds > .carrd > .carrd-content > h6.carrd-meta {
+		margin-top: 0.2em;
+		}
+		.carrd > .carrd-content > h6.carrd-meta + .carrd-description,
+		.carrds > .carrd > .carrd-content > h6.carrd-meta + .carrd-description,
+		.carrd > .carrd-content > h4.carrd-title + .carrd-description,
+		.carrds > .carrd > .carrd-content > h4.carrd-title + .carrd-description {
+		margin-top: 1em;
+		}
+		.carrd > .carrd-content > .carrd-description,
+		.carrds > .carrd > .carrd-content > .carrd-description {
+		clear: both;
+		margin-top: 1em;
+		}
+		.carrd > .carrd-content p,
+		.carrds > .carrd > .carrd-content p {
+		margin: 0 0 0.5em;
+		}
+		.carrd > .carrd-content p:last-child,
+		.carrds > .carrd > .carrd-content p:last-child {
+		margin-bottom: 0;
+		}
+		.carrd > .carrd-content > a.carrd-title,
+		.carrds > .carrd > .carrd-content > a.carrd-title {
+		color: rgba(0, 0, 0, 0.85);
+		}
+		.carrd > .carrd-content > a.carrd-title:hover,
+		.carrds > .carrd > .carrd-content > a.carrd-title:hover {
+		color: #1e70bf;
+		}
+		/*carrd with border*/
+		.carrd.carrd-centred-text {
+		text-align: center;
+		}
+		/*carrd with border*/
+		.carrd.carrd-with-border .carrd-content {
+		position: relative;
+		/*padding: 15px 15px 25px 15px;*/
+		}
+		.carrd.carrd-with-border::after {
+		position: absolute;
+		display: block;
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		content: '';
+		top: 5px;
+		left: 5px;
+		z-index: 1;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		}
+		/*bg and text*/
+		.black-grey {
+		color: #fff !important;
+		background-color: #aaafb5 !important;
+		}
+		.text-white, .text-white-hover:hover {
+		color: #fff !important;
+		}
+		.ribbon-top-left {
+		top: 38px;
+		left: 246px;
+		}
+		.ribbon {
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+		position: absolute;
+		}
+		.ribbon-top-left::before {
+		top: 0;
+		right: 0;
+		}
+		.ribbon-top-left::before {
+		top: 0px;
+		right: 56px;
+		}
+		.ribbon-top-left::before, .ribbon-top-left::after {
+		border-top-color: transparent;
+		border-left-color: transparent;
+		}
+		.ribbon::before, .ribbon::after {
+		position: absolute;
+		z-index: -1;
+		content: '';
+		display: block;
+		border: 5px solid #C9422C;
+		}
+		.ribbon-top-left span {
+		right: 38px;
+		top: 23px;
+		transform: rotate(-45deg);
+		}
+		.ribbon span {
+		position: absolute;
+		display: block;
+		width: 150px;
+		padding: 7px 0;
+		background-color: #C9422C;
+		box-shadow: 0 5px 10px rgba(0,0,0,.1);
+		color: #fff;
+		font: 700 18px/1 '',;
+		text-shadow: 0 1px 1px rgba(0,0,0,.2);
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 14px;
+		}
+		.ribbon-top-left::after {
+		bottom: 56px;
+		left: -1px;
+		}
+		.apple__logo {
+		}
+		.right span {
+		display: block;
+		}
+		.right span:nth-child(2) {
+		color: grey;
+		}
+		.right span:nth-child(1) {
+		color: #CC199D;
+		}
+		.right {
+		float: none !important;
+		padding: 15px;
+		}
+		/*textarea*/
+		.text-container {
+		background: #4492E0;
+		padding: 20px;
+		height: 100%;
+		position: relative;
+		}
+		textarea {
+		background: transparent;
+		resize: none;
+		border: 0 none;
+		width: 100%;
+		/*font-size: 5em;*/
+		outline: none;
+		height: 100%;
+		font-family: 'Varela Round', sans-serif;
+		}
+		#cin {
+		overflow: auto;
+		overflow-x: hidden;
+		}
+		#cin::-webkit-scrollbar-track {
+		background-color: #e2e2e2;
+		}
+		#cin::-webkit-scrollbar {
+		width: 6px;
+		background-color: #F5F5F5;
+		}
+		#cin::-webkit-scrollbar-thumb {
+		border-radius: 100px;
+		background-color: #d60e61;
+		}
+	</style>
+	<div class="business-name-section">
+		<div class="container">
+			<div class="row mt-5 mb-5">
+				<div class="col s12 l9 card z-depth-2 mb-5">
+					<div class="col m6 s12 l6">
+						<div class="form-group row" style="margin-top: 15px !important;">
+							<div class="col l12 m12 s12" style="margin-bottom:10px;">
+								<div class="layer">
+									<div class=" col m12">
+										<div style="margin-left: -10px;margin-right: -11px;">
+											<img src="/images/banner/Choosing-A-Baby-Name.jpg" alt="" class="responsive-img brand-logo" style="border-radius: 2%;">
+										</div>
+									</div>
+									<div class="l12 m12 s12">
+										<p class="egift">E-gift CARD</p>
+									</div>
+									<div class="l12 m12 s12">
+										<div class="col l6 m6 s6">
+											<div class="l12 m12 s12" style="color: #d60e61;">
+												{{gname}}
+											</div>
+											<div class="l12 m12 s12" style="color: #d60e61;">
+												<i class="fa fa-inr"></i> {{gprice}}
+											</div>
+										</div>
+										<div class="col l6 m6 s6">
+											<img src="~/images/logo.png" alt="" class="giftlogo responsive-img"/>
+										</div>
+									</div>
+									<div class="l12 m12 s12">
+										<div>
+											<textarea autogrow class="form-control" ng-model="Message" ng-maxlength="260" ng-minlength="10" required name="content" ng-show="Message" style="overflow: hidden;height: 60px;padding: 14px 10px 2px 10px !important;resize: none !important;"></textarea>
+											@*<textarea readonly autogrow style="background:#fff;  height:auto; width:100%;" ng-show="Message">{{Message}}</textarea>*@
+											<textarea readonly ng-show="!Message" style="padding: 6px 2px 2px 10px !important;text-align: left;" placeholder="Your message will appear here"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col m6 s12 l6">
+						<form class="order-form form-comflex" style="width: 100% !important;margin: 16px 2px 12px auto !important;">
+							@*<div class="ribbon ribbon-top-left"><span>Best Wishes</span></div>*@
+							<div class="form-group row">
+								<div class="col l12 m12 s12" style="text-align:center;margin:20px 0px;">
+									<b style="font-family: 'Varela Round', sans-serif;font-size:22px;color:#d70a61;">NaamVidya E-mail Gift Card</b>
+								</div>
+							</div>
+							<fieldset class="fs-login" style="margin-bottom:2px !important">
+								<legend>Select a your gift card</legend>
+								<section>
+									<div class="container">
+										<div class="row">
+											<div class="col s12 m6 c3" ng-repeat="x in MyCartDetail">
+												<!--Card-->
+												<div class="card hoverable" style="padding:0px !important;border-radius: 7px;">
+													<!--Card content-->
+													<div class="card-body">
+														<div class="carrd carrd-with-border carrd-centred-text black-grey" style="background-color:#DAA520 !important;" data-ng-click="OpenCourse(x.ProductId)">
+															<div id="{{x.ProductName}}" ng-style="x.ProductId === 9  && {'background-color': '#DAA520'} ||
+															x.ProductId === 10 && {'background-color': '#aaafb5'} ||
+															x.ProductId === 11 && {'background-color': '#DAA520'} ||
+															x.ProductId === 12 && {'background-color': '#aaafb5'}">
+																<div class="carrd-content text-white">
+																	<h6 class="carrd-title" style="font-size: 13px;padding: 5%;">
+																		{{x.ProductName}}
+																		<br>
+																		<br>
+																		<i class="fa fa-inr "></i> {{x.Price}}
+																	</h6>
+																</div>
+															</div>	 
+														</div>
+													</div>
+												</div>
+												<!--/.Card-->
+											</div>
+										</div>
+									</div>
+								</section>
+							</fieldset>
+							<fieldset class="fs-login" style="margin-bottom: 0px !important;">
+								<legend>Enter your gift card details</legend>
+								<div class="form-group row">
+									<label for="email_id" class="col l12 m12 s12 col-form-label">To Name*</label>
+									<div class="col l12 m12 s12">
+										<input class="form-control" style="width:100%;border-radius:5px;margin-bottom: 2%;" type="text" data-ng-model="To_Name" id="to_name" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="email_id" class="col l12 m12 s12 col-form-label">To Email*</label>
+									<div class="col l12 m12 s12">
+										<input class="form-control" style="width:100%;border-radius:5px;margin-bottom: 2%;" type="text" data-ng-model="To_EmailId" id="to_email_id" placeholder="">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="password" class="col l12 m12 s12 col-form-label">From Name*</label>
+									<div class="col l12 m12 s12">
+										<input class="form-control" style="width:100%;border-radius:5px;margin-bottom: 2%;" type="text" data-ng-model="From_name" id="from_name" placeholder="">
+									</div>
+								</div>
+								@*<div class="form-group row">
+									<label for="password" class="col l12 m12 s12 col-form-label">From Email*</label>
+									<div class="col l12 m12 s12">
+										<input class="form-control" style="width:100%;border-radius:5px;margin-bottom: 2%;" type="text" data-ng-model="From_EmailId" id="from_email_id" placeholder="">
+									</div>
+								</div>*@
+								<div class="form-group row">
+									<label for="password" class="col l12 m12 s12 col-form-label">Message</label>
+									<div class="col l12 m12 s12">
+										<textarea ng-change="evaluateChange()" id="cin" class="materialize-textarea" style="width:100%;border: none !important;border-radius:5px;color:black !important;" data-ng-model="Message" placeholder="" name="message" maxlength="280"></textarea>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label id="lblerrormsg" style="color:green" data-ng-show="msgdone">{{errormsg}}</label>
+									<label id="lblerrormsg" style="color:red" data-ng-show="msgerror">{{errormsg}}</label>
+								</div>
+								<div class="form-group row">
+									<div class="col l12 m12 s12">
+										<a data-ng-click="fn_Add_To_Cart();" style="margin-bottom: 11px;width: 100%;border-radius: 5px;height: 50px;line-height: 50px;font-size: 18px;" class="waves-effect waves-light btn">Add To Cart</a>
+									</div>
+									@*<div class="col l6 m6 s12">
+										<a data-ng-click="fn_View_Cart();" style="margin-bottom: 11px;width: 100%;border-radius: 5px;height: 50px;line-height: 50px;font-size: 18px;" class="waves-effect waves-light btn">View Cart</a>
+									</div>*@
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="col s12 l3" data-ng-controller="sidebarController">
+					<div class="bg-yellow animated slideInBottom">
+						<div class="form clearfix">
+							<h5 class="lead wc">
+								<img src="images/soundicon.png" alt="" />Free First<br>
+								Name Analysis
+							</h5>
+							<p>
+								<input class="col  s12" type="text" data-ng-model="newfirstName" placeholder="Enter First Name" only-alphabet />
+								<label style="color:#ffffff;font-size:14px;text-align:left;">{{errMsg}}</label>
+							</p>
+							<!--p>Date of Birth<br/>
+								<input class="col  s12" type="text" />
+							</p-->
+							<input type="button" class="waves-effect waves-light pink btn" value="Analyse" data-ng-click="analyzeFirstName()" />
+						</div>
+					</div>
+					<div class="animated slideInBottom bg-aqua" style="margin-bottom:20px;">
+						<div class="list">
+							<ul>
+								<li><a href="/about-us">About NaamVidya</a></li>
+								<li><a href="/why-names-matter">Why name matters</a></li>
+								<!-- <li><a href="/balanced-name">Origins of balanced name</a></li> -->
+								<li><a href="/ethics-beliefs">Ethics & Beliefs</a></li>
+								<li><a href="/life-path">Purpose and Karma</a></li>
+								<li><a href="/faq">FAQ</a></li>
+								<li><a href="/full-name-analysis">Full Name Report</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@*<script type="text/javascript" language="javascript">
+		$(document).ready(function () {
+			loadCaptcha();
+		});
+		function loadCaptcha() {
+			$.ajax({
+				type: 'GET', url: 'Routes/generateCaptcha',
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				cache: false,
+				success: function (data) { $("#m_imgCaptcha").attr('src', data); },
+				error: function (data) { alert("Error while loading captcha image") }
+			});
+		}
+	</script>*@										

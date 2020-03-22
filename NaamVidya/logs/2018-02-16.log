@@ -1,0 +1,5 @@
+16/02/2018 12:57:15 PM SIDDHESH-PC COMFLEX\1150 iisexpress 36  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+16/02/2018 12:59:17 PM SIDDHESH-PC COMFLEX\1150 iisexpress 73  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Object cannot be cast from DBNull to other types.
+16/02/2018 07:03:59 PM SIDDHESH-PC COMFLEX\1150 iisexpress 11  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Conversion failed when converting date and/or time from character string.
+16/02/2018 07:06:11 PM SIDDHESH-PC COMFLEX\1150 iisexpress 9   NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Conversion failed when converting date and/or time from character string.
+16/02/2018 07:09:16 PM SIDDHESH-PC COMFLEX\1150 iisexpress 10  NVAPI.Nlogger.nLoggerMsg(e:\TFS\NaamVidya\NV\NaamVidya\Nlogger.cs:19) ERROR - Conversion failed when converting date and/or time from character string.

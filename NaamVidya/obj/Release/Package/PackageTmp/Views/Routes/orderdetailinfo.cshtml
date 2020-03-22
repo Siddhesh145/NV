@@ -1,0 +1,202 @@
+﻿<style>
+    .borderclass {
+	border : 1px solid #aaaaaa;
+    }
+    .borderleftclass {
+	border-left : 1px solid #aaaaaa;
+    }
+</style>
+<div class="business-name-section">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col s12 m12 l12">
+                <div class="card z-depth-2 mb-5">
+					<div class="order-form" data-ng-show="dvconfirmdetail">
+						<div class="form-group row">
+							<div class="col l9 m8 s12">
+								<b style="color:#d70a61;margin-top:20px;font-size:20px;">Order detail :</b>
+								@*<strong>Give us the following detail.</strong>*@
+							</div>
+						</div>
+						<div class="form-group row ">
+							<div class="col l4 m8 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">First Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="firstName">{{firstName}}</span>
+								</div>
+							</div>
+							<div class="col l4 m8 s12 borderclass">
+								<label for="example-text-input " class="col l6 m6 s12 col-form-label">Middle Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="middleName">{{middleName}}</span>
+								</div>
+							</div>
+							<div class="col l4 m8 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Last Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="lastName">{{lastName}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m8 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label ">Mobile No : </label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="mobileno">{{mobileno}}</span>
+								</div>
+							</div>
+							<div class="col l4 m8 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Date of Birth :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="dob">{{dob}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Gender :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Gender">{{Gender}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m4 s12 col-form-label">Name 1 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Name1">{{Name1}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Name 2 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Name2">{{Name2}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Name 3 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Name3">{{Name3}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Name 4 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Name4">{{Name4}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Name 5 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Name5">{{Name5}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Alter Name Spell :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="namespell">{{namespell}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Alter LName Spell :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="lastnamespell">{{lastnamespell}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Max Length Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="maxlengthname">{{maxlengthname}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Prefered Alphabets :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="PreferedAlphabets">{{PreferedAlphabets}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Mothers Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="MothersName">{{MothersName}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Fathers Name :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="FathersName">{{FathersName}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Sibling 1 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Sibling1">{{Sibling1}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Sibling 2 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Sibling2">{{Sibling2}}</span>
+								</div>
+							</div>
+							<div class="col l4 m6 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Sibling 3 :</label>
+								<div class="col l6 m6 s12">
+									<span data-ng-model="Sibling3">{{Sibling3}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l12 m12 s12 borderclass">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">Last Name :</label>
+								<div class="col l6 m6 s12">
+									<div class="box" data-ng-repeat="x in LNameDetail | unique:'LName'">
+										<input type="checkbox" id="LID-{{x.LName}}" data-ng-change="fn_filter()" data-ng-model="x.Status" />
+										<label for="LID-{{x.LName}}"> {{x.LName}}</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						@*<div class="form-group row">
+							<div class="col l12 m12 s12 borderclass">
+								<button type="button" class="waves-effect waves-light pink btn" data-ng-click="fn_filter()">Filter First Name List</button>
+								<div class="col l6 m6 s12">
+								</div>
+							</div>
+						</div>*@
+						<div class="form-group row">
+							<div class="col l12 m12 s12 borderclass" style="float:none">
+								<label for="example-text-input" class="col l6 m6 s12 col-form-label">First Name :</label>
+								<div class="col l6 m6 s12">
+									<div class="box" data-ng-repeat="x in FLNameDetail  ">
+										<input type="checkbox" id="FLID-{{x.FName}}" data-ng-model="x.Status" />
+										<label for="FLID-{{x.FName}}"> {{x.FName}}</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l9 m8 s12">
+								<label id="lblerrormsg" style="color:green" data-ng-show="msgdone">{{errormsg}}</label>
+								<label id="lblerrormsg" style="color:red" data-ng-show="msgerror">{{errormsg}}</label>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col l12 m12 s12 borderclass">
+								<button type="button" class="waves-effect waves-light pink btn" data-ng-click="fn_Save()">Save</button>
+								<div class="col l6 m6 s12">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>	
